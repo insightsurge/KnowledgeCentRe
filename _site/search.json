@@ -1,0 +1,226 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome, Learner.",
+    "section": "",
+    "text": "Your one-stop shop for R, Shiny, and Clinical Trials excellence."
+  },
+  {
+    "objectID": "index.html#jump-start",
+    "href": "index.html#jump-start",
+    "title": "Welcome, Learner.",
+    "section": "🚀 Jump Start",
+    "text": "🚀 Jump Start\n\nSelect your path below to get moving immediately.\n\n\n\n\n\n\n\n The R Hub\nMaster R from SAS migration to Advanced Meta-programming.  Go to R Hub\n\n\n The Shinyverse\nBuild, scale, and deploy production-ready dashboards.  Go to Shinyverse\n\n\n SME Help\nStuck? Our Subject Matter Experts are here to rescue your code.  Get Rescue"
+  },
+  {
+    "objectID": "index.html#key-resources",
+    "href": "index.html#key-resources",
+    "title": "Welcome, Learner.",
+    "section": "📚 Key Resources",
+    "text": "📚 Key Resources\n\n\n  \n  \n    \n      \n      \n        R Language Resources\n        Tidyverse, Clinical, and Base R documentation.\n        \n      \n    \n  \n\n  \n  \n    \n      \n      \n        Shiny Resources\n        UI components, Reactivity, and Deployment guides."
+  },
+  {
+    "objectID": "blog/posts/2024-05-28-shiny-reactivity.html",
+    "href": "blog/posts/2024-05-28-shiny-reactivity.html",
+    "title": "Shiny: Reactivity vs Observe vs bindEvent",
+    "section": "",
+    "text": "Welcome to this article on Shiny: Reactivity vs Observe vs bindEvent.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-28-shiny-reactivity.html#overview",
+    "href": "blog/posts/2024-05-28-shiny-reactivity.html#overview",
+    "title": "Shiny: Reactivity vs Observe vs bindEvent",
+    "section": "",
+    "text": "Welcome to this article on Shiny: Reactivity vs Observe vs bindEvent.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-20-debugging-shiny.html",
+    "href": "blog/posts/2024-06-20-debugging-shiny.html",
+    "title": "Debugging Shiny Apps: A Survival Guide",
+    "section": "",
+    "text": "Welcome to this article on Debugging Shiny Apps: A Survival Guide.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-20-debugging-shiny.html#overview",
+    "href": "blog/posts/2024-06-20-debugging-shiny.html#overview",
+    "title": "Debugging Shiny Apps: A Survival Guide",
+    "section": "",
+    "text": "Welcome to this article on Debugging Shiny Apps: A Survival Guide.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-15-ggplot-themes.html",
+    "href": "blog/posts/2024-06-15-ggplot-themes.html",
+    "title": "Standardizing Company Plots with ggplot2",
+    "section": "",
+    "text": "Welcome to this article on Standardizing Company Plots with ggplot2.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-15-ggplot-themes.html#overview",
+    "href": "blog/posts/2024-06-15-ggplot-themes.html#overview",
+    "title": "Standardizing Company Plots with ggplot2",
+    "section": "",
+    "text": "Welcome to this article on Standardizing Company Plots with ggplot2.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-20-dplyr-pro.html",
+    "href": "blog/posts/2024-05-20-dplyr-pro.html",
+    "title": "Using dplyr Like a Pro",
+    "section": "",
+    "text": "Welcome to this article on Using dplyr Like a Pro.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-20-dplyr-pro.html#overview",
+    "href": "blog/posts/2024-05-20-dplyr-pro.html#overview",
+    "title": "Using dplyr Like a Pro",
+    "section": "",
+    "text": "Welcome to this article on Using dplyr Like a Pro.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-01-gt-tables.html",
+    "href": "blog/posts/2024-06-01-gt-tables.html",
+    "title": "Beautiful Clinical Tables with gt",
+    "section": "",
+    "text": "Welcome to this article on Beautiful Clinical Tables with gt.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-01-gt-tables.html#overview",
+    "href": "blog/posts/2024-06-01-gt-tables.html#overview",
+    "title": "Beautiful Clinical Tables with gt",
+    "section": "",
+    "text": "Welcome to this article on Beautiful Clinical Tables with gt.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "sme-rescue/index.html",
+    "href": "sme-rescue/index.html",
+    "title": "SME to the Rescue",
+    "section": "",
+    "text": "Need help with a project? Reach out to our Subject Matter Experts directly below."
+  },
+  {
+    "objectID": "sme-rescue/index.html#row",
+    "href": "sme-rescue/index.html#row",
+    "title": "SME to the Rescue",
+    "section": "Row",
+    "text": "Row\n\nHow to use this Dashboard\nWelcome to the SME Finder. Use the search box below to find an expert for your specific problem.\n\nSearch by topic (e.g., ‘Shiny’, ‘Clinical’).\nClick ‘Ask for Help’ to draft an email automatically."
+  },
+  {
+    "objectID": "sme-rescue/index.html#row-1",
+    "href": "sme-rescue/index.html#row-1",
+    "title": "SME to the Rescue",
+    "section": "Row",
+    "text": "Row\n\nDT::datatable(sme_data, escape = FALSE, options = list(pageLength = 5, dom = 'ft'))"
+  },
+  {
+    "objectID": "blog/posts/2024-05-22-purrr-basics.html",
+    "href": "blog/posts/2024-05-22-purrr-basics.html",
+    "title": "The purrr Way of Doing Things",
+    "section": "",
+    "text": "Welcome to this article on The purrr Way of Doing Things.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-22-purrr-basics.html#overview",
+    "href": "blog/posts/2024-05-22-purrr-basics.html#overview",
+    "title": "The purrr Way of Doing Things",
+    "section": "",
+    "text": "Welcome to this article on The purrr Way of Doing Things.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-05-renv-reproducibility.html",
+    "href": "blog/posts/2024-06-05-renv-reproducibility.html",
+    "title": "Why We Use renv (And You Should Too)",
+    "section": "",
+    "text": "Welcome to this article on Why We Use renv (And You Should Too).\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-05-renv-reproducibility.html#overview",
+    "href": "blog/posts/2024-06-05-renv-reproducibility.html#overview",
+    "title": "Why We Use renv (And You Should Too)",
+    "section": "",
+    "text": "Welcome to this article on Why We Use renv (And You Should Too).\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-25-admiral-intro.html",
+    "href": "blog/posts/2024-05-25-admiral-intro.html",
+    "title": "Admiral Package for Beginners",
+    "section": "",
+    "text": "Welcome to this article on Admiral Package for Beginners.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-25-admiral-intro.html#overview",
+    "href": "blog/posts/2024-05-25-admiral-intro.html#overview",
+    "title": "Admiral Package for Beginners",
+    "section": "",
+    "text": "Welcome to this article on Admiral Package for Beginners.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-25-quarto-reports.html",
+    "href": "blog/posts/2024-06-25-quarto-reports.html",
+    "title": "Automated Reporting with Quarto",
+    "section": "",
+    "text": "Welcome to this article on Automated Reporting with Quarto.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-25-quarto-reports.html#overview",
+    "href": "blog/posts/2024-06-25-quarto-reports.html#overview",
+    "title": "Automated Reporting with Quarto",
+    "section": "",
+    "text": "Welcome to this article on Automated Reporting with Quarto.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-10-box-modules.html",
+    "href": "blog/posts/2024-06-10-box-modules.html",
+    "title": "Organizing Code with ‘box’ and Modules",
+    "section": "",
+    "text": "Welcome to this article on Organizing Code with ‘box’ and Modules.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-10-box-modules.html#overview",
+    "href": "blog/posts/2024-06-10-box-modules.html#overview",
+    "title": "Organizing Code with ‘box’ and Modules",
+    "section": "",
+    "text": "Welcome to this article on Organizing Code with ‘box’ and Modules.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "The KnowledgeCentRe Blog",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nAutomated Reporting with Quarto\n\n\n1 min\n\n\n\nQuarto\n\n\nReporting\n\n\nAutomation\n\n\n\nGenerating 100 HTML reports from a single parameterised template.\n\n\n\nData Science Team\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nDebugging Shiny Apps: A Survival Guide\n\n\n1 min\n\n\n\nShiny\n\n\nDebugging\n\n\n\nUsing browser(), reactlog, and print-debugging effectively.\n\n\n\nShiny Expert\n\n\nJun 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nStandardizing Company Plots with ggplot2\n\n\n1 min\n\n\n\nVisualization\n\n\nR\n\n\nBranding\n\n\n\nHow to apply the corporate theme to every plot automatically.\n\n\n\nViz Team\n\n\nJun 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nOrganizing Code with ‘box’ and Modules\n\n\n1 min\n\n\n\nR\n\n\nArchitecture\n\n\nPackages\n\n\n\nMoving away from library() calls towards modular, explicit imports.\n\n\n\nR Architect\n\n\nJun 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nWhy We Use renv (And You Should Too)\n\n\n1 min\n\n\n\nBest Practices\n\n\nDevOps\n\n\n\nManaging package versions to ensure your code works 5 years from now.\n\n\n\nAdmin\n\n\nJun 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nBeautiful Clinical Tables with gt\n\n\n1 min\n\n\n\nR\n\n\nReporting\n\n\nVisualization\n\n\n\nCreating publication-ready demographic tables without SAS.\n\n\n\nReporting Team\n\n\nJun 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nShiny: Reactivity vs Observe vs bindEvent\n\n\n1 min\n\n\n\nShiny\n\n\nAdvanced\n\n\nPerformance\n\n\n\nDemystifying the reactive graph. When to use what for optimal app performance.\n\n\n\nShiny Expert\n\n\nMay 28, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nAdmiral Package for Beginners\n\n\n1 min\n\n\n\nClinical\n\n\nADaM\n\n\nPackages\n\n\n\nYour first steps into CDISC ADaM generation using the admiral package.\n\n\n\nClinical Lead\n\n\nMay 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe purrr Way of Doing Things\n\n\n1 min\n\n\n\nR\n\n\nAdvanced\n\n\nFunctional Programming\n\n\n\nStop writing for-loops. Start mapping your way to cleaner code.\n\n\n\nR SME\n\n\nMay 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nUsing dplyr Like a Pro\n\n\n1 min\n\n\n\nR\n\n\nTidyverse\n\n\nIntermediate\n\n\n\nMove beyond filter and select. Learn across(), rowwise(), and cur_data().\n\n\n\nData Science Team\n\n\nMay 20, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "sme-rescue/index.html#clinical-regulatory",
+    "href": "sme-rescue/index.html#clinical-regulatory",
+    "title": "SME to the Rescue",
+    "section": "Clinical & Regulatory",
+    "text": "Clinical & Regulatory\n\nDr. Sarah Connor\n\nRole: Clinical Analysis Lead\nExperience: 12 Years\nSpecialty: ADaM, SDTM, and submission readiness.\nAsk for Help\n\n\n\nDiana Prince\n\nRole: Regulatory & Validation\nExperience: 10 Years\nSpecialty: FDA guidelines, R package validation, and compliance frameworks.\nAsk for Help\n\n\n\nFiona Shrek\n\nRole: Legacy Migration\nExperience: 7 Years\nSpecialty: Converting complex SAS macros into R functions and QC strategies.\nAsk for Help"
+  },
+  {
+    "objectID": "sme-rescue/index.html#engineering-development",
+    "href": "sme-rescue/index.html#engineering-development",
+    "title": "SME to the Rescue",
+    "section": "Engineering & Development",
+    "text": "Engineering & Development\n\nJohn Wick\n\nRole: Automation & DevOps\nExperience: 8 Years\nSpecialty: CI/CD pipelines, Docker, and internal R package development.\nAsk for Help\n\n\n\nBob Builder\n\nRole: Shiny Architect\nExperience: 6 Years\nSpecialty: Building modular, production-grade Shiny applications for safety monitoring.\nAsk for Help\n\n\n\nCharlie Brown\n\nRole: Data Engineering\nExperience: 4 Years\nSpecialty: SQL optimization, database connections, and Big Data handling.\nAsk for Help"
+  },
+  {
+    "objectID": "sme-rescue/index.html#visualization-innovation",
+    "href": "sme-rescue/index.html#visualization-innovation",
+    "title": "SME to the Rescue",
+    "section": "Visualization & Innovation",
+    "text": "Visualization & Innovation\n\nAlice Wonderland\n\nRole: Data Visualization\nExperience: 5 Years\nSpecialty: High-impact storytelling, custom ggplot2 themes, and interactive plots.\nAsk for Help\n\n\n\nGeorge Jetson\n\nRole: Innovation & AI\nExperience: 15 Years\nSpecialty: Machine Learning integration, Python interoperability, and future-tech strategy.\nAsk for Help"
+  },
+  {
+    "objectID": "sme-rescue/index.html#specialized-fields",
+    "href": "sme-rescue/index.html#specialized-fields",
+    "title": "SME to the Rescue",
+    "section": "Specialized Fields",
+    "text": "Specialized Fields\n\nEvan Wright\n\nRole: Bioinformatics\nExperience: 3 Years\nSpecialty: Genomic data analysis using Bioconductor packages.\nAsk for Help\n\n\n\nHannah Montana\n\nRole: Training & Enablement\nExperience: 2 Years\nSpecialty: Documentation, onboarding new users, and community building.\nAsk for Help"
+  },
+  {
+    "objectID": "r-hub/resources.html",
+    "href": "r-hub/resources.html",
+    "title": "R Resources",
+    "section": "",
+    "text": "Everything you need to be productive in R.\n\n📦 Golden Packages📄 Cheatsheets🔗 Internal Links\n\n\n\nData Manipulation: dplyr, tidyr, data.table\nVisualization: ggplot2, patchwork, gt\n\n\n\n\nData Transformation (dplyr)\nVisualization (ggplot2)\n\n\n\n\nLink to internal GitLab/GitHub\nLink to shared drive"
+  }
+]

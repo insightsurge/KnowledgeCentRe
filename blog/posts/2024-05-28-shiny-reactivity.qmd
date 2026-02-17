@@ -1,0 +1,27 @@
+---
+title: "Shiny: Reactivity vs Observe vs bindEvent"
+date: "2024-05-28"
+author: "Shiny Expert"
+categories: [Shiny, Advanced, Performance]
+description: "Demystifying the reactive graph. When to use what for optimal app performance."
+---
+
+## Overview
+
+Welcome to this article on **Shiny: Reactivity vs Observe vs bindEvent**.
+
+This is a placeholder for content that will help you master this topic.
+
+### Key Takeaways
+
+* Concept 1: Understanding the basics.
+* Concept 2: Applying it to clinical data.
+* Concept 3: Best practices in our company.
+
+```{r}
+#| label: setup
+#| message: false
+library(tidyverse)
+# Example code placeholder
+print('Hello KnowledgeCentRe!')
+```

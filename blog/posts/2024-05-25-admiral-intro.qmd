@@ -1,0 +1,27 @@
+---
+title: "Admiral Package for Beginners"
+date: "2024-05-25"
+author: "Clinical Lead"
+categories: [Clinical, ADaM, Packages]
+description: "Your first steps into CDISC ADaM generation using the admiral package."
+---
+
+## Overview
+
+Welcome to this article on **Admiral Package for Beginners**.
+
+This is a placeholder for content that will help you master this topic.
+
+### Key Takeaways
+
+* Concept 1: Understanding the basics.
+* Concept 2: Applying it to clinical data.
+* Concept 3: Best practices in our company.
+
+```{r}
+#| label: setup
+#| message: false
+library(tidyverse)
+# Example code placeholder
+print('Hello KnowledgeCentRe!')
+```

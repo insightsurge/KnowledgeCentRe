@@ -1,0 +1,75 @@
+---
+pagetitle: "KnowledgeCentRe"
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div class="hero-section text-center">
+  <h1 class="display-3 fw-bold animate-text">Welcome, Learner.</h1>
+  <p class="lead animate-delay-1">Your one-stop shop for R, Shiny, and Clinical Trials excellence.</p>
+</div>
+```
+
+<div class="container my-5">
+
+## 🚀 Jump Start
+<p class="text-muted mb-4 animate-delay-2">Select your path below to get moving immediately.</p>
+
+::: {layout-ncol=3}
+
+::: {.card .feature-card .h-100 .p-3}
+### <i class="bi bi-rocket-takeoff text-primary"></i> The R Hub
+Master R from SAS migration to Advanced Meta-programming.
+<br><br>
+[Go to R Hub](r-hub/beginner.qmd){.btn .btn-outline-primary .stretched-link}
+:::
+
+::: {.card .feature-card .h-100 .p-3}
+### <i class="bi bi-columns-gap text-purple"></i> The Shinyverse
+Build, scale, and deploy production-ready dashboards.
+<br><br>
+[Go to Shinyverse](shinyverse/basics.qmd){.btn .btn-outline-primary .stretched-link}
+:::
+
+::: {.card .feature-card .h-100 .p-3}
+### <i class="bi bi-life-preserver text-danger"></i> SME Help
+Stuck? Our Subject Matter Experts are here to rescue your code.
+<br><br>
+[Get Rescue](sme-rescue/index.qmd){.btn .btn-outline-primary .stretched-link}
+:::
+
+:::
+
+<hr class="my-5">
+
+## 📚 Key Resources
+
+<!-- 2. The Resources Section (Fixed using Raw HTML block) -->
+```{=html}
+<div class="row">
+  <!-- R Resources Card -->
+  <div class="col-md-6">
+    <div class="alert alert-info d-flex align-items-center" role="alert">
+      <i class="bi bi-book-half me-3 fs-3"></i>
+      <div>
+        <strong>R Language Resources</strong><br>
+        Tidyverse, Clinical, and Base R documentation.
+        <a href="r-hub/resources.qmd" class="alert-link stretched-link"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shiny Resources Card -->
+  <div class="col-md-6">
+    <div class="alert alert-success d-flex align-items-center" role="alert">
+      <i class="bi bi-window-desktop me-3 fs-3"></i>
+      <div>
+        <strong>Shiny Resources</strong><br>
+        UI components, Reactivity, and Deployment guides.
+        <a href="shinyverse/resources.qmd" class="alert-link stretched-link"></a>
+      </div>
+    </div>
+  </div>
+</div>
+```

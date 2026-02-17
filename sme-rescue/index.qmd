@@ -1,0 +1,80 @@
+---
+title: "SME to the Rescue"
+format: html
+---
+
+Need help with a project? Reach out to our Subject Matter Experts directly below.
+
+## Clinical & Regulatory
+
+### Dr. Sarah Connor
+* **Role:** Clinical Analysis Lead
+* **Experience:** 12 Years
+* **Specialty:** ADaM, SDTM, and submission readiness.
+* [Ask for Help](mailto:sarah@company.com?subject=Help%20Request:%20Clinical%20Analysis){.btn .btn-primary .btn-sm}
+
+### Diana Prince
+* **Role:** Regulatory & Validation
+* **Experience:** 10 Years
+* **Specialty:** FDA guidelines, R package validation, and compliance frameworks.
+* [Ask for Help](mailto:diana@company.com?subject=Help%20Request:%20Validation){.btn .btn-primary .btn-sm}
+
+### Fiona Shrek
+* **Role:** Legacy Migration
+* **Experience:** 7 Years
+* **Specialty:** Converting complex SAS macros into R functions and QC strategies.
+* [Ask for Help](mailto:fiona@company.com?subject=Help%20Request:%20SAS%20to%20R){.btn .btn-primary .btn-sm}
+
+---
+
+## Engineering & Development
+
+### John Wick
+* **Role:** Automation & DevOps
+* **Experience:** 8 Years
+* **Specialty:** CI/CD pipelines, Docker, and internal R package development.
+* [Ask for Help](mailto:john@company.com?subject=Help%20Request:%20Automation){.btn .btn-primary .btn-sm}
+
+### Bob Builder
+* **Role:** Shiny Architect
+* **Experience:** 6 Years
+* **Specialty:** Building modular, production-grade Shiny applications for safety monitoring.
+* [Ask for Help](mailto:bob@company.com?subject=Help%20Request:%20Shiny){.btn .btn-primary .btn-sm}
+
+### Charlie Brown
+* **Role:** Data Engineering
+* **Experience:** 4 Years
+* **Specialty:** SQL optimization, database connections, and Big Data handling.
+* [Ask for Help](mailto:charlie@company.com?subject=Help%20Request:%20Data%20Engineering){.btn .btn-primary .btn-sm}
+
+---
+
+## Visualization & Innovation
+
+### Alice Wonderland
+* **Role:** Data Visualization
+* **Experience:** 5 Years
+* **Specialty:** High-impact storytelling, custom ggplot2 themes, and interactive plots.
+* [Ask for Help](mailto:alice@company.com?subject=Help%20Request:%20Data%20Viz){.btn .btn-primary .btn-sm}
+
+### George Jetson
+* **Role:** Innovation & AI
+* **Experience:** 15 Years
+* **Specialty:** Machine Learning integration, Python interoperability, and future-tech strategy.
+* [Ask for Help](mailto:george@company.com?subject=Help%20Request:%20Innovation){.btn .btn-primary .btn-sm}
+
+---
+
+## Specialized Fields
+
+### Evan Wright
+* **Role:** Bioinformatics
+* **Experience:** 3 Years
+* **Specialty:** Genomic data analysis using Bioconductor packages.
+* [Ask for Help](mailto:evan@company.com?subject=Help%20Request:%20Bioinformatics){.btn .btn-primary .btn-sm}
+
+### Hannah Montana
+* **Role:** Training & Enablement
+* **Experience:** 2 Years
+* **Specialty:** Documentation, onboarding new users, and community building.
+* [Ask for Help](mailto:hannah@company.com?subject=Help%20Request:%20Training){.btn .btn-primary .btn-sm}

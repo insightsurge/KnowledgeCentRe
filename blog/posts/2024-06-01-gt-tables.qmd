@@ -1,0 +1,27 @@
+---
+title: "Beautiful Clinical Tables with gt"
+date: "2024-06-01"
+author: "Reporting Team"
+categories: [R, Reporting, Visualization]
+description: "Creating publication-ready demographic tables without SAS."
+---
+
+## Overview
+
+Welcome to this article on **Beautiful Clinical Tables with gt**.
+
+This is a placeholder for content that will help you master this topic.
+
+### Key Takeaways
+
+* Concept 1: Understanding the basics.
+* Concept 2: Applying it to clinical data.
+* Concept 3: Best practices in our company.
+
+```{r}
+#| label: setup
+#| message: false
+library(tidyverse)
+# Example code placeholder
+print('Hello KnowledgeCentRe!')
+```

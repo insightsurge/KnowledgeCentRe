@@ -1,0 +1,59 @@
+project:
+  type: website
+
+website:
+  title: "KnowledgeCentRe"
+  
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: Home
+      - text: "R Hub"
+        menu:
+          - href: r-hub/beginner.qmd
+            text: "R for Beginners"
+          - href: r-hub/sas-to-r.qmd
+            text: "SAS to R"
+          - href: r-hub/clinical.qmd
+            text: "Clinical Trials Analysis"
+          - href: r-hub/advanced.qmd
+            text: "R for Advanced Users"
+          - href: r-hub/resources.qmd
+            text: "Resources"
+      - text: "Shinyverse"
+        menu:
+          - href: shinyverse/basics.qmd
+            text: "Getting Started"
+          - href: shinyverse/beyond-basics.qmd
+            text: "Beyond Basics"
+          - href: shinyverse/clinical-shiny.qmd
+            text: "Clinical Shiny"
+          - href: shinyverse/deployment.qmd
+            text: "Deploying Shiny Apps"
+          - href: shinyverse/resources.qmd
+            text: "Resources"
+      - href: blog/index.qmd
+        text: Blog
+    right: 
+      - href: sme-rescue/index.qmd
+        text: "SME to the Rescue"
+        icon: life-preserver
+  
+  page-footer:
+    background: primary
+    left: "© 2024 KnowledgeCentRe | Syneos Health"
+    right: 
+      - href: harsh.verma@syneoshealth.com
+        text: "Contact Creator"
+        
+format:
+  html:
+    theme: 
+      light: cosmo
+      dark: superhero # 'darkly' or 'superhero' are great dark themes
+    css: styles.css
+    toc: true
+
+editor: visual
+

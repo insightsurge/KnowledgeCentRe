@@ -1,0 +1,22 @@
+---
+title: "R Resources"
+toc: true
+---
+
+Everything you need to be productive in R.
+
+::: {.panel-tabset}
+
+## 📦 Golden Packages
+* **Data Manipulation:** `dplyr`, `tidyr`, `data.table`
+* **Visualization:** `ggplot2`, `patchwork`, `gt`
+
+## 📄 Cheatsheets
+* [Data Transformation (dplyr)](https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf)
+* [Visualization (ggplot2)](https://github.com/rstudio/cheatsheets/blob/main/data-visualization.pdf)
+
+## 🔗 Internal Links
+* Link to internal GitLab/GitHub
+* Link to shared drive
+
+:::

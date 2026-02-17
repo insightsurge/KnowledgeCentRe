@@ -1,0 +1,14 @@
+---
+title: "The KnowledgeCentRe Blog"
+subtitle: "Updates, Case Studies, and R Tips"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [image, date, title, author, reading-time, description, categories]
+page-layout: full
+title-block-banner: true
+---

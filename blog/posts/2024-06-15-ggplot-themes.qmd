@@ -1,0 +1,27 @@
+---
+title: "Standardizing Company Plots with ggplot2"
+date: "2024-06-15"
+author: "Viz Team"
+categories: [Visualization, R, Branding]
+description: "How to apply the corporate theme to every plot automatically."
+---
+
+## Overview
+
+Welcome to this article on **Standardizing Company Plots with ggplot2**.
+
+This is a placeholder for content that will help you master this topic.
+
+### Key Takeaways
+
+* Concept 1: Understanding the basics.
+* Concept 2: Applying it to clinical data.
+* Concept 3: Best practices in our company.
+
+```{r}
+#| label: setup
+#| message: false
+library(tidyverse)
+# Example code placeholder
+print('Hello KnowledgeCentRe!')
+```

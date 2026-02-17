@@ -1,0 +1,27 @@
+---
+title: "Why We Use renv (And You Should Too)"
+date: "2024-06-05"
+author: "Admin"
+categories: [Best Practices, DevOps]
+description: "Managing package versions to ensure your code works 5 years from now."
+---
+
+## Overview
+
+Welcome to this article on **Why We Use renv (And You Should Too)**.
+
+This is a placeholder for content that will help you master this topic.
+
+### Key Takeaways
+
+* Concept 1: Understanding the basics.
+* Concept 2: Applying it to clinical data.
+* Concept 3: Best practices in our company.
+
+```{r}
+#| label: setup
+#| message: false
+library(tidyverse)
+# Example code placeholder
+print('Hello KnowledgeCentRe!')
+```
