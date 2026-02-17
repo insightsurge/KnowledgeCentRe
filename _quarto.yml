@@ -44,7 +44,7 @@ website:
     background: primary
     left: "© 2024 KnowledgeCentRe | Syneos Health"
     right: 
-      - href: harsh.verma@syneoshealth.com
+      - href: mailto:harsh.verma@syneoshealth.com
         text: "Contact Creator"
         
 format:
