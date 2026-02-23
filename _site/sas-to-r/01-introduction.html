@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Why R? The SAS Programmer’s Perspective.">
 
-<title>SME to the Rescue – KnowledgeCentRe</title>
+<title>1. Introduction: SAS vs R – KnowledgeCentRe</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -73,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../sas-to-r/index.html"> 
+    <a class="nav-link active" href="../sas-to-r/index.html" aria-current="page"> 
 <span class="menu-text">SAS to R</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -155,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../sme-rescue/index.html" aria-current="page"> <i class="bi bi-life-preserver" role="img">
+    <a class="nav-link" href="../sme-rescue/index.html"> <i class="bi bi-life-preserver" role="img">
 </i> 
 <span class="menu-text">SME to the Rescue</span></a>
   </li>  
@@ -166,37 +201,106 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sas-to-r/01-introduction.html">1. Introduction: SAS vs R</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SAS to R: The Migration Guide</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/01-introduction.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">1. Introduction: SAS vs R</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/02-ecosystem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. The R Ecosystem &amp; Tools</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/03-data-structures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Data Structures: Vectors &amp; Frames</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/04-data-io.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Data Import &amp; Export</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/05-data-wrangling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Data Manipulation (dplyr)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/06-merging-joining.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Merging &amp; Joining Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/07-advanced-programming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Advanced Programming: Functions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/08-reporting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Tables &amp; Reporting</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/09-clinical-workflows.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Clinical Workflows (CDISC)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/10-package-development.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">10. Package Development</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#clinical-regulatory" id="toc-clinical-regulatory" class="nav-link active" data-scroll-target="#clinical-regulatory">Clinical &amp; Regulatory</a>
+  <li><a href="#why-change" id="toc-why-change" class="nav-link active" data-scroll-target="#why-change">Why Change?</a></li>
+  <li><a href="#the-core-mental-shifts" id="toc-the-core-mental-shifts" class="nav-link" data-scroll-target="#the-core-mental-shifts">The Core Mental Shifts</a>
   <ul class="collapse">
-  <li><a href="#dr.-sarah-connor" id="toc-dr.-sarah-connor" class="nav-link" data-scroll-target="#dr.-sarah-connor">Dr.&nbsp;Sarah Connor</a></li>
-  <li><a href="#diana-prince" id="toc-diana-prince" class="nav-link" data-scroll-target="#diana-prince">Diana Prince</a></li>
-  <li><a href="#fiona-shrek" id="toc-fiona-shrek" class="nav-link" data-scroll-target="#fiona-shrek">Fiona Shrek</a></li>
-  </ul></li>
-  <li><a href="#engineering-development" id="toc-engineering-development" class="nav-link" data-scroll-target="#engineering-development">Engineering &amp; Development</a>
-  <ul class="collapse">
-  <li><a href="#john-wick" id="toc-john-wick" class="nav-link" data-scroll-target="#john-wick">John Wick</a></li>
-  <li><a href="#bob-builder" id="toc-bob-builder" class="nav-link" data-scroll-target="#bob-builder">Bob Builder</a></li>
-  <li><a href="#charlie-brown" id="toc-charlie-brown" class="nav-link" data-scroll-target="#charlie-brown">Charlie Brown</a></li>
-  </ul></li>
-  <li><a href="#visualization-innovation" id="toc-visualization-innovation" class="nav-link" data-scroll-target="#visualization-innovation">Visualization &amp; Innovation</a>
-  <ul class="collapse">
-  <li><a href="#alice-wonderland" id="toc-alice-wonderland" class="nav-link" data-scroll-target="#alice-wonderland">Alice Wonderland</a></li>
-  <li><a href="#george-jetson" id="toc-george-jetson" class="nav-link" data-scroll-target="#george-jetson">George Jetson</a></li>
-  </ul></li>
-  <li><a href="#specialized-fields" id="toc-specialized-fields" class="nav-link" data-scroll-target="#specialized-fields">Specialized Fields</a>
-  <ul class="collapse">
-  <li><a href="#evan-wright" id="toc-evan-wright" class="nav-link" data-scroll-target="#evan-wright">Evan Wright</a></li>
-  <li><a href="#hannah-montana" id="toc-hannah-montana" class="nav-link" data-scroll-target="#hannah-montana">Hannah Montana</a></li>
+  <li><a href="#procedures-vs.-functions" id="toc-procedures-vs.-functions" class="nav-link" data-scroll-target="#procedures-vs.-functions">1. Procedures vs.&nbsp;Functions</a></li>
+  <li><a href="#the-implicit-loop-vs.-vectorization" id="toc-the-implicit-loop-vs.-vectorization" class="nav-link" data-scroll-target="#the-implicit-loop-vs.-vectorization">2. The Implicit Loop vs.&nbsp;Vectorization</a></li>
+  <li><a href="#disk-vs.-ram" id="toc-disk-vs.-ram" class="nav-link" data-scroll-target="#disk-vs.-ram">3. Disk vs.&nbsp;RAM</a></li>
+  <li><a href="#test-your-knowledge" id="toc-test-your-knowledge" class="nav-link" data-scroll-target="#test-your-knowledge">Test Your Knowledge</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -206,9 +310,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">SME to the Rescue</h1>
+<h1 class="title">1. Introduction: SAS vs R</h1>
 </div>
 
+<div>
+  <div class="description">
+    Why R? The SAS Programmer’s Perspective.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -223,110 +332,61 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Need help with a project? Reach out to our Subject Matter Experts directly below.</p>
-<section id="clinical-regulatory" class="level2">
-<h2 class="anchored" data-anchor-id="clinical-regulatory">Clinical &amp; Regulatory</h2>
-<section id="dr.-sarah-connor" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-sarah-connor">Dr.&nbsp;Sarah Connor</h3>
+<section id="why-change" class="level1">
+<h1>Why Change?</h1>
+<p>You are likely an expert in SAS. You know how to manipulate data, generate reports, and debug macros. So why learn R?</p>
 <ul>
-<li><strong>Role:</strong> Clinical Analysis Lead</li>
-<li><strong>Experience:</strong> 12 Years</li>
-<li><strong>Specialty:</strong> ADaM, SDTM, and submission readiness.</li>
-<li><a href="mailto:sarah@company.com?subject=Help%20Request:%20Clinical%20Analysis" class="btn btn-primary btn-sm">Ask for Help</a></li>
+<li><strong>Open Source:</strong> R is free and has a massive community contributing packages.</li>
+<li><strong>Vectorization:</strong> R operations often apply to entire columns at once, reducing the need for explicit loops.</li>
+<li><strong>Graphics:</strong> <code>ggplot2</code> offers unparalleled flexibility for data visualization.</li>
+<li><strong>Modern Workflows:</strong> R integrates seamlessly with Git, extensive testing frameworks, and reproducible reporting tools like Quarto.</li>
 </ul>
 </section>
-<section id="diana-prince" class="level3">
-<h3 class="anchored" data-anchor-id="diana-prince">Diana Prince</h3>
+<section id="the-core-mental-shifts" class="level1">
+<h1>The Core Mental Shifts</h1>
+<section id="procedures-vs.-functions" class="level2">
+<h2 class="anchored" data-anchor-id="procedures-vs.-functions">1. Procedures vs.&nbsp;Functions</h2>
+<p>In SAS, you think in <strong>Procedures</strong> (<code>PROC</code>s). You set up a procedure, give it options, and run it.</p>
+<pre class="sas"><code>/* SAS: Procedure-based */
+proc means data=sashelp.class mean std;
+  var height weight;
+run;</code></pre>
+<p>In R, you think in <strong>Functions</strong>. You pass data into a function, and it returns a result. You often chain these functions together.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># R: Function-based</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>sashelp_class <span class="sc">%&gt;%</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_height =</span> <span class="fu">mean</span>(height),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">sd_height =</span> <span class="fu">sd</span>(height)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="the-implicit-loop-vs.-vectorization" class="level2">
+<h2 class="anchored" data-anchor-id="the-implicit-loop-vs.-vectorization">2. The Implicit Loop vs.&nbsp;Vectorization</h2>
+<p>The SAS <code>DATA</code> step has an implicit loop. It processes row 1, then row 2, etc.</p>
+<pre class="sas"><code>data new;
+  set old;
+  if age &gt; 18 then group = 'Adult';
+  else group = 'Pediatric';
+run;</code></pre>
+<p>In R, operations are <strong>vectorized</strong>. The <code>ifelse</code> function checks the entire <code>age</code> column at once and returns a new column.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># R: Vectorized</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>new_data <span class="ot">&lt;-</span> old_data <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">group =</span> <span class="fu">if_else</span>(age <span class="sc">&gt;</span> <span class="dv">18</span>, <span class="st">"Adult"</span>, <span class="st">"Pediatric"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="disk-vs.-ram" class="level2">
+<h2 class="anchored" data-anchor-id="disk-vs.-ram">3. Disk vs.&nbsp;RAM</h2>
 <ul>
-<li><strong>Role:</strong> Regulatory &amp; Validation</li>
-<li><strong>Experience:</strong> 10 Years</li>
-<li><strong>Specialty:</strong> FDA guidelines, R package validation, and compliance frameworks.</li>
-<li><a href="mailto:diana@company.com?subject=Help%20Request:%20Validation" class="btn btn-primary btn-sm">Ask for Help</a></li>
+<li><strong>SAS:</strong> Libraries (<code>LIBNAME</code>) often point to physical files on the hard drive. SAS handles large data by processing it chunk-by-chunk from the disk.</li>
+<li><strong>R:</strong> Objects live in <strong>RAM (Memory)</strong>. This makes R extremely fast for most datasets but requires different strategies for “Big Data” (e.g., <code>arrow</code>, <code>sparklyr</code>, or databases).</li>
 </ul>
 </section>
-<section id="fiona-shrek" class="level3">
-<h3 class="anchored" data-anchor-id="fiona-shrek">Fiona Shrek</h3>
-<ul>
-<li><strong>Role:</strong> Legacy Migration</li>
-<li><strong>Experience:</strong> 7 Years</li>
-<li><strong>Specialty:</strong> Converting complex SAS macros into R functions and QC strategies.</li>
-<li><a href="mailto:fiona@company.com?subject=Help%20Request:%20SAS%20to%20R" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="engineering-development" class="level2">
-<h2 class="anchored" data-anchor-id="engineering-development">Engineering &amp; Development</h2>
-<section id="john-wick" class="level3">
-<h3 class="anchored" data-anchor-id="john-wick">John Wick</h3>
-<ul>
-<li><strong>Role:</strong> Automation &amp; DevOps</li>
-<li><strong>Experience:</strong> 8 Years</li>
-<li><strong>Specialty:</strong> CI/CD pipelines, Docker, and internal R package development.</li>
-<li><a href="mailto:john@company.com?subject=Help%20Request:%20Automation" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-</section>
-<section id="bob-builder" class="level3">
-<h3 class="anchored" data-anchor-id="bob-builder">Bob Builder</h3>
-<ul>
-<li><strong>Role:</strong> Shiny Architect</li>
-<li><strong>Experience:</strong> 6 Years</li>
-<li><strong>Specialty:</strong> Building modular, production-grade Shiny applications for safety monitoring.</li>
-<li><a href="mailto:bob@company.com?subject=Help%20Request:%20Shiny" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-</section>
-<section id="charlie-brown" class="level3">
-<h3 class="anchored" data-anchor-id="charlie-brown">Charlie Brown</h3>
-<ul>
-<li><strong>Role:</strong> Data Engineering</li>
-<li><strong>Experience:</strong> 4 Years</li>
-<li><strong>Specialty:</strong> SQL optimization, database connections, and Big Data handling.</li>
-<li><a href="mailto:charlie@company.com?subject=Help%20Request:%20Data%20Engineering" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="visualization-innovation" class="level2">
-<h2 class="anchored" data-anchor-id="visualization-innovation">Visualization &amp; Innovation</h2>
-<section id="alice-wonderland" class="level3">
-<h3 class="anchored" data-anchor-id="alice-wonderland">Alice Wonderland</h3>
-<ul>
-<li><strong>Role:</strong> Data Visualization</li>
-<li><strong>Experience:</strong> 5 Years</li>
-<li><strong>Specialty:</strong> High-impact storytelling, custom ggplot2 themes, and interactive plots.</li>
-<li><a href="mailto:alice@company.com?subject=Help%20Request:%20Data%20Viz" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-</section>
-<section id="george-jetson" class="level3">
-<h3 class="anchored" data-anchor-id="george-jetson">George Jetson</h3>
-<ul>
-<li><strong>Role:</strong> Innovation &amp; AI</li>
-<li><strong>Experience:</strong> 15 Years</li>
-<li><strong>Specialty:</strong> Machine Learning integration, Python interoperability, and future-tech strategy.</li>
-<li><a href="mailto:george@company.com?subject=Help%20Request:%20Innovation" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="specialized-fields" class="level2">
-<h2 class="anchored" data-anchor-id="specialized-fields">Specialized Fields</h2>
-<section id="evan-wright" class="level3">
-<h3 class="anchored" data-anchor-id="evan-wright">Evan Wright</h3>
-<ul>
-<li><strong>Role:</strong> Bioinformatics</li>
-<li><strong>Experience:</strong> 3 Years</li>
-<li><strong>Specialty:</strong> Genomic data analysis using Bioconductor packages.</li>
-<li><a href="mailto:evan@company.com?subject=Help%20Request:%20Bioinformatics" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-</section>
-<section id="hannah-montana" class="level3">
-<h3 class="anchored" data-anchor-id="hannah-montana">Hannah Montana</h3>
-<ul>
-<li><strong>Role:</strong> Training &amp; Enablement</li>
-<li><strong>Experience:</strong> 2 Years</li>
-<li><strong>Specialty:</strong> Documentation, onboarding new users, and community building.</li>
-<li><a href="mailto:hannah@company.com?subject=Help%20Request:%20Training" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
+<section id="test-your-knowledge" class="level2">
+<h2 class="anchored" data-anchor-id="test-your-knowledge">Test Your Knowledge</h2>
+<ol type="1">
+<li>How would you translate a <code>PROC SORT</code> to R? (Hint: It’s a verb in <code>dplyr</code>).</li>
+<li>Does R process data row-by-row in a standard operation?</li>
+</ol>
 
 
 </section>

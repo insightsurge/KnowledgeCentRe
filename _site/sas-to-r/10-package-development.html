@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Reproducibility and building your own tools.">
 
-<title>SME to the Rescue – KnowledgeCentRe</title>
+<title>10. Package Development – KnowledgeCentRe</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../sas-to-r/index.html"> 
+    <a class="nav-link active" href="../sas-to-r/index.html" aria-current="page"> 
 <span class="menu-text">SAS to R</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -155,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../sme-rescue/index.html" aria-current="page"> <i class="bi bi-life-preserver" role="img">
+    <a class="nav-link" href="../sme-rescue/index.html"> <i class="bi bi-life-preserver" role="img">
 </i> 
 <span class="menu-text">SME to the Rescue</span></a>
   </li>  
@@ -166,37 +167,105 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sas-to-r/10-package-development.html">10. Package Development</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SAS to R: The Migration Guide</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/01-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Introduction: SAS vs R</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/02-ecosystem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. The R Ecosystem &amp; Tools</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/03-data-structures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Data Structures: Vectors &amp; Frames</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/04-data-io.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. Data Import &amp; Export</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/05-data-wrangling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. Data Manipulation (dplyr)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/06-merging-joining.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">6. Merging &amp; Joining Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/07-advanced-programming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7. Advanced Programming: Functions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/08-reporting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8. Tables &amp; Reporting</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/09-clinical-workflows.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">9. Clinical Workflows (CDISC)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sas-to-r/10-package-development.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">10. Package Development</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#clinical-regulatory" id="toc-clinical-regulatory" class="nav-link active" data-scroll-target="#clinical-regulatory">Clinical &amp; Regulatory</a>
+  <li><a href="#reproducibility-with-renv" id="toc-reproducibility-with-renv" class="nav-link active" data-scroll-target="#reproducibility-with-renv">Reproducibility with <code>renv</code></a></li>
+  <li><a href="#directory-structure" id="toc-directory-structure" class="nav-link" data-scroll-target="#directory-structure">Directory Structure</a></li>
+  <li><a href="#building-internal-packages" id="toc-building-internal-packages" class="nav-link" data-scroll-target="#building-internal-packages">Building Internal Packages</a></li>
+  <li><a href="#debugging" id="toc-debugging" class="nav-link" data-scroll-target="#debugging">Debugging</a>
   <ul class="collapse">
-  <li><a href="#dr.-sarah-connor" id="toc-dr.-sarah-connor" class="nav-link" data-scroll-target="#dr.-sarah-connor">Dr.&nbsp;Sarah Connor</a></li>
-  <li><a href="#diana-prince" id="toc-diana-prince" class="nav-link" data-scroll-target="#diana-prince">Diana Prince</a></li>
-  <li><a href="#fiona-shrek" id="toc-fiona-shrek" class="nav-link" data-scroll-target="#fiona-shrek">Fiona Shrek</a></li>
-  </ul></li>
-  <li><a href="#engineering-development" id="toc-engineering-development" class="nav-link" data-scroll-target="#engineering-development">Engineering &amp; Development</a>
-  <ul class="collapse">
-  <li><a href="#john-wick" id="toc-john-wick" class="nav-link" data-scroll-target="#john-wick">John Wick</a></li>
-  <li><a href="#bob-builder" id="toc-bob-builder" class="nav-link" data-scroll-target="#bob-builder">Bob Builder</a></li>
-  <li><a href="#charlie-brown" id="toc-charlie-brown" class="nav-link" data-scroll-target="#charlie-brown">Charlie Brown</a></li>
-  </ul></li>
-  <li><a href="#visualization-innovation" id="toc-visualization-innovation" class="nav-link" data-scroll-target="#visualization-innovation">Visualization &amp; Innovation</a>
-  <ul class="collapse">
-  <li><a href="#alice-wonderland" id="toc-alice-wonderland" class="nav-link" data-scroll-target="#alice-wonderland">Alice Wonderland</a></li>
-  <li><a href="#george-jetson" id="toc-george-jetson" class="nav-link" data-scroll-target="#george-jetson">George Jetson</a></li>
-  </ul></li>
-  <li><a href="#specialized-fields" id="toc-specialized-fields" class="nav-link" data-scroll-target="#specialized-fields">Specialized Fields</a>
-  <ul class="collapse">
-  <li><a href="#evan-wright" id="toc-evan-wright" class="nav-link" data-scroll-target="#evan-wright">Evan Wright</a></li>
-  <li><a href="#hannah-montana" id="toc-hannah-montana" class="nav-link" data-scroll-target="#hannah-montana">Hannah Montana</a></li>
+  <li><a href="#test-your-knowledge" id="toc-test-your-knowledge" class="nav-link" data-scroll-target="#test-your-knowledge">Test Your Knowledge</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -206,9 +275,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">SME to the Rescue</h1>
+<h1 class="title">10. Package Development</h1>
 </div>
 
+<div>
+  <div class="description">
+    Reproducibility and building your own tools.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -223,110 +297,50 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Need help with a project? Reach out to our Subject Matter Experts directly below.</p>
-<section id="clinical-regulatory" class="level2">
-<h2 class="anchored" data-anchor-id="clinical-regulatory">Clinical &amp; Regulatory</h2>
-<section id="dr.-sarah-connor" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-sarah-connor">Dr.&nbsp;Sarah Connor</h3>
+<section id="reproducibility-with-renv" class="level1">
+<h1>Reproducibility with <code>renv</code></h1>
+<p>In SAS, you might rely on server configuration. In R, packages change versions. <code>renv</code> (R Environment) creates a lockfile (<code>renv.lock</code>) that records exactly which version of every package you used.</p>
+<ol type="1">
+<li><code>renv::init()</code>: Initialize a project.</li>
+<li><code>renv::snapshot()</code>: Save the current state of packages to the lockfile.</li>
+<li><code>renv::restore()</code>: Reinstall packages exactly as recorded in the lockfile.</li>
+</ol>
+<p>This ensures that your code runs 5 years from now.</p>
+</section>
+<section id="directory-structure" class="level1">
+<h1>Directory Structure</h1>
+<p>Adopt a standard structure like the <strong>R Package Structure</strong>, even for analysis projects.</p>
+<pre><code>project/
+├── R/                  # Custom functions
+├── data/               # Raw data
+├── data-derived/       # ADaM / Intermediates
+├── programs/           # Analysis scripts
+├── output/             # Tables and Figures
+└── tests/              # Unit tests</code></pre>
+</section>
+<section id="building-internal-packages" class="level1">
+<h1>Building Internal Packages</h1>
+<p>If you write a function that you use in multiple projects, don’t copy-paste it. <strong>Make a package.</strong></p>
+<ol type="1">
+<li><code>usethis::create_package("MyClinicalTools")</code></li>
+<li>Move your functions into the <code>R/</code> folder.</li>
+<li>Document them with <code>roxygen2</code> comments.</li>
+<li>Build and install.</li>
+</ol>
+<p>Now your team can do <code>library(MyClinicalTools)</code> and share validated logic.</p>
+</section>
+<section id="debugging" class="level1">
+<h1>Debugging</h1>
 <ul>
-<li><strong>Role:</strong> Clinical Analysis Lead</li>
-<li><strong>Experience:</strong> 12 Years</li>
-<li><strong>Specialty:</strong> ADaM, SDTM, and submission readiness.</li>
-<li><a href="mailto:sarah@company.com?subject=Help%20Request:%20Clinical%20Analysis" class="btn btn-primary btn-sm">Ask for Help</a></li>
+<li><strong><code>browser()</code></strong>: Put this inside a function to pause execution and inspect the environment (like the SAS debugger).</li>
+<li><strong><code>traceback()</code></strong>: See the sequence of calls that led to an error.</li>
 </ul>
-</section>
-<section id="diana-prince" class="level3">
-<h3 class="anchored" data-anchor-id="diana-prince">Diana Prince</h3>
-<ul>
-<li><strong>Role:</strong> Regulatory &amp; Validation</li>
-<li><strong>Experience:</strong> 10 Years</li>
-<li><strong>Specialty:</strong> FDA guidelines, R package validation, and compliance frameworks.</li>
-<li><a href="mailto:diana@company.com?subject=Help%20Request:%20Validation" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-</section>
-<section id="fiona-shrek" class="level3">
-<h3 class="anchored" data-anchor-id="fiona-shrek">Fiona Shrek</h3>
-<ul>
-<li><strong>Role:</strong> Legacy Migration</li>
-<li><strong>Experience:</strong> 7 Years</li>
-<li><strong>Specialty:</strong> Converting complex SAS macros into R functions and QC strategies.</li>
-<li><a href="mailto:fiona@company.com?subject=Help%20Request:%20SAS%20to%20R" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="engineering-development" class="level2">
-<h2 class="anchored" data-anchor-id="engineering-development">Engineering &amp; Development</h2>
-<section id="john-wick" class="level3">
-<h3 class="anchored" data-anchor-id="john-wick">John Wick</h3>
-<ul>
-<li><strong>Role:</strong> Automation &amp; DevOps</li>
-<li><strong>Experience:</strong> 8 Years</li>
-<li><strong>Specialty:</strong> CI/CD pipelines, Docker, and internal R package development.</li>
-<li><a href="mailto:john@company.com?subject=Help%20Request:%20Automation" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-</section>
-<section id="bob-builder" class="level3">
-<h3 class="anchored" data-anchor-id="bob-builder">Bob Builder</h3>
-<ul>
-<li><strong>Role:</strong> Shiny Architect</li>
-<li><strong>Experience:</strong> 6 Years</li>
-<li><strong>Specialty:</strong> Building modular, production-grade Shiny applications for safety monitoring.</li>
-<li><a href="mailto:bob@company.com?subject=Help%20Request:%20Shiny" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-</section>
-<section id="charlie-brown" class="level3">
-<h3 class="anchored" data-anchor-id="charlie-brown">Charlie Brown</h3>
-<ul>
-<li><strong>Role:</strong> Data Engineering</li>
-<li><strong>Experience:</strong> 4 Years</li>
-<li><strong>Specialty:</strong> SQL optimization, database connections, and Big Data handling.</li>
-<li><a href="mailto:charlie@company.com?subject=Help%20Request:%20Data%20Engineering" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="visualization-innovation" class="level2">
-<h2 class="anchored" data-anchor-id="visualization-innovation">Visualization &amp; Innovation</h2>
-<section id="alice-wonderland" class="level3">
-<h3 class="anchored" data-anchor-id="alice-wonderland">Alice Wonderland</h3>
-<ul>
-<li><strong>Role:</strong> Data Visualization</li>
-<li><strong>Experience:</strong> 5 Years</li>
-<li><strong>Specialty:</strong> High-impact storytelling, custom ggplot2 themes, and interactive plots.</li>
-<li><a href="mailto:alice@company.com?subject=Help%20Request:%20Data%20Viz" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-</section>
-<section id="george-jetson" class="level3">
-<h3 class="anchored" data-anchor-id="george-jetson">George Jetson</h3>
-<ul>
-<li><strong>Role:</strong> Innovation &amp; AI</li>
-<li><strong>Experience:</strong> 15 Years</li>
-<li><strong>Specialty:</strong> Machine Learning integration, Python interoperability, and future-tech strategy.</li>
-<li><a href="mailto:george@company.com?subject=Help%20Request:%20Innovation" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="specialized-fields" class="level2">
-<h2 class="anchored" data-anchor-id="specialized-fields">Specialized Fields</h2>
-<section id="evan-wright" class="level3">
-<h3 class="anchored" data-anchor-id="evan-wright">Evan Wright</h3>
-<ul>
-<li><strong>Role:</strong> Bioinformatics</li>
-<li><strong>Experience:</strong> 3 Years</li>
-<li><strong>Specialty:</strong> Genomic data analysis using Bioconductor packages.</li>
-<li><a href="mailto:evan@company.com?subject=Help%20Request:%20Bioinformatics" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
-</section>
-<section id="hannah-montana" class="level3">
-<h3 class="anchored" data-anchor-id="hannah-montana">Hannah Montana</h3>
-<ul>
-<li><strong>Role:</strong> Training &amp; Enablement</li>
-<li><strong>Experience:</strong> 2 Years</li>
-<li><strong>Specialty:</strong> Documentation, onboarding new users, and community building.</li>
-<li><a href="mailto:hannah@company.com?subject=Help%20Request:%20Training" class="btn btn-primary btn-sm">Ask for Help</a></li>
-</ul>
+<section id="test-your-knowledge" class="level2">
+<h2 class="anchored" data-anchor-id="test-your-knowledge">Test Your Knowledge</h2>
+<ol type="1">
+<li>What is the purpose of <code>renv</code>?</li>
+<li>Where should you put custom functions that are used across multiple projects?</li>
+</ol>
 
 
 </section>

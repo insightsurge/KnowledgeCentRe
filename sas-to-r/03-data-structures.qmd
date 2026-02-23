@@ -1,0 +1,75 @@
+---
+title: "3. Data Structures: Vectors & Frames"
+description: "Vectors, Lists, and Data Frames: The building blocks of R."
+---
+
+# Beyond the Dataset
+
+In SAS, almost everything is a dataset. In R, you have lower-level building blocks.
+
+## 1. Vectors
+
+The fundamental unit in R. Even a single number is a vector of length 1.
+Vectors must be of the **same type** (numeric, character, logical).
+
+```r
+# Numeric vector
+ages <- c(25, 30, 45, 22)
+
+# Character vector
+names <- c("Alice", "Bob", "Charlie")
+```
+
+*Note: R is 1-indexed, just like SAS. `ages[1]` is 25.*
+
+## 2. Lists
+
+Lists can contain **anything**: vectors, datasets, other lists, models. They are flexible containers.
+
+```r
+my_patient <- list(
+  id = "1001",
+  visits = c("Screening", "Baseline", "Week 4"),
+  demographics = data.frame(age = 45, sex = "M")
+)
+```
+
+## 3. Data Frames (and Tibbles)
+
+This is your **SAS Dataset**. It is technically a list of vectors of equal length.
+
+*   **`data.frame`**: The base R version.
+*   **`tibble`**: The modern ("tidyverse") version. It prints nicer and is stricter (doesn't change variable names or types unexpectedly).
+
+```r
+library(tibble)
+
+dm <- tibble(
+  USUBJID = c("001", "002", "003"),
+  ARM = c("Placebo", "Active", "Placebo"),
+  AGE = c(45, 52, 38)
+)
+```
+
+## 4. Factors
+
+Factors are used for categorical data. They look like strings but are stored as integers with labels. This is similar to **SAS Formats**.
+
+```r
+sex <- factor(c("M", "F", "F", "M"), levels = c("F", "M"))
+```
+
+## 5. Missing Values (`NA`)
+
+In SAS, numeric missing is `.`. In R, it is `NA`.
+**Important:** `NA` propagates. `5 + NA` equals `NA`. You often need `na.rm = TRUE` in functions.
+
+```r
+mean(c(1, 2, NA)) # Returns NA
+mean(c(1, 2, NA), na.rm = TRUE) # Returns 1.5
+```
+
+## Test Your Knowledge
+
+1.  If you try to put a character string into a numeric vector, what happens?
+2.  What is the R equivalent of a SAS format?

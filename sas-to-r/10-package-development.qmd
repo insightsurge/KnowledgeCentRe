@@ -1,0 +1,50 @@
+---
+title: "10. Package Development"
+description: "Reproducibility and building your own tools."
+---
+
+# Reproducibility with `renv`
+
+In SAS, you might rely on server configuration. In R, packages change versions.
+`renv` (R Environment) creates a lockfile (`renv.lock`) that records exactly which version of every package you used.
+
+1.  `renv::init()`: Initialize a project.
+2.  `renv::snapshot()`: Save the current state of packages to the lockfile.
+3.  `renv::restore()`: Reinstall packages exactly as recorded in the lockfile.
+
+This ensures that your code runs 5 years from now.
+
+# Directory Structure
+
+Adopt a standard structure like the **R Package Structure**, even for analysis projects.
+
+```
+project/
+├── R/                  # Custom functions
+├── data/               # Raw data
+├── data-derived/       # ADaM / Intermediates
+├── programs/           # Analysis scripts
+├── output/             # Tables and Figures
+└── tests/              # Unit tests
+```
+
+# Building Internal Packages
+
+If you write a function that you use in multiple projects, don't copy-paste it. **Make a package.**
+
+1.  `usethis::create_package("MyClinicalTools")`
+2.  Move your functions into the `R/` folder.
+3.  Document them with `roxygen2` comments.
+4.  Build and install.
+
+Now your team can do `library(MyClinicalTools)` and share validated logic.
+
+# Debugging
+
+*   **`browser()`**: Put this inside a function to pause execution and inspect the environment (like the SAS debugger).
+*   **`traceback()`**: See the sequence of calls that led to an error.
+
+## Test Your Knowledge
+
+1.  What is the purpose of `renv`?
+2.  Where should you put custom functions that are used across multiple projects?

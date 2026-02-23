@@ -1,0 +1,63 @@
+---
+title: "9. Clinical Workflows (CDISC)"
+description: "CDISC, ADaM, and SDTM in R."
+---
+
+# The Open Source Pharma Movement
+
+The pharmaceutical industry is rapidly adopting R. The **Pharmaverse** is a collection of packages designed for clinical reporting.
+
+# The `admiral` Package
+
+`admiral` (ADaM in R Asset Library) is the industry standard for creating ADaM datasets. It provides modular functions for common derivations.
+
+```r
+library(admiral)
+library(dplyr)
+
+# Example: Deriving Analysis Start Date (ASTDT)
+adsl <- dm %>%
+  derive_vars_dt(
+    dtc = RFSTDTC,
+    new_vars_prefix = "RFST"
+  ) %>%
+  derive_vars_duration(
+    new_var = DURATION,
+    start_date = RFSTDTC,
+    end_date = RFENDTC
+  )
+```
+
+# Managing Metadata (Labels)
+
+R is not metadata-rich by default, but the `labelled` package bridges the gap.
+
+```r
+library(labelled)
+
+var_label(adsl$AGE) <- "Age in Years"
+var_label(adsl$SEX) <- "Biological Sex"
+```
+
+# Validation: `diffdf`
+
+How do you `PROC COMPARE` in R? Use `diffdf`.
+
+```r
+library(diffdf)
+
+# Compare two dataframes
+diff <- diffdf(base_df, compare_df, keys = "USUBJID")
+
+# Print issues
+print(diff)
+```
+
+# TFL Generation
+
+Tools like `r2rtf` or `pharmaRTF` allow you to create compliant RTF documents for FDA submission.
+
+## Test Your Knowledge
+
+1.  What is the primary package for creating ADaM datasets in R?
+2.  Which function/package replaces `PROC COMPARE`?

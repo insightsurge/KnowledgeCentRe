@@ -1,75 +1,85 @@
 ---
-pagetitle: "KnowledgeCentRe"
+pagetitle: "KnowledgeCentRe - SAS to R Hub"
 page-layout: full
 toc: false
 ---
 
+<!-- 1. The Hero Section -->
 ```{=html}
-<div class="hero-section text-center">
-  <h1 class="display-3 fw-bold animate-text">Welcome, Learner.</h1>
-  <p class="lead animate-delay-1">Your one-stop shop for R, Shiny, and Clinical Trials excellence.</p>
+<div class="hero-section text-center p-5 bg-light border-bottom">
+  <h1 class="display-3 fw-bold text-primary">Bridge the Gap: SAS to R</h1>
+  <p>The definitive guide for clinical programmers transitioning to modern data science.</p>
+  <div class="mt-4">
+    <a href="sas-to-r/index.qmd" class="btn btn-primary btn-lg me-2">Start the Migration</a>
+    <a href="r-hub/beginner.qmd" class="btn btn-outline btn-lg">New to Programming?</a>
+  </div>
 </div>
 ```
 
 <div class="container my-5">
 
-## 🚀 Jump Start
-<p class="text-muted mb-4 animate-delay-2">Select your path below to get moving immediately.</p>
+## 🎯 Select Your Path
+<p class="text-muted mb-4">Explore our curated learning tracks.</p>
 
 ::: {layout-ncol=3}
 
 ::: {.card .feature-card .h-100 .p-3}
-### <i class="bi bi-rocket-takeoff text-primary"></i> The R Hub
-Master R from SAS migration to Advanced Meta-programming.
+### <i class="bi bi-arrow-left-right text-primary"></i> SAS to R Migration
+Detailed chapters mapping SAS procedures to R functions, specifically for clinical trials.
 <br><br>
-[Go to R Hub](r-hub/beginner.qmd){.btn .btn-outline-primary .stretched-link}
+[Start Learning](sas-to-r/index.qmd){.btn .btn-primary .stretched-link}
+:::
+
+::: {.card .feature-card .h-100 .p-3}
+### <i class="bi bi-life-preserver text-info"></i> R-Hub
+R Hub. Your one stop solution to eveRything!
+<br><br>
+[R you ready!](r-hub/beginner.qmd){.btn .btn-outline-primary .stretched-link}
 :::
 
 ::: {.card .feature-card .h-100 .p-3}
 ### <i class="bi bi-columns-gap text-purple"></i> The Shinyverse
-Build, scale, and deploy production-ready dashboards.
+Build interactive clinical dashboards using R Shiny.
 <br><br>
-[Go to Shinyverse](shinyverse/basics.qmd){.btn .btn-outline-primary .stretched-link}
+[Explore Shiny](shinyverse/basics.qmd){.btn .btn-outline-primary .stretched-link}
 :::
 
 ::: {.card .feature-card .h-100 .p-3}
 ### <i class="bi bi-life-preserver text-danger"></i> SME Help
-Stuck? Our Subject Matter Experts are here to rescue your code.
+Need immediate assistance? Our experts are here.
 <br><br>
 [Get Rescue](sme-rescue/index.qmd){.btn .btn-outline-primary .stretched-link}
 :::
+
+::: {.card .feature-card .h-100 .p-3}
+### <i class="bi bi-book text-warning"></i> Blog
+Articles you don't know you need.
+<br><br>
+[Learn something new](blog/index.qmd){.btn .btn-outline-primary .stretched-link}
+:::
+
 
 :::
 
 <hr class="my-5">
 
-## 📚 Key Resources
+## 📚 Quick Access Resources
 
-<!-- 2. The Resources Section (Fixed using Raw HTML block) -->
-```{=html}
-<div class="row">
-  <!-- R Resources Card -->
-  <div class="col-md-6">
-    <div class="alert alert-info d-flex align-items-center" role="alert">
-      <i class="bi bi-book-half me-3 fs-3"></i>
-      <div>
-        <strong>R Language Resources</strong><br>
-        Tidyverse, Clinical, and Base R documentation.
-        <a href="r-hub/resources.qmd" class="alert-link stretched-link"></a>
-      </div>
-    </div>
-  </div>
+::: {.grid}
 
-  <!-- Shiny Resources Card -->
-  <div class="col-md-6">
-    <div class="alert alert-success d-flex align-items-center" role="alert">
-      <i class="bi bi-window-desktop me-3 fs-3"></i>
-      <div>
-        <strong>Shiny Resources</strong><br>
-        UI components, Reactivity, and Deployment guides.
-        <a href="shinyverse/resources.qmd" class="alert-link stretched-link"></a>
-      </div>
-    </div>
-  </div>
+::: {.g-col-6}
+### For Clinical Programmers
+*   [**CDISC in R**](sas-to-r/09-clinical-workflows.qmd) - Using `admiral` for ADaM.
+*   [**Reporting**](sas-to-r/08-reporting.qmd) - Creating TF-compliant tables.
+*   [**Validation**](r-hub/clinical.qmd) - Ensuring regulatory compliance.
+:::
+
+::: {.g-col-6}
+### For General R Users
+*   [**R Basics**](r-hub/beginner.qmd) - Syntax and data structures.
+*   [**Advanced Topics**](r-hub/advanced.qmd) - Metaprogramming and packages.
+*   [**Blog**](blog/index.qmd) - Latest updates and tutorials.
+:::
+
+
 </div>
-```

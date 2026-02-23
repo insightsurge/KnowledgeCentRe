@@ -1,171 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome, Learner.",
+    "objectID": "r-hub/resources.html",
+    "href": "r-hub/resources.html",
+    "title": "R Resources",
     "section": "",
-    "text": "Your one-stop shop for R, Shiny, and Clinical Trials excellence."
+    "text": "Everything you need to be productive in R.\n\n📦 Golden Packages📄 Cheatsheets🔗 Internal Links\n\n\n\nData Manipulation: dplyr, tidyr, data.table\nVisualization: ggplot2, patchwork, gt\n\n\n\n\nData Transformation (dplyr)\nVisualization (ggplot2)\n\n\n\n\nLink to internal GitLab/GitHub\nLink to shared drive"
   },
   {
-    "objectID": "index.html#jump-start",
-    "href": "index.html#jump-start",
-    "title": "Welcome, Learner.",
-    "section": "🚀 Jump Start",
-    "text": "🚀 Jump Start\n\nSelect your path below to get moving immediately.\n\n\n\n\n\n\n\n The R Hub\nMaster R from SAS migration to Advanced Meta-programming.  Go to R Hub\n\n\n The Shinyverse\nBuild, scale, and deploy production-ready dashboards.  Go to Shinyverse\n\n\n SME Help\nStuck? Our Subject Matter Experts are here to rescue your code.  Get Rescue"
-  },
-  {
-    "objectID": "index.html#key-resources",
-    "href": "index.html#key-resources",
-    "title": "Welcome, Learner.",
-    "section": "📚 Key Resources",
-    "text": "📚 Key Resources\n\n\n  \n  \n    \n      \n      \n        R Language Resources\n        Tidyverse, Clinical, and Base R documentation.\n        \n      \n    \n  \n\n  \n  \n    \n      \n      \n        Shiny Resources\n        UI components, Reactivity, and Deployment guides."
-  },
-  {
-    "objectID": "blog/posts/2024-05-28-shiny-reactivity.html",
-    "href": "blog/posts/2024-05-28-shiny-reactivity.html",
-    "title": "Shiny: Reactivity vs Observe vs bindEvent",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "The KnowledgeCentRe Blog",
     "section": "",
-    "text": "Welcome to this article on Shiny: Reactivity vs Observe vs bindEvent.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-05-28-shiny-reactivity.html#overview",
-    "href": "blog/posts/2024-05-28-shiny-reactivity.html#overview",
-    "title": "Shiny: Reactivity vs Observe vs bindEvent",
-    "section": "",
-    "text": "Welcome to this article on Shiny: Reactivity vs Observe vs bindEvent.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-06-20-debugging-shiny.html",
-    "href": "blog/posts/2024-06-20-debugging-shiny.html",
-    "title": "Debugging Shiny Apps: A Survival Guide",
-    "section": "",
-    "text": "Welcome to this article on Debugging Shiny Apps: A Survival Guide.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-06-20-debugging-shiny.html#overview",
-    "href": "blog/posts/2024-06-20-debugging-shiny.html#overview",
-    "title": "Debugging Shiny Apps: A Survival Guide",
-    "section": "",
-    "text": "Welcome to this article on Debugging Shiny Apps: A Survival Guide.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-06-15-ggplot-themes.html",
-    "href": "blog/posts/2024-06-15-ggplot-themes.html",
-    "title": "Standardizing Company Plots with ggplot2",
-    "section": "",
-    "text": "Welcome to this article on Standardizing Company Plots with ggplot2.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-06-15-ggplot-themes.html#overview",
-    "href": "blog/posts/2024-06-15-ggplot-themes.html#overview",
-    "title": "Standardizing Company Plots with ggplot2",
-    "section": "",
-    "text": "Welcome to this article on Standardizing Company Plots with ggplot2.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-05-20-dplyr-pro.html",
-    "href": "blog/posts/2024-05-20-dplyr-pro.html",
-    "title": "Using dplyr Like a Pro",
-    "section": "",
-    "text": "Welcome to this article on Using dplyr Like a Pro.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-05-20-dplyr-pro.html#overview",
-    "href": "blog/posts/2024-05-20-dplyr-pro.html#overview",
-    "title": "Using dplyr Like a Pro",
-    "section": "",
-    "text": "Welcome to this article on Using dplyr Like a Pro.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-06-01-gt-tables.html",
-    "href": "blog/posts/2024-06-01-gt-tables.html",
-    "title": "Beautiful Clinical Tables with gt",
-    "section": "",
-    "text": "Welcome to this article on Beautiful Clinical Tables with gt.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-06-01-gt-tables.html#overview",
-    "href": "blog/posts/2024-06-01-gt-tables.html#overview",
-    "title": "Beautiful Clinical Tables with gt",
-    "section": "",
-    "text": "Welcome to this article on Beautiful Clinical Tables with gt.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "sme-rescue/index.html",
-    "href": "sme-rescue/index.html",
-    "title": "SME to the Rescue",
-    "section": "",
-    "text": "Need help with a project? Reach out to our Subject Matter Experts directly below."
-  },
-  {
-    "objectID": "sme-rescue/index.html#row",
-    "href": "sme-rescue/index.html#row",
-    "title": "SME to the Rescue",
-    "section": "Row",
-    "text": "Row\n\nHow to use this Dashboard\nWelcome to the SME Finder. Use the search box below to find an expert for your specific problem.\n\nSearch by topic (e.g., ‘Shiny’, ‘Clinical’).\nClick ‘Ask for Help’ to draft an email automatically."
-  },
-  {
-    "objectID": "sme-rescue/index.html#row-1",
-    "href": "sme-rescue/index.html#row-1",
-    "title": "SME to the Rescue",
-    "section": "Row",
-    "text": "Row\n\nDT::datatable(sme_data, escape = FALSE, options = list(pageLength = 5, dom = 'ft'))"
-  },
-  {
-    "objectID": "blog/posts/2024-05-22-purrr-basics.html",
-    "href": "blog/posts/2024-05-22-purrr-basics.html",
-    "title": "The purrr Way of Doing Things",
-    "section": "",
-    "text": "Welcome to this article on The purrr Way of Doing Things.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-05-22-purrr-basics.html#overview",
-    "href": "blog/posts/2024-05-22-purrr-basics.html#overview",
-    "title": "The purrr Way of Doing Things",
-    "section": "",
-    "text": "Welcome to this article on The purrr Way of Doing Things.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-06-05-renv-reproducibility.html",
-    "href": "blog/posts/2024-06-05-renv-reproducibility.html",
-    "title": "Why We Use renv (And You Should Too)",
-    "section": "",
-    "text": "Welcome to this article on Why We Use renv (And You Should Too).\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-06-05-renv-reproducibility.html#overview",
-    "href": "blog/posts/2024-06-05-renv-reproducibility.html#overview",
-    "title": "Why We Use renv (And You Should Too)",
-    "section": "",
-    "text": "Welcome to this article on Why We Use renv (And You Should Too).\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-05-25-admiral-intro.html",
-    "href": "blog/posts/2024-05-25-admiral-intro.html",
-    "title": "Admiral Package for Beginners",
-    "section": "",
-    "text": "Welcome to this article on Admiral Package for Beginners.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-05-25-admiral-intro.html#overview",
-    "href": "blog/posts/2024-05-25-admiral-intro.html#overview",
-    "title": "Admiral Package for Beginners",
-    "section": "",
-    "text": "Welcome to this article on Admiral Package for Beginners.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-06-25-quarto-reports.html",
-    "href": "blog/posts/2024-06-25-quarto-reports.html",
-    "title": "Automated Reporting with Quarto",
-    "section": "",
-    "text": "Welcome to this article on Automated Reporting with Quarto.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
-  },
-  {
-    "objectID": "blog/posts/2024-06-25-quarto-reports.html#overview",
-    "href": "blog/posts/2024-06-25-quarto-reports.html#overview",
-    "title": "Automated Reporting with Quarto",
-    "section": "",
-    "text": "Welcome to this article on Automated Reporting with Quarto.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nAutomated Reporting with Quarto\n\n\n1 min\n\n\n\nQuarto\n\n\nReporting\n\n\nAutomation\n\n\n\nGenerating 100 HTML reports from a single parameterised template.\n\n\n\nData Science Team\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nDebugging Shiny Apps: A Survival Guide\n\n\n1 min\n\n\n\nShiny\n\n\nDebugging\n\n\n\nUsing browser(), reactlog, and print-debugging effectively.\n\n\n\nShiny Expert\n\n\nJun 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nStandardizing Company Plots with ggplot2\n\n\n1 min\n\n\n\nVisualization\n\n\nR\n\n\nBranding\n\n\n\nHow to apply the corporate theme to every plot automatically.\n\n\n\nViz Team\n\n\nJun 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nOrganizing Code with ‘box’ and Modules\n\n\n1 min\n\n\n\nR\n\n\nArchitecture\n\n\nPackages\n\n\n\nMoving away from library() calls towards modular, explicit imports.\n\n\n\nR Architect\n\n\nJun 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nWhy We Use renv (And You Should Too)\n\n\n1 min\n\n\n\nBest Practices\n\n\nDevOps\n\n\n\nManaging package versions to ensure your code works 5 years from now.\n\n\n\nAdmin\n\n\nJun 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nBeautiful Clinical Tables with gt\n\n\n1 min\n\n\n\nR\n\n\nReporting\n\n\nVisualization\n\n\n\nCreating publication-ready demographic tables without SAS.\n\n\n\nReporting Team\n\n\nJun 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nShiny: Reactivity vs Observe vs bindEvent\n\n\n1 min\n\n\n\nShiny\n\n\nAdvanced\n\n\nPerformance\n\n\n\nDemystifying the reactive graph. When to use what for optimal app performance.\n\n\n\nShiny Expert\n\n\nMay 28, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nAdmiral Package for Beginners\n\n\n1 min\n\n\n\nClinical\n\n\nADaM\n\n\nPackages\n\n\n\nYour first steps into CDISC ADaM generation using the admiral package.\n\n\n\nClinical Lead\n\n\nMay 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe purrr Way of Doing Things\n\n\n1 min\n\n\n\nR\n\n\nAdvanced\n\n\nFunctional Programming\n\n\n\nStop writing for-loops. Start mapping your way to cleaner code.\n\n\n\nR SME\n\n\nMay 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nUsing dplyr Like a Pro\n\n\n1 min\n\n\n\nR\n\n\nTidyverse\n\n\nIntermediate\n\n\n\nMove beyond filter and select. Learn across(), rowwise(), and cur_data().\n\n\n\nData Science Team\n\n\nMay 20, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/2024-06-10-box-modules.html",
@@ -182,11 +28,320 @@
     "text": "Welcome to this article on Organizing Code with ‘box’ and Modules.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "The KnowledgeCentRe Blog",
+    "objectID": "blog/posts/2024-06-25-quarto-reports.html",
+    "href": "blog/posts/2024-06-25-quarto-reports.html",
+    "title": "Automated Reporting with Quarto",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nAutomated Reporting with Quarto\n\n\n1 min\n\n\n\nQuarto\n\n\nReporting\n\n\nAutomation\n\n\n\nGenerating 100 HTML reports from a single parameterised template.\n\n\n\nData Science Team\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nDebugging Shiny Apps: A Survival Guide\n\n\n1 min\n\n\n\nShiny\n\n\nDebugging\n\n\n\nUsing browser(), reactlog, and print-debugging effectively.\n\n\n\nShiny Expert\n\n\nJun 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nStandardizing Company Plots with ggplot2\n\n\n1 min\n\n\n\nVisualization\n\n\nR\n\n\nBranding\n\n\n\nHow to apply the corporate theme to every plot automatically.\n\n\n\nViz Team\n\n\nJun 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nOrganizing Code with ‘box’ and Modules\n\n\n1 min\n\n\n\nR\n\n\nArchitecture\n\n\nPackages\n\n\n\nMoving away from library() calls towards modular, explicit imports.\n\n\n\nR Architect\n\n\nJun 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nWhy We Use renv (And You Should Too)\n\n\n1 min\n\n\n\nBest Practices\n\n\nDevOps\n\n\n\nManaging package versions to ensure your code works 5 years from now.\n\n\n\nAdmin\n\n\nJun 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nBeautiful Clinical Tables with gt\n\n\n1 min\n\n\n\nR\n\n\nReporting\n\n\nVisualization\n\n\n\nCreating publication-ready demographic tables without SAS.\n\n\n\nReporting Team\n\n\nJun 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nShiny: Reactivity vs Observe vs bindEvent\n\n\n1 min\n\n\n\nShiny\n\n\nAdvanced\n\n\nPerformance\n\n\n\nDemystifying the reactive graph. When to use what for optimal app performance.\n\n\n\nShiny Expert\n\n\nMay 28, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nAdmiral Package for Beginners\n\n\n1 min\n\n\n\nClinical\n\n\nADaM\n\n\nPackages\n\n\n\nYour first steps into CDISC ADaM generation using the admiral package.\n\n\n\nClinical Lead\n\n\nMay 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe purrr Way of Doing Things\n\n\n1 min\n\n\n\nR\n\n\nAdvanced\n\n\nFunctional Programming\n\n\n\nStop writing for-loops. Start mapping your way to cleaner code.\n\n\n\nR SME\n\n\nMay 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nUsing dplyr Like a Pro\n\n\n1 min\n\n\n\nR\n\n\nTidyverse\n\n\nIntermediate\n\n\n\nMove beyond filter and select. Learn across(), rowwise(), and cur_data().\n\n\n\nData Science Team\n\n\nMay 20, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome to this article on Automated Reporting with Quarto.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-25-quarto-reports.html#overview",
+    "href": "blog/posts/2024-06-25-quarto-reports.html#overview",
+    "title": "Automated Reporting with Quarto",
+    "section": "",
+    "text": "Welcome to this article on Automated Reporting with Quarto.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-25-admiral-intro.html",
+    "href": "blog/posts/2024-05-25-admiral-intro.html",
+    "title": "Admiral Package for Beginners",
+    "section": "",
+    "text": "Welcome to this article on Admiral Package for Beginners.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-25-admiral-intro.html#overview",
+    "href": "blog/posts/2024-05-25-admiral-intro.html#overview",
+    "title": "Admiral Package for Beginners",
+    "section": "",
+    "text": "Welcome to this article on Admiral Package for Beginners.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-05-renv-reproducibility.html",
+    "href": "blog/posts/2024-06-05-renv-reproducibility.html",
+    "title": "Why We Use renv (And You Should Too)",
+    "section": "",
+    "text": "Welcome to this article on Why We Use renv (And You Should Too).\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-05-renv-reproducibility.html#overview",
+    "href": "blog/posts/2024-06-05-renv-reproducibility.html#overview",
+    "title": "Why We Use renv (And You Should Too)",
+    "section": "",
+    "text": "Welcome to this article on Why We Use renv (And You Should Too).\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-22-purrr-basics.html",
+    "href": "blog/posts/2024-05-22-purrr-basics.html",
+    "title": "The purrr Way of Doing Things",
+    "section": "",
+    "text": "Welcome to this article on The purrr Way of Doing Things.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-22-purrr-basics.html#overview",
+    "href": "blog/posts/2024-05-22-purrr-basics.html#overview",
+    "title": "The purrr Way of Doing Things",
+    "section": "",
+    "text": "Welcome to this article on The purrr Way of Doing Things.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "sas-to-r/06-merging-joining.html",
+    "href": "sas-to-r/06-merging-joining.html",
+    "title": "6. Merging & Joining Data",
+    "section": "",
+    "text": "In SAS, merging requires you to PROC SORT both datasets first. If you forget, things break. In R, dplyr joins do not require sorting. They use a hash join algorithm, which is generally faster and safer.",
+    "crumbs": [
+      "SAS to R",
+      "6. Merging & Joining Data"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/06-merging-joining.html#left-join",
+    "href": "sas-to-r/06-merging-joining.html#left-join",
+    "title": "6. Merging & Joining Data",
+    "section": "Left Join",
+    "text": "Left Join\nKeep all rows from the Left table, match rows from the Right. Unmatched become NA. Equivalent to SAS Merge (A, B) with if a.\nlibrary(dplyr)\n\n# Join DM and AE by Subject ID\ndm_ae &lt;- left_join(dm, ae, by = \"USUBJID\")",
+    "crumbs": [
+      "SAS to R",
+      "6. Merging & Joining Data"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/06-merging-joining.html#inner-join",
+    "href": "sas-to-r/06-merging-joining.html#inner-join",
+    "title": "6. Merging & Joining Data",
+    "section": "Inner Join",
+    "text": "Inner Join\nKeep only rows present in both tables. Equivalent to SAS Merge (A, B) with if a and b.\npatients_with_events &lt;- inner_join(dm, ae, by = \"USUBJID\")",
+    "crumbs": [
+      "SAS to R",
+      "6. Merging & Joining Data"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/06-merging-joining.html#full-join",
+    "href": "sas-to-r/06-merging-joining.html#full-join",
+    "title": "6. Merging & Joining Data",
+    "section": "Full Join",
+    "text": "Full Join\nKeep rows from either table. Equivalent to SAS Merge (A, B).\nall_data &lt;- full_join(dm, ae, by = \"USUBJID\")",
+    "crumbs": [
+      "SAS to R",
+      "6. Merging & Joining Data"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/06-merging-joining.html#semi-join",
+    "href": "sas-to-r/06-merging-joining.html#semi-join",
+    "title": "6. Merging & Joining Data",
+    "section": "Semi Join",
+    "text": "Semi Join\nKeep rows in A that have a match in B. (Like a WHERE EXISTS SQL subquery).\n# Keep patients in DM who have at least one AE\npatients_with_ae &lt;- semi_join(dm, ae, by = \"USUBJID\")",
+    "crumbs": [
+      "SAS to R",
+      "6. Merging & Joining Data"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/06-merging-joining.html#anti-join",
+    "href": "sas-to-r/06-merging-joining.html#anti-join",
+    "title": "6. Merging & Joining Data",
+    "section": "Anti Join",
+    "text": "Anti Join\nKeep rows in A that do not have a match in B. (Great for finding “orphan” records).\n# Keep patients in DM who have ZERO AEs\nhealthy_patients &lt;- anti_join(dm, ae, by = \"USUBJID\")",
+    "crumbs": [
+      "SAS to R",
+      "6. Merging & Joining Data"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/06-merging-joining.html#test-your-knowledge",
+    "href": "sas-to-r/06-merging-joining.html#test-your-knowledge",
+    "title": "6. Merging & Joining Data",
+    "section": "Test Your Knowledge",
+    "text": "Test Your Knowledge\n\nWhich join keeps all records from the left table and matching records from the right?\nDo you need to sort data before joining in dplyr?",
+    "crumbs": [
+      "SAS to R",
+      "6. Merging & Joining Data"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/03-data-structures.html",
+    "href": "sas-to-r/03-data-structures.html",
+    "title": "3. Data Structures: Vectors & Frames",
+    "section": "",
+    "text": "In SAS, almost everything is a dataset. In R, you have lower-level building blocks.\n\n\nThe fundamental unit in R. Even a single number is a vector of length 1. Vectors must be of the same type (numeric, character, logical).\n# Numeric vector\nages &lt;- c(25, 30, 45, 22)\n\n# Character vector\nnames &lt;- c(\"Alice\", \"Bob\", \"Charlie\")\nNote: R is 1-indexed, just like SAS. ages[1] is 25.\n\n\n\nLists can contain anything: vectors, datasets, other lists, models. They are flexible containers.\nmy_patient &lt;- list(\n  id = \"1001\",\n  visits = c(\"Screening\", \"Baseline\", \"Week 4\"),\n  demographics = data.frame(age = 45, sex = \"M\")\n)\n\n\n\nThis is your SAS Dataset. It is technically a list of vectors of equal length.\n\ndata.frame: The base R version.\ntibble: The modern (“tidyverse”) version. It prints nicer and is stricter (doesn’t change variable names or types unexpectedly).\n\nlibrary(tibble)\n\ndm &lt;- tibble(\n  USUBJID = c(\"001\", \"002\", \"003\"),\n  ARM = c(\"Placebo\", \"Active\", \"Placebo\"),\n  AGE = c(45, 52, 38)\n)\n\n\n\nFactors are used for categorical data. They look like strings but are stored as integers with labels. This is similar to SAS Formats.\nsex &lt;- factor(c(\"M\", \"F\", \"F\", \"M\"), levels = c(\"F\", \"M\"))\n\n\n\nIn SAS, numeric missing is .. In R, it is NA. Important: NA propagates. 5 + NA equals NA. You often need na.rm = TRUE in functions.\nmean(c(1, 2, NA)) # Returns NA\nmean(c(1, 2, NA), na.rm = TRUE) # Returns 1.5\n\n\n\n\nIf you try to put a character string into a numeric vector, what happens?\nWhat is the R equivalent of a SAS format?",
+    "crumbs": [
+      "SAS to R",
+      "3. Data Structures: Vectors & Frames"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/03-data-structures.html#vectors",
+    "href": "sas-to-r/03-data-structures.html#vectors",
+    "title": "3. Data Structures: Vectors & Frames",
+    "section": "",
+    "text": "The fundamental unit in R. Even a single number is a vector of length 1. Vectors must be of the same type (numeric, character, logical).\n# Numeric vector\nages &lt;- c(25, 30, 45, 22)\n\n# Character vector\nnames &lt;- c(\"Alice\", \"Bob\", \"Charlie\")\nNote: R is 1-indexed, just like SAS. ages[1] is 25.",
+    "crumbs": [
+      "SAS to R",
+      "3. Data Structures: Vectors & Frames"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/03-data-structures.html#lists",
+    "href": "sas-to-r/03-data-structures.html#lists",
+    "title": "3. Data Structures: Vectors & Frames",
+    "section": "",
+    "text": "Lists can contain anything: vectors, datasets, other lists, models. They are flexible containers.\nmy_patient &lt;- list(\n  id = \"1001\",\n  visits = c(\"Screening\", \"Baseline\", \"Week 4\"),\n  demographics = data.frame(age = 45, sex = \"M\")\n)",
+    "crumbs": [
+      "SAS to R",
+      "3. Data Structures: Vectors & Frames"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/03-data-structures.html#data-frames-and-tibbles",
+    "href": "sas-to-r/03-data-structures.html#data-frames-and-tibbles",
+    "title": "3. Data Structures: Vectors & Frames",
+    "section": "",
+    "text": "This is your SAS Dataset. It is technically a list of vectors of equal length.\n\ndata.frame: The base R version.\ntibble: The modern (“tidyverse”) version. It prints nicer and is stricter (doesn’t change variable names or types unexpectedly).\n\nlibrary(tibble)\n\ndm &lt;- tibble(\n  USUBJID = c(\"001\", \"002\", \"003\"),\n  ARM = c(\"Placebo\", \"Active\", \"Placebo\"),\n  AGE = c(45, 52, 38)\n)",
+    "crumbs": [
+      "SAS to R",
+      "3. Data Structures: Vectors & Frames"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/03-data-structures.html#factors",
+    "href": "sas-to-r/03-data-structures.html#factors",
+    "title": "3. Data Structures: Vectors & Frames",
+    "section": "",
+    "text": "Factors are used for categorical data. They look like strings but are stored as integers with labels. This is similar to SAS Formats.\nsex &lt;- factor(c(\"M\", \"F\", \"F\", \"M\"), levels = c(\"F\", \"M\"))",
+    "crumbs": [
+      "SAS to R",
+      "3. Data Structures: Vectors & Frames"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/03-data-structures.html#missing-values-na",
+    "href": "sas-to-r/03-data-structures.html#missing-values-na",
+    "title": "3. Data Structures: Vectors & Frames",
+    "section": "",
+    "text": "In SAS, numeric missing is .. In R, it is NA. Important: NA propagates. 5 + NA equals NA. You often need na.rm = TRUE in functions.\nmean(c(1, 2, NA)) # Returns NA\nmean(c(1, 2, NA), na.rm = TRUE) # Returns 1.5",
+    "crumbs": [
+      "SAS to R",
+      "3. Data Structures: Vectors & Frames"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/03-data-structures.html#test-your-knowledge",
+    "href": "sas-to-r/03-data-structures.html#test-your-knowledge",
+    "title": "3. Data Structures: Vectors & Frames",
+    "section": "",
+    "text": "If you try to put a character string into a numeric vector, what happens?\nWhat is the R equivalent of a SAS format?",
+    "crumbs": [
+      "SAS to R",
+      "3. Data Structures: Vectors & Frames"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/04-data-io.html",
+    "href": "sas-to-r/04-data-io.html",
+    "title": "2. Data I/O",
+    "section": "",
+    "text": "In SAS, you define a library pointing to a directory. libname mylib \"C:/projects/data\";\nIn R, you refer to file paths directly or use projects (like this one!).\n\n\nWe use the haven package.\nlibrary(haven)\n\n# Read\nadae &lt;- read_sas(\"./data/adae.sas7bdat\")\n\n# Write\nwrite_sas(adae, \"./output/adae_new.sas7bdat\")\nContent to be expanded…",
+    "crumbs": [
+      "SAS to R",
+      "4. Data I/O"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/04-data-io.html#handling-labels-and-formats",
+    "href": "sas-to-r/04-data-io.html#handling-labels-and-formats",
+    "title": "4. Data Import & Export",
+    "section": "",
+    "text": "haven imports SAS labels as an attribute called label. It imports SAS formats as format.\nYou can view these with:\n# View variable label\nattr(adae$AESEV, \"label\")",
+    "crumbs": [
+      "SAS to R",
+      "4. Data Import & Export"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/04-data-io.html#test-your-knowledge",
+    "href": "sas-to-r/04-data-io.html#test-your-knowledge",
+    "title": "4. Data Import & Export",
+    "section": "Test Your Knowledge",
+    "text": "Test Your Knowledge\n\nWhich package reads .sas7bdat files?\nWhat is the benefit of using .rds format over .csv?",
+    "crumbs": [
+      "SAS to R",
+      "4. Data Import & Export"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/08-reporting.html",
+    "href": "sas-to-r/08-reporting.html",
+    "title": "8. Tables & Reporting",
+    "section": "",
+    "text": "The gt package allows you to construct tables by adding layers, similar to how ggplot2 builds plots.\nlibrary(gt)\nlibrary(dplyr)\n\n# Prepare data\nsummary_table &lt;- adae %&gt;%\n  group_by(AESOC) %&gt;%\n  summarise(\n    n_events = n(),\n    n_subjects = n_distinct(USUBJID)\n  )\n\n# Create Table\nsummary_table %&gt;%\n  gt() %&gt;%\n  tab_header(\n    title = \"Adverse Events by SOC\"\n  ) %&gt;%\n  cols_label(\n    AESOC = \"System Organ Class\",\n    n_events = \"Total Events\",\n    n_subjects = \"Total Subjects\"\n  )",
+    "crumbs": [
+      "SAS to R",
+      "8. Tables & Reporting"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/08-reporting.html#test-your-knowledge",
+    "href": "sas-to-r/08-reporting.html#test-your-knowledge",
+    "title": "8. Tables & Reporting",
+    "section": "Test Your Knowledge",
+    "text": "Test Your Knowledge\n\nWhich package is known as the “Grammar of Tables”?\nWhich package quickly creates a demographic summary table?",
+    "crumbs": [
+      "SAS to R",
+      "8. Tables & Reporting"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/10-package-development.html",
+    "href": "sas-to-r/10-package-development.html",
+    "title": "10. Package Development",
+    "section": "",
+    "text": "In SAS, you might rely on server configuration. In R, packages change versions. renv (R Environment) creates a lockfile (renv.lock) that records exactly which version of every package you used.\n\nrenv::init(): Initialize a project.\nrenv::snapshot(): Save the current state of packages to the lockfile.\nrenv::restore(): Reinstall packages exactly as recorded in the lockfile.\n\nThis ensures that your code runs 5 years from now.",
+    "crumbs": [
+      "SAS to R",
+      "10. Package Development"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/10-package-development.html#test-your-knowledge",
+    "href": "sas-to-r/10-package-development.html#test-your-knowledge",
+    "title": "10. Package Development",
+    "section": "Test Your Knowledge",
+    "text": "Test Your Knowledge\n\nWhat is the purpose of renv?\nWhere should you put custom functions that are used across multiple projects?",
+    "crumbs": [
+      "SAS to R",
+      "10. Package Development"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/09-clinical-workflows.html",
+    "href": "sas-to-r/09-clinical-workflows.html",
+    "title": "9. Clinical Workflows (CDISC)",
+    "section": "",
+    "text": "The pharmaceutical industry is rapidly adopting R. The Pharmaverse is a collection of packages designed for clinical reporting.",
+    "crumbs": [
+      "SAS to R",
+      "9. Clinical Workflows (CDISC)"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/09-clinical-workflows.html#test-your-knowledge",
+    "href": "sas-to-r/09-clinical-workflows.html#test-your-knowledge",
+    "title": "9. Clinical Workflows (CDISC)",
+    "section": "Test Your Knowledge",
+    "text": "Test Your Knowledge\n\nWhat is the primary package for creating ADaM datasets in R?\nWhich function/package replaces PROC COMPARE?",
+    "crumbs": [
+      "SAS to R",
+      "9. Clinical Workflows (CDISC)"
+    ]
+  },
+  {
+    "objectID": "sme-rescue/index.html",
+    "href": "sme-rescue/index.html",
+    "title": "SME to the Rescue",
+    "section": "",
+    "text": "Need help with a project? Reach out to our Subject Matter Experts directly below."
   },
   {
     "objectID": "sme-rescue/index.html#clinical-regulatory",
@@ -217,10 +372,380 @@
     "text": "Specialized Fields\n\nEvan Wright\n\nRole: Bioinformatics\nExperience: 3 Years\nSpecialty: Genomic data analysis using Bioconductor packages.\nAsk for Help\n\n\n\nHannah Montana\n\nRole: Training & Enablement\nExperience: 2 Years\nSpecialty: Documentation, onboarding new users, and community building.\nAsk for Help"
   },
   {
-    "objectID": "r-hub/resources.html",
-    "href": "r-hub/resources.html",
-    "title": "R Resources",
+    "objectID": "sas-to-r/05-data-wrangling.html",
+    "href": "sas-to-r/05-data-wrangling.html",
+    "title": "3. Data Manipulation",
     "section": "",
-    "text": "Everything you need to be productive in R.\n\n📦 Golden Packages📄 Cheatsheets🔗 Internal Links\n\n\n\nData Manipulation: dplyr, tidyr, data.table\nVisualization: ggplot2, patchwork, gt\n\n\n\n\nData Transformation (dplyr)\nVisualization (ggplot2)\n\n\n\n\nLink to internal GitLab/GitHub\nLink to shared drive"
+    "text": "SAS Operation\nR (dplyr)\n\n\n\n\nKEEP/DROP\nselect()\n\n\nWHERE\nfilter()\n\n\nIF ... THEN ...\nmutate() + if_else()/case_when()\n\n\nBY\ngroup_by()\n\n\nPROC SORT\narrange()\n\n\nMERGE\nleft_join(), inner_join(), etc.\n\n\n\n\n\nlibrary(dplyr)\n\n# SAS: proc sort; by subject; run;\n#      data subset; set data; where age &gt; 18; run;\n\ndata_clean &lt;- data %&gt;%\n  filter(age &gt; 18) %&gt;%\n  arrange(subject)\nContent to be expanded…",
+    "crumbs": [
+      "SAS to R",
+      "5. Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/05-data-wrangling.html#filter-where",
+    "href": "sas-to-r/05-data-wrangling.html#filter-where",
+    "title": "5. Data Manipulation (dplyr)",
+    "section": "Filter (WHERE)",
+    "text": "Filter (WHERE)\n# numeric condition\nfilter(dm, AGE &gt;= 18)\n\n# string condition\nfilter(dm, ARM == \"Placebo\")\n\n# multiple conditions (AND)\nfilter(dm, AGE &gt;= 18, SEX == \"F\")\n\n# OR condition\nfilter(dm, ARM == \"Placebo\" | ARM == \"Active\")",
+    "crumbs": [
+      "SAS to R",
+      "5. Data Manipulation (dplyr)"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/05-data-wrangling.html#arrange-proc-sort",
+    "href": "sas-to-r/05-data-wrangling.html#arrange-proc-sort",
+    "title": "5. Data Manipulation (dplyr)",
+    "section": "Arrange (PROC SORT)",
+    "text": "Arrange (PROC SORT)\n# Ascending\narrange(dm, USUBJID)\n\n# Descending\narrange(dm, desc(AGE))",
+    "crumbs": [
+      "SAS to R",
+      "5. Data Manipulation (dplyr)"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/05-data-wrangling.html#select-keepdrop",
+    "href": "sas-to-r/05-data-wrangling.html#select-keepdrop",
+    "title": "5. Data Manipulation (dplyr)",
+    "section": "Select (KEEP/DROP)",
+    "text": "Select (KEEP/DROP)\n# Keep specific columns\nselect(dm, USUBJID, AGE)\n\n# Drop columns\nselect(dm, -RFSTDTC)\n\n# Select helper functions\nselect(dm, starts_with(\"AE\"))",
+    "crumbs": [
+      "SAS to R",
+      "5. Data Manipulation (dplyr)"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/05-data-wrangling.html#mutate-variable-creation",
+    "href": "sas-to-r/05-data-wrangling.html#mutate-variable-creation",
+    "title": "5. Data Manipulation (dplyr)",
+    "section": "Mutate (Variable Creation)",
+    "text": "Mutate (Variable Creation)\ndm_new &lt;- dm %&gt;%\n  mutate(\n    # Simple arithmetic\n    AGE_MONTHS = AGE * 12,\n    \n    # Conditional logic (if/else)\n    AGE_GROUP = if_else(AGE &gt;= 65, \"Elderly\", \"Adult\"),\n    \n    # Complex logic (CASE statement)\n    BMI_CAT = case_when(\n      BMI &lt; 18.5 ~ \"Underweight\",\n      BMI &lt; 25 ~ \"Normal\",\n      BMI &lt; 30 ~ \"Overweight\",\n      TRUE ~ \"Obese\" # The \"Else\" clause\n    )\n  )",
+    "crumbs": [
+      "SAS to R",
+      "5. Data Manipulation (dplyr)"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/05-data-wrangling.html#test-your-knowledge",
+    "href": "sas-to-r/05-data-wrangling.html#test-your-knowledge",
+    "title": "5. Data Manipulation (dplyr)",
+    "section": "Test Your Knowledge",
+    "text": "Test Your Knowledge\n\nHow do you create a new variable in dplyr?\nWhat is the function to remove columns?",
+    "crumbs": [
+      "SAS to R",
+      "5. Data Manipulation (dplyr)"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/01-introduction.html",
+    "href": "sas-to-r/01-introduction.html",
+    "title": "1. Introduction: SAS vs R",
+    "section": "",
+    "text": "You are likely an expert in SAS. You know how to manipulate data, generate reports, and debug macros. So why learn R?\n\nOpen Source: R is free and has a massive community contributing packages.\nVectorization: R operations often apply to entire columns at once, reducing the need for explicit loops.\nGraphics: ggplot2 offers unparalleled flexibility for data visualization.\nModern Workflows: R integrates seamlessly with Git, extensive testing frameworks, and reproducible reporting tools like Quarto.",
+    "crumbs": [
+      "SAS to R",
+      "1. Introduction: SAS vs R"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/01-introduction.html#procedures-vs.-functions",
+    "href": "sas-to-r/01-introduction.html#procedures-vs.-functions",
+    "title": "1. Introduction: SAS vs R",
+    "section": "1. Procedures vs. Functions",
+    "text": "1. Procedures vs. Functions\nIn SAS, you think in Procedures (PROCs). You set up a procedure, give it options, and run it.\n/* SAS: Procedure-based */\nproc means data=sashelp.class mean std;\n  var height weight;\nrun;\nIn R, you think in Functions. You pass data into a function, and it returns a result. You often chain these functions together.\n# R: Function-based\nlibrary(dplyr)\n\nsashelp_class %&gt;%\n  summarise(\n    mean_height = mean(height),\n    sd_height = sd(height)\n  )",
+    "crumbs": [
+      "SAS to R",
+      "1. Introduction: SAS vs R"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/01-introduction.html#the-implicit-loop-vs.-vectorization",
+    "href": "sas-to-r/01-introduction.html#the-implicit-loop-vs.-vectorization",
+    "title": "1. Introduction: SAS vs R",
+    "section": "2. The Implicit Loop vs. Vectorization",
+    "text": "2. The Implicit Loop vs. Vectorization\nThe SAS DATA step has an implicit loop. It processes row 1, then row 2, etc.\ndata new;\n  set old;\n  if age &gt; 18 then group = 'Adult';\n  else group = 'Pediatric';\nrun;\nIn R, operations are vectorized. The ifelse function checks the entire age column at once and returns a new column.\n# R: Vectorized\nnew_data &lt;- old_data %&gt;%\n  mutate(group = if_else(age &gt; 18, \"Adult\", \"Pediatric\"))",
+    "crumbs": [
+      "SAS to R",
+      "1. Introduction: SAS vs R"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/01-introduction.html#disk-vs.-ram",
+    "href": "sas-to-r/01-introduction.html#disk-vs.-ram",
+    "title": "1. Introduction: SAS vs R",
+    "section": "3. Disk vs. RAM",
+    "text": "3. Disk vs. RAM\n\nSAS: Libraries (LIBNAME) often point to physical files on the hard drive. SAS handles large data by processing it chunk-by-chunk from the disk.\nR: Objects live in RAM (Memory). This makes R extremely fast for most datasets but requires different strategies for “Big Data” (e.g., arrow, sparklyr, or databases).",
+    "crumbs": [
+      "SAS to R",
+      "1. Introduction: SAS vs R"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/01-introduction.html#test-your-knowledge",
+    "href": "sas-to-r/01-introduction.html#test-your-knowledge",
+    "title": "1. Introduction: SAS vs R",
+    "section": "Test Your Knowledge",
+    "text": "Test Your Knowledge\n\nHow would you translate a PROC SORT to R? (Hint: It’s a verb in dplyr).\nDoes R process data row-by-row in a standard operation?",
+    "crumbs": [
+      "SAS to R",
+      "1. Introduction: SAS vs R"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/index.html",
+    "href": "sas-to-r/index.html",
+    "title": "SAS to R: The Migration Guide",
+    "section": "",
+    "text": "You’ve spent years mastering the Data Step, PROC SQL, and the art of the macro language. You think in SET, MERGE, and BY statements. Now, you’re looking at R, and it feels… different.\nYou are in the right place.\nThis guide isn’t just about syntax; it’s about translating your mental models. We map your existing SAS knowledge directly to R equivalents, specifically focusing on the clinical trial domain.\n\n\n\n\n\nStop thinking in iterations. Start thinking in vectors and functions.\n\n\n\nInstallation, IDEs, and setting up your first project.\n\n\n\nVectors, Lists, and Data Frames: The building blocks of R.\n\n\n\nWhere is my LIBNAME? Reading and writing data with haven and readr.\n\n\n\nThe DATA step and PROC SQL reborn in dplyr.\n\n\n\nMastering left_join, inner_join, and anti_join.\n\n\n\nReplacing SAS Macros with R Functions and iteration.\n\n\n\nReplacements for PROC REPORT and PROC TABULATE using gt and tfrmt.\n\n\n\nCDISC implementation: Creating ADaM and SDTM datasets in R.\n\n\n\nBuilding robust, reproducible tools for your team.",
+    "crumbs": [
+      "SAS to R",
+      "SAS to R: The Migration Guide"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/index.html#curriculum",
+    "href": "sas-to-r/index.html#curriculum",
+    "title": "SAS to R: The Migration Guide",
+    "section": "",
+    "text": "Stop thinking in iterations. Start thinking in vectors and functions.\n\n\n\nInstallation, IDEs, and setting up your first project.\n\n\n\nVectors, Lists, and Data Frames: The building blocks of R.\n\n\n\nWhere is my LIBNAME? Reading and writing data with haven and readr.\n\n\n\nThe DATA step and PROC SQL reborn in dplyr.\n\n\n\nMastering left_join, inner_join, and anti_join.\n\n\n\nReplacing SAS Macros with R Functions and iteration.\n\n\n\nReplacements for PROC REPORT and PROC TABULATE using gt and tfrmt.\n\n\n\nCDISC implementation: Creating ADaM and SDTM datasets in R.\n\n\n\nBuilding robust, reproducible tools for your team.",
+    "crumbs": [
+      "SAS to R",
+      "SAS to R: The Migration Guide"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/02-ecosystem.html",
+    "href": "sas-to-r/02-ecosystem.html",
+    "title": "2. The R Ecosystem & Tools",
+    "section": "",
+    "text": "R is the language and the engine.\nRStudio is the Integrated Development Environment (IDE). It’s like the “SAS Enterprise Guide” for R, but much more developer-focused.\n\n\n\n\n\nSource (Top Left): Your “Program Editor”. This is where you write scripts (.R) or Quarto documents (.qmd).\nConsole (Bottom Left): The “Log” and immediate execution area. You can type commands here to test them, but they aren’t saved.\nEnvironment (Top Right): Shows your “Work Library”. All active dataframes, variables, and functions live here.\nFiles/Plots/Packages (Bottom Right): File browser, plot viewer, and package manager.",
+    "crumbs": [
+      "SAS to R",
+      "2. The R Ecosystem & Tools"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/02-ecosystem.html#r-vs.-rstudio",
+    "href": "sas-to-r/02-ecosystem.html#r-vs.-rstudio",
+    "title": "2. The R Ecosystem & Tools",
+    "section": "",
+    "text": "R is the language and the engine.\nRStudio is the Integrated Development Environment (IDE). It’s like the “SAS Enterprise Guide” for R, but much more developer-focused.",
+    "crumbs": [
+      "SAS to R",
+      "2. The R Ecosystem & Tools"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/02-ecosystem.html#the-rstudio-interface-for-sas-users",
+    "href": "sas-to-r/02-ecosystem.html#the-rstudio-interface-for-sas-users",
+    "title": "2. The R Ecosystem & Tools",
+    "section": "",
+    "text": "Source (Top Left): Your “Program Editor”. This is where you write scripts (.R) or Quarto documents (.qmd).\nConsole (Bottom Left): The “Log” and immediate execution area. You can type commands here to test them, but they aren’t saved.\nEnvironment (Top Right): Shows your “Work Library”. All active dataframes, variables, and functions live here.\nFiles/Plots/Packages (Bottom Right): File browser, plot viewer, and package manager.",
+    "crumbs": [
+      "SAS to R",
+      "2. The R Ecosystem & Tools"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/02-ecosystem.html#test-your-knowledge",
+    "href": "sas-to-r/02-ecosystem.html#test-your-knowledge",
+    "title": "2. The R Ecosystem & Tools",
+    "section": "Test Your Knowledge",
+    "text": "Test Your Knowledge\n\nWhat is the command to load a package?\nWhy should you use an .Rproj file?",
+    "crumbs": [
+      "SAS to R",
+      "2. The R Ecosystem & Tools"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/07-advanced-programming.html",
+    "href": "sas-to-r/07-advanced-programming.html",
+    "title": "7. Advanced Programming: Functions",
+    "section": "",
+    "text": "In SAS, macros are text substitution. They are powerful but hard to debug. In R, you write Functions. Functions are first-class citizens. They accept objects as input and return objects.\n\n\nSAS Macro:\n%macro print_stats(dset, var);\n  proc means data=&dset;\n    var &var;\n  run;\n%mend;\nR Function:\nprint_stats &lt;- function(df, col_name) {\n  df %&gt;%\n    summarise(\n      mean_val = mean(.data[[col_name]], na.rm = TRUE),\n      sd_val = sd(.data[[col_name]], na.rm = TRUE)\n    )\n}\n\nprint_stats(dm, \"AGE\")\nNote: The .data[[col_name]] syntax is needed for “Tidy Evaluation” when passing column names as strings.",
+    "crumbs": [
+      "SAS to R",
+      "7. Advanced Programming: Functions"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/07-advanced-programming.html#writing-a-simple-function",
+    "href": "sas-to-r/07-advanced-programming.html#writing-a-simple-function",
+    "title": "7. Advanced Programming: Functions",
+    "section": "",
+    "text": "SAS Macro:\n%macro print_stats(dset, var);\n  proc means data=&dset;\n    var &var;\n  run;\n%mend;\nR Function:\nprint_stats &lt;- function(df, col_name) {\n  df %&gt;%\n    summarise(\n      mean_val = mean(.data[[col_name]], na.rm = TRUE),\n      sd_val = sd(.data[[col_name]], na.rm = TRUE)\n    )\n}\n\nprint_stats(dm, \"AGE\")\nNote: The .data[[col_name]] syntax is needed for “Tidy Evaluation” when passing column names as strings.",
+    "crumbs": [
+      "SAS to R",
+      "7. Advanced Programming: Functions"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/07-advanced-programming.html#map-apply-function-to-each-element",
+    "href": "sas-to-r/07-advanced-programming.html#map-apply-function-to-each-element",
+    "title": "7. Advanced Programming: Functions",
+    "section": "Map: Apply function to each element",
+    "text": "Map: Apply function to each element\nSuppose you have a list of files to read.\nlibrary(purrr)\nlibrary(readr)\n\nfiles &lt;- c(\"data/cohort1.csv\", \"data/cohort2.csv\", \"data/cohort3.csv\")\n\n# Read all files into a list of dataframes\ndata_list &lt;- map(files, read_csv)\n\n# Read all files and stack them immediately into one dataframe\nall_data &lt;- map_dfr(files, read_csv)",
+    "crumbs": [
+      "SAS to R",
+      "7. Advanced Programming: Functions"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/07-advanced-programming.html#iterating-over-columns",
+    "href": "sas-to-r/07-advanced-programming.html#iterating-over-columns",
+    "title": "7. Advanced Programming: Functions",
+    "section": "Iterating over Columns",
+    "text": "Iterating over Columns\nCalculate mean for every numeric column.\ndm %&gt;%\n  select(where(is.numeric)) %&gt;%\n  map(mean, na.rm = TRUE)",
+    "crumbs": [
+      "SAS to R",
+      "7. Advanced Programming: Functions"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/07-advanced-programming.html#test-your-knowledge",
+    "href": "sas-to-r/07-advanced-programming.html#test-your-knowledge",
+    "title": "7. Advanced Programming: Functions",
+    "section": "Test Your Knowledge",
+    "text": "Test Your Knowledge\n\nWhat purrr function allows you to read multiple files and combine them into one dataframe?\nWhy are R functions generally safer/easier to debug than SAS macros?",
+    "crumbs": [
+      "SAS to R",
+      "7. Advanced Programming: Functions"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bridge the Gap: SAS to R",
+    "section": "",
+    "text": "The definitive guide for clinical programmers transitioning to modern data science.\n  \n    Start the Migration\n    New to Programming?"
+  },
+  {
+    "objectID": "index.html#select-your-path",
+    "href": "index.html#select-your-path",
+    "title": "Bridge the Gap: SAS to R",
+    "section": "🎯 Select Your Path",
+    "text": "🎯 Select Your Path\n\nExplore our curated learning tracks.\n\n\n\n\n\n\n\n SAS to R Migration\nDetailed chapters mapping SAS procedures to R functions, specifically for clinical trials.  Start Learning\n\n\n R-Hub\nR Hub. Your one stop solution to eveRything!  R you ready!\n\n\n The Shinyverse\nBuild interactive clinical dashboards using R Shiny.  Explore Shiny\n\n\n\n\n SME Help\nNeed immediate assistance? Our experts are here.  Get Rescue\n\n\n Blog\nArticles you don’t know you need.  Learn something new"
+  },
+  {
+    "objectID": "index.html#quick-access-resources",
+    "href": "index.html#quick-access-resources",
+    "title": "Bridge the Gap: SAS to R",
+    "section": "📚 Quick Access Resources",
+    "text": "📚 Quick Access Resources\n\n\nFor Clinical Programmers\n\nCDISC in R - Using admiral for ADaM.\nReporting - Creating TF-compliant tables.\nValidation - Ensuring regulatory compliance.\n\n\n\nFor General R Users\n\nR Basics - Syntax and data structures.\nAdvanced Topics - Metaprogramming and packages.\nBlog - Latest updates and tutorials."
+  },
+  {
+    "objectID": "blog/posts/2024-06-01-gt-tables.html",
+    "href": "blog/posts/2024-06-01-gt-tables.html",
+    "title": "Beautiful Clinical Tables with gt",
+    "section": "",
+    "text": "Welcome to this article on Beautiful Clinical Tables with gt.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-01-gt-tables.html#overview",
+    "href": "blog/posts/2024-06-01-gt-tables.html#overview",
+    "title": "Beautiful Clinical Tables with gt",
+    "section": "",
+    "text": "Welcome to this article on Beautiful Clinical Tables with gt.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-20-dplyr-pro.html",
+    "href": "blog/posts/2024-05-20-dplyr-pro.html",
+    "title": "Using dplyr Like a Pro",
+    "section": "",
+    "text": "Welcome to this article on Using dplyr Like a Pro.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-20-dplyr-pro.html#overview",
+    "href": "blog/posts/2024-05-20-dplyr-pro.html#overview",
+    "title": "Using dplyr Like a Pro",
+    "section": "",
+    "text": "Welcome to this article on Using dplyr Like a Pro.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-15-ggplot-themes.html",
+    "href": "blog/posts/2024-06-15-ggplot-themes.html",
+    "title": "Standardizing Company Plots with ggplot2",
+    "section": "",
+    "text": "Welcome to this article on Standardizing Company Plots with ggplot2.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-15-ggplot-themes.html#overview",
+    "href": "blog/posts/2024-06-15-ggplot-themes.html#overview",
+    "title": "Standardizing Company Plots with ggplot2",
+    "section": "",
+    "text": "Welcome to this article on Standardizing Company Plots with ggplot2.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-20-debugging-shiny.html",
+    "href": "blog/posts/2024-06-20-debugging-shiny.html",
+    "title": "Debugging Shiny Apps: A Survival Guide",
+    "section": "",
+    "text": "Welcome to this article on Debugging Shiny Apps: A Survival Guide.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-20-debugging-shiny.html#overview",
+    "href": "blog/posts/2024-06-20-debugging-shiny.html#overview",
+    "title": "Debugging Shiny Apps: A Survival Guide",
+    "section": "",
+    "text": "Welcome to this article on Debugging Shiny Apps: A Survival Guide.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-28-shiny-reactivity.html",
+    "href": "blog/posts/2024-05-28-shiny-reactivity.html",
+    "title": "Shiny: Reactivity vs Observe vs bindEvent",
+    "section": "",
+    "text": "Welcome to this article on Shiny: Reactivity vs Observe vs bindEvent.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-28-shiny-reactivity.html#overview",
+    "href": "blog/posts/2024-05-28-shiny-reactivity.html#overview",
+    "title": "Shiny: Reactivity vs Observe vs bindEvent",
+    "section": "",
+    "text": "Welcome to this article on Shiny: Reactivity vs Observe vs bindEvent.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "sas-to-r/04-data-io.html#reading-sas-datasets-.sas7bdat",
+    "href": "sas-to-r/04-data-io.html#reading-sas-datasets-.sas7bdat",
+    "title": "2. Data I/O",
+    "section": "",
+    "text": "We use the haven package.\nlibrary(haven)\n\n# Read\nadae &lt;- read_sas(\"./data/adae.sas7bdat\")\n\n# Write\nwrite_sas(adae, \"./output/adae_new.sas7bdat\")\nContent to be expanded…",
+    "crumbs": [
+      "SAS to R",
+      "4. Data I/O"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/05-data-wrangling.html#sorting-and-filtering",
+    "href": "sas-to-r/05-data-wrangling.html#sorting-and-filtering",
+    "title": "3. Data Manipulation",
+    "section": "",
+    "text": "library(dplyr)\n\n# SAS: proc sort; by subject; run;\n#      data subset; set data; where age &gt; 18; run;\n\ndata_clean &lt;- data %&gt;%\n  filter(age &gt; 18) %&gt;%\n  arrange(subject)\nContent to be expanded…",
+    "crumbs": [
+      "SAS to R",
+      "5. Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/08-reporting.html#the-gt-package-grammar-of-tables",
+    "href": "sas-to-r/08-reporting.html#the-gt-package-grammar-of-tables",
+    "title": "4. Tables & Reporting",
+    "section": "",
+    "text": "Think of gt as building a table layer by layer.\nlibrary(gt)\n\nadae %&gt;%\n  group_by(aesoc) %&gt;%\n  summarise(n = n()) %&gt;%\n  gt() %&gt;%\n  tab_header(title = \"Adverse Events\")\nContent to be expanded…",
+    "crumbs": [
+      "SAS to R",
+      "8. Tables & Reporting"
+    ]
+  },
+  {
+    "objectID": "sas-to-r/09-clinical-workflows.html#the-admiral-package",
+    "href": "sas-to-r/09-clinical-workflows.html#the-admiral-package",
+    "title": "5. Clinical Workflows",
+    "section": "",
+    "text": "admiral provides modular functions to build ADaM datasets.\nlibrary(admiral)\n\n# Deriving Analysis Days\nadsl &lt;- dm %&gt;%\n  derive_vars_dt(\n    dtc = RFSTDTC,\n    new_vars_prefix = \"RFST\"\n  )\nContent to be expanded…",
+    "crumbs": [
+      "SAS to R",
+      "9. Clinical Workflows"
+    ]
   }
 ]
