@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "KnowledgeCentRe"
@@ -59,7 +60,7 @@ website:
   
   page-footer:
     background: primary
-    left: "© 2024 KnowledgeCentRe | Syneos Health"
+    left: "© 2024 KnowledgeCentRe"
     right: 
       - href: mailto:harsh.verma@syneoshealth.com
         text: "Contact Creator"
