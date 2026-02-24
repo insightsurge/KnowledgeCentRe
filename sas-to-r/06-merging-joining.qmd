@@ -1,0 +1,79 @@
+---
+title: "6. Merging & Joining Data"
+description: "Mastering `left_join`, `inner_join`, and `anti_join`."
+---
+
+# Goodbye `DATA MERGE`
+
+In SAS, merging requires you to `PROC SORT` both datasets first. If you forget, things break.
+In R, `dplyr` joins do not require sorting. They use a hash join algorithm, which is generally faster and safer.
+
+# Types of Joins
+
+## Left Join
+
+Keep all rows from the Left table, match rows from the Right. Unmatched become `NA`.
+*Equivalent to SAS Merge (A, B) with `if a`.*
+
+```r
+library(dplyr)
+
+# Join DM and AE by Subject ID
+dm_ae <- left_join(dm, ae, by = "USUBJID")
+```
+
+## Inner Join
+
+Keep only rows present in **both** tables.
+*Equivalent to SAS Merge (A, B) with `if a and b`.*
+
+```r
+patients_with_events <- inner_join(dm, ae, by = "USUBJID")
+```
+
+## Full Join
+
+Keep rows from **either** table.
+*Equivalent to SAS Merge (A, B).*
+
+```r
+all_data <- full_join(dm, ae, by = "USUBJID")
+```
+
+# Filtering Joins
+
+These filter rows but do not add columns.
+
+## Semi Join
+
+Keep rows in A that have a match in B. (Like a `WHERE EXISTS` SQL subquery).
+
+```r
+# Keep patients in DM who have at least one AE
+patients_with_ae <- semi_join(dm, ae, by = "USUBJID")
+```
+
+## Anti Join
+
+Keep rows in A that do **not** have a match in B. (Great for finding "orphan" records).
+
+```r
+# Keep patients in DM who have ZERO AEs
+healthy_patients <- anti_join(dm, ae, by = "USUBJID")
+```
+
+# Binding Rows (Set Statement)
+
+To stack datasets vertically (like `SET A B;`), use `bind_rows`.
+
+```r
+# Stack cohort 1 and cohort 2
+all_cohorts <- bind_rows(cohort1, cohort2)
+```
+
+**Note:** `bind_rows` matches columns by name, not position. It handles missing columns gracefully by filling with `NA`.
+
+## Test Your Knowledge
+
+1.  Which join keeps all records from the left table and matching records from the right?
+2.  Do you need to sort data before joining in `dplyr`?

@@ -1,0 +1,69 @@
+---
+title: "8. Tables & Reporting"
+description: "Replacements for `PROC REPORT` and `PROC TABULATE`."
+---
+
+# The Grammar of Tables (`gt`)
+
+The `gt` package allows you to construct tables by adding layers, similar to how `ggplot2` builds plots.
+
+```r
+library(gt)
+library(dplyr)
+
+# Prepare data
+summary_table <- adae %>%
+  group_by(AESOC) %>%
+  summarise(
+    n_events = n(),
+    n_subjects = n_distinct(USUBJID)
+  )
+
+# Create Table
+summary_table %>%
+  gt() %>%
+  tab_header(
+    title = "Adverse Events by SOC"
+  ) %>%
+  cols_label(
+    AESOC = "System Organ Class",
+    n_events = "Total Events",
+    n_subjects = "Total Subjects"
+  )
+```
+
+# Clinical Reporting: `tfrmt` and `gtsummary`
+
+For standard "Table 1" (Demographics), `gtsummary` is magic.
+
+```r
+library(gtsummary)
+
+dm %>%
+  select(AGE, SEX, ARM) %>%
+  tbl_summary(by = ARM) %>%
+  add_p()
+```
+
+# Visualization: `ggplot2`
+
+Replacing `PROC SGPLOT`.
+
+```r
+library(ggplot2)
+
+ggplot(data = dm, aes(x = ARM, y = AGE)) +
+  geom_boxplot() +
+  geom_jitter(width = 0.2, alpha = 0.5) +
+  theme_minimal() +
+  labs(title = "Age Distribution by Arm")
+```
+
+# Exporting Reports
+
+Quarto (what you are reading now) is the replacement for ODS. You combine code, text, and output into one HTML, PDF, or Word document.
+
+## Test Your Knowledge
+
+1.  Which package is known as the "Grammar of Tables"?
+2.  Which package quickly creates a demographic summary table?

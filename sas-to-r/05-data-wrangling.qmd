@@ -1,0 +1,110 @@
+---
+title: "5. Data Manipulation (dplyr)"
+description: "Mastering `dplyr`: Your new Data Step."
+---
+
+# The Translation Dictionary
+
+| SAS Operation | R (`dplyr`) |
+|---------------|-------------|
+| `KEEP`/`DROP` | `select()` |
+| `WHERE` | `filter()` |
+| `IF ... THEN ...` | `mutate()` + `if_else()`/`case_when()` |
+| `BY` | `group_by()` |
+| `PROC SORT` | `arrange()` |
+| `RENAME` | `rename()` |
+| `PROC MEANS/FREQ` | `summarise()` |
+
+# The Pipe (`%>%` or `|>`)
+
+The pipe passes the result of the left side to the first argument of the right side. It lets you read code from left-to-right, top-to-bottom.
+
+```r
+# "Take dataset `dm`, THEN filter rows, THEN select columns"
+dm_clean <- dm %>%
+  filter(ARM != "Screen Failure") %>%
+  select(USUBJID, ARM, AGE, SEX)
+```
+
+# Row Operations
+
+## Filter (WHERE)
+
+```r
+# numeric condition
+filter(dm, AGE >= 18)
+
+# string condition
+filter(dm, ARM == "Placebo")
+
+# multiple conditions (AND)
+filter(dm, AGE >= 18, SEX == "F")
+
+# OR condition
+filter(dm, ARM == "Placebo" | ARM == "Active")
+```
+
+## Arrange (PROC SORT)
+
+```r
+# Ascending
+arrange(dm, USUBJID)
+
+# Descending
+arrange(dm, desc(AGE))
+```
+
+# Column Operations
+
+## Select (KEEP/DROP)
+
+```r
+# Keep specific columns
+select(dm, USUBJID, AGE)
+
+# Drop columns
+select(dm, -RFSTDTC)
+
+# Select helper functions
+select(dm, starts_with("AE"))
+```
+
+## Mutate (Variable Creation)
+
+```r
+dm_new <- dm %>%
+  mutate(
+    # Simple arithmetic
+    AGE_MONTHS = AGE * 12,
+    
+    # Conditional logic (if/else)
+    AGE_GROUP = if_else(AGE >= 65, "Elderly", "Adult"),
+    
+    # Complex logic (CASE statement)
+    BMI_CAT = case_when(
+      BMI < 18.5 ~ "Underweight",
+      BMI < 25 ~ "Normal",
+      BMI < 30 ~ "Overweight",
+      TRUE ~ "Obese" # The "Else" clause
+    )
+  )
+```
+
+# Aggregation (PROC MEANS/FREQ)
+
+Split-Apply-Combine strategy.
+
+```r
+dm %>%
+  group_by(ARM) %>%
+  summarise(
+    N = n(),
+    Mean_Age = mean(AGE, na.rm = TRUE),
+    SD_Age = sd(AGE, na.rm = TRUE)
+  )
+```
+
+## Test Your Knowledge
+
+1.  How do you create a new variable in `dplyr`?
+2.  What is the function to remove columns?

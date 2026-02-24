@@ -1,0 +1,68 @@
+---
+title: "SAS to R: The Migration Guide"
+subtitle: "A comprehensive curriculum for clinical programmers transitioning from SAS to R."
+---
+
+# Welcome, SAS User.
+
+You've spent years mastering the Data Step, `PROC SQL`, and the art of the macro language. You think in `SET`, `MERGE`, and `BY` statements. Now, you're looking at R, and it feels... different.
+
+**You are in the right place.**
+
+This guide isn't just about syntax; it's about translating your **mental models**. We map your existing SAS knowledge directly to R equivalents, specifically focusing on the clinical trial domain.
+
+## Curriculum
+
+::: {.grid}
+
+::: {.g-col-6}
+### [1. Introduction: SAS vs R](01-introduction.qmd)
+Stop thinking in iterations. Start thinking in vectors and functions.
+:::
+
+::: {.g-col-6}
+### [2. The R Ecosystem & Tools](02-ecosystem.qmd)
+Installation, IDEs, and setting up your first project.
+:::
+
+::: {.g-col-6}
+### [3. Data Structures: Vectors & Frames](03-data-structures.qmd)
+Vectors, Lists, and Data Frames: The building blocks of R.
+:::
+
+::: {.g-col-6}
+### [4. Data Import & Export](04-data-io.qmd)
+Where is my `LIBNAME`? Reading and writing data with `haven` and `readr`.
+:::
+
+::: {.g-col-6}
+### [5. Data Manipulation (dplyr)](05-data-wrangling.qmd)
+The `DATA` step and `PROC SQL` reborn in `dplyr`.
+:::
+
+::: {.g-col-6}
+### [6. Merging & Joining Data](06-merging-joining.qmd)
+Mastering `left_join`, `inner_join`, and `anti_join`.
+:::
+
+::: {.g-col-6}
+### [7. Advanced Programming: Functions](07-advanced-programming.qmd)
+Replacing SAS Macros with R Functions and iteration.
+:::
+
+::: {.g-col-6}
+### [8. Tables & Reporting](08-reporting.qmd)
+Replacements for `PROC REPORT` and `PROC TABULATE` using `gt` and `tfrmt`.
+:::
+
+::: {.g-col-6}
+### [9. Clinical Workflows (CDISC)](09-clinical-workflows.qmd)
+CDISC implementation: Creating ADaM and SDTM datasets in R.
+:::
+
+::: {.g-col-6}
+### [10. Package Development](10-package-development.qmd)
+Building robust, reproducible tools for your team.
+:::
+
+:::

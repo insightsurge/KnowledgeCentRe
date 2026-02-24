@@ -1,0 +1,54 @@
+---
+title: "2. The R Ecosystem & Tools"
+description: "Tools, Setup, and the Project Workflow."
+---
+
+# The Environment
+
+## R vs. RStudio
+
+*   **R** is the language and the engine.
+*   **RStudio** is the Integrated Development Environment (IDE). It's like the "SAS Enterprise Guide" for R, but much more developer-focused.
+
+## The RStudio Interface for SAS Users
+
+1.  **Source (Top Left):** Your "Program Editor". This is where you write scripts (`.R`) or Quarto documents (`.qmd`).
+2.  **Console (Bottom Left):** The "Log" and immediate execution area. You can type commands here to test them, but they aren't saved.
+3.  **Environment (Top Right):** Shows your "Work Library". All active dataframes, variables, and functions live here.
+4.  **Files/Plots/Packages (Bottom Right):** File browser, plot viewer, and package manager.
+
+# Libraries and Packages
+
+In SAS, you use `PROC PRODUCT_INSTALL` to check tools or `LIBNAME` to access data. In R, functionality is grouped into **Packages**.
+
+*   **CRAN:** The Comprehensive R Archive Network (the central repository).
+*   **`install.packages("package_name")`**: Downloads the package (Do this once).
+*   **`library(package_name)`**: Loads the package into your session (Do this every time you restart R).
+
+```r
+# Install once
+# install.packages("dplyr")
+
+# Load every session
+library(dplyr)
+```
+
+# Project-Oriented Workflow
+
+Stop using hardcoded paths like `C:/Users/Me/Documents/ProjectA`.
+
+Use **R Projects (`.Rproj`)**.
+1.  Create a project: File -> New Project.
+2.  This sets your "working directory" to the project folder automatically.
+3.  Use the `here` package to reference files relative to the project root.
+
+```r
+library(here)
+# Instead of "C:/Projects/Study123/data/dm.sas7bdat"
+data <- read_sas(here("data", "dm.sas7bdat"))
+```
+
+## Test Your Knowledge
+
+1.  What is the command to load a package?
+2.  Why should you use an `.Rproj` file?

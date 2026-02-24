@@ -1,0 +1,87 @@
+---
+title: "7. Advanced Programming: Functions"
+description: "Replacing SAS Macros with R Functions and iteration."
+---
+
+# The Macro Trap
+
+In SAS, macros are text substitution. They are powerful but hard to debug.
+In R, you write **Functions**. Functions are first-class citizens. They accept objects as input and return objects.
+
+## Writing a Simple Function
+
+SAS Macro:
+```sas
+%macro print_stats(dset, var);
+  proc means data=&dset;
+    var &var;
+  run;
+%mend;
+```
+
+R Function:
+```r
+print_stats <- function(df, col_name) {
+  df %>%
+    summarise(
+      mean_val = mean(.data[[col_name]], na.rm = TRUE),
+      sd_val = sd(.data[[col_name]], na.rm = TRUE)
+    )
+}
+
+print_stats(dm, "AGE")
+```
+
+*Note: The `.data[[col_name]]` syntax is needed for "Tidy Evaluation" when passing column names as strings.*
+
+# Iteration: The `purrr` Package
+
+Stop writing `%DO` loops. Use `purrr` to `map` a function over a list of inputs.
+
+## Map: Apply function to each element
+
+Suppose you have a list of files to read.
+
+```r
+library(purrr)
+library(readr)
+
+files <- c("data/cohort1.csv", "data/cohort2.csv", "data/cohort3.csv")
+
+# Read all files into a list of dataframes
+data_list <- map(files, read_csv)
+
+# Read all files and stack them immediately into one dataframe
+all_data <- map_dfr(files, read_csv)
+```
+
+## Iterating over Columns
+
+Calculate mean for every numeric column.
+
+```r
+dm %>%
+  select(where(is.numeric)) %>%
+  map(mean, na.rm = TRUE)
+```
+
+# Control Flow
+
+R has standard if/else and for-loops, but you rarely need loops for data manipulation.
+
+```r
+# Standard If
+if (nrow(dm) > 0) {
+  print("Data exists")
+}
+
+# For loop (use sparingly)
+for (i in 1:10) {
+  print(i)
+}
+```
+
+## Test Your Knowledge
+
+1.  What `purrr` function allows you to read multiple files and combine them into one dataframe?
+2.  Why are R functions generally safer/easier to debug than SAS macros?

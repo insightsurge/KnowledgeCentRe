@@ -1,0 +1,17 @@
+[
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/posts/2024-06-25-quarto-reports.html",
+      "/blog/posts/2024-06-20-debugging-shiny.html",
+      "/blog/posts/2024-06-15-ggplot-themes.html",
+      "/blog/posts/2024-06-10-box-modules.html",
+      "/blog/posts/2024-06-05-renv-reproducibility.html",
+      "/blog/posts/2024-06-01-gt-tables.html",
+      "/blog/posts/2024-05-28-shiny-reactivity.html",
+      "/blog/posts/2024-05-25-admiral-intro.html",
+      "/blog/posts/2024-05-22-purrr-basics.html",
+      "/blog/posts/2024-05-20-dplyr-pro.html"
+    ]
+  }
+]

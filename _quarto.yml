@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "KnowledgeCentRe"
@@ -9,12 +10,12 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - text: "SAS to R"
+        href: sas-to-r/index.qmd
       - text: "R Hub"
         menu:
           - href: r-hub/beginner.qmd
             text: "R for Beginners"
-          - href: r-hub/sas-to-r.qmd
-            text: "SAS to R"
           - href: r-hub/clinical.qmd
             text: "Clinical Trials Analysis"
           - href: r-hub/advanced.qmd
@@ -40,11 +41,28 @@ website:
         text: "SME to the Rescue"
         icon: life-preserver
   
+  sidebar:
+    - title: "SAS to R Migration"
+      id: "sas-to-r"
+      contents:
+        - sas-to-r/index.qmd
+        - sas-to-r/01-introduction.qmd
+        - sas-to-r/02-ecosystem.qmd
+        - sas-to-r/03-data-structures.qmd
+        - sas-to-r/04-data-io.qmd
+        - sas-to-r/05-data-wrangling.qmd
+        - sas-to-r/06-merging-joining.qmd
+        - sas-to-r/07-advanced-programming.qmd
+        - sas-to-r/08-reporting.qmd
+        - sas-to-r/09-clinical-workflows.qmd
+        - sas-to-r/10-package-development.qmd
+
+  
   page-footer:
     background: primary
-    left: "© 2024 KnowledgeCentRe | Syneos Health"
+    left: "© 2024 KnowledgeCentRe"
     right: 
-      - href: harsh.verma@syneoshealth.com
+      - href: mailto:harsh.verma@syneoshealth.com
         text: "Contact Creator"
         
 format:

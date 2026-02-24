@@ -1,0 +1,76 @@
+---
+title: "4. Data Import & Export"
+description: "Reading and Writing Data: The `libname` equivalent."
+---
+
+# Reading SAS Data
+
+The `haven` package is the gold standard for reading `.sas7bdat` and `.xpt` files.
+
+```r
+library(haven)
+library(here)
+
+# Reading a SAS dataset
+# equivalent to: set mylib.adae;
+adae <- read_sas(here("data", "adae.sas7bdat"))
+
+# Reading an XPT file (common for FDA submissions)
+dm_xpt <- read_xpt(here("data", "dm.xpt"))
+```
+
+## Handling Labels and Formats
+
+`haven` imports SAS labels as an attribute called `label`.
+It imports SAS formats as `format`.
+
+You can view these with:
+```r
+# View variable label
+attr(adae$AESEV, "label")
+```
+
+# Reading CSVs and Excel
+
+Use `readr` (part of tidyverse) for CSVs and `readxl` for Excel.
+
+```r
+library(readr)
+library(readxl)
+
+# PROC IMPORT (CSV)
+labs <- read_csv(here("data", "labs.csv"))
+
+# PROC IMPORT (Excel)
+# You can specify the sheet
+codes <- read_excel(here("data", "codelist.xlsx"), sheet = "AESOC")
+```
+
+# Writing Data
+
+Just as you read, you can write.
+
+```r
+# Export to SAS
+write_sas(adae, here("output", "adae_new.sas7bdat"))
+
+# Export to CSV
+write_csv(labs, here("output", "labs_clean.csv"))
+```
+
+# Saving R Objects (`.rds`)
+
+If you are working strictly within R, save your files as `.rds`. It preserves all R-specific attributes (factors, classes) perfectly and is compressed.
+
+```r
+# Save single object
+write_rds(adae, here("data", "adae.rds"))
+
+# Read it back
+adae <- read_rds(here("data", "adae.rds"))
+```
+
+## Test Your Knowledge
+
+1.  Which package reads `.sas7bdat` files?
+2.  What is the benefit of using `.rds` format over `.csv`?
