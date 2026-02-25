@@ -1,0 +1,153 @@
+---
+title: "Translating PROC FREQ and PROC MEANS into R: A Practical Guide"
+date: "2026-02-05"
+author: "Harsh Verma"
+categories: [SAS-to-R, Tidyverse, Summary Statistics, Clinical]
+description: "How to summarize your clinical data without relying on PROC FREQ or PROC MEANS."
+---
+
+## The Bread and Butter of Clinical Reporting
+
+If you write SAS code for clinical trials, you likely type `PROC FREQ` and `PROC MEANS` in your sleep. These two procedures form the backbone of exploratory data analysis, data checking, and baseline characteristic tables.
+
+When migrating to R, SAS programmers inevitably ask: *"What's the R equivalent of PROC MEANS?"* 
+
+The good news? The R ecosystem (specifically the `{tidyverse}`) provides tools that are just as powerful, but vastly more flexible for integration into downstream operations. 
+
+Let's break down how to handle tabulations and summary statistics in R.
+
+## Replacing PROC FREQ
+
+Let’s look at a standard frequency table for adverse event severity (AETOXGR).
+
+```sas
+/* SAS Code: PROC FREQ */
+proc freq data=adae;
+  tables aetoxgr / missing;
+run;
+```
+
+### The Base R Way
+
+In Base R, you have the `table()` function, which is functional but lacks the modern structure we usually want.
+
+```{r}
+# Mock ADAE Data
+adae <- data.frame(
+  subjid = 1:50,
+  trta = sample(c("Placebo", "Active"), 50, replace = TRUE),
+  aetoxgr = sample(c("MILD", "MODERATE", "SEVERE"), 50, replace = TRUE)
+)
+
+# Base R
+table(adae$aetoxgr, useNA = "always")
+```
+
+Using `{dplyr}`, the replacement is the `count()` function. It’s elegant and returns a data frame (which SAS users appreciate, given that `PROC FREQ` requires an `ods output` statement to capture the results!).
+
+```{r}
+#| label: count-example
+#| message: false
+library(dplyr)
+
+# dplyr equivalent
+adae %>%
+  count(aetoxgr)
+```
+
+Need percentages like SAS provides natively? Combine `count()` with a simple `mutate()`:
+
+```{r}
+adae %>%
+  count(aetoxgr) %>%
+  mutate(percent = (n / sum(n)) * 100)
+```
+
+### Cross-Tabulations
+
+SAS:
+```sas
+proc freq data=adae;
+  tables trta * aetoxgr;
+run;
+```
+
+R `{dplyr}` + `{tidyr}`:
+```{r}
+library(tidyr)
+
+adae %>%
+  count(trta, aetoxgr) %>%
+  pivot_wider(names_from = aetoxgr, values_from = n, values_fill = 0)
+```
+Notice how `pivot_wider()` reshapes the data frame exactly the way you need it for reporting—no `PROC TRANSPOSE` required!
+
+## Replacing PROC MEANS
+
+`PROC MEANS` (or its twin, `PROC SUMMARY`) is used to calculate N, mean, standard deviation, median, min, and max.
+
+```sas
+/* SAS Code: PROC MEANS */
+proc means data=advs n mean std median min max;
+  class paramcd;
+  var aval;
+run;
+```
+
+### The Tidyverse Way: `group_by()` + `summarize()`
+
+In R, calculating summary statistics is a two-step pipeline: group the data, then summarize it. 
+
+```{r}
+# Mock ADVS Data
+advs <- data.frame(
+  subjid = rep(1:10, each = 2),
+  paramcd = rep(c("SYSBP", "DIABP"), times = 10),
+  aval = c(rnorm(10, 120, 10), rnorm(10, 80, 5))
+)
+
+# dplyr equivalent
+advs %>%
+  group_by(paramcd) %>%
+  summarize(
+    n = n(),
+    mean_val = mean(aval, na.rm = TRUE),
+    std_dev = sd(aval, na.rm = TRUE),
+    median_val = median(aval, na.rm = TRUE),
+    min_val = min(aval, na.rm = TRUE),
+    max_val = max(aval, na.rm = TRUE)
+  )
+```
+
+**Two key things to note here for SAS transplants:**
+1. R is unforgiving with missing data. In SAS, `mean(1, 2, .)` is `1.5`. In R, `mean(c(1, 2, NA))` is `NA`. You almost always need to add `na.rm = TRUE` to your statistical functions to skip missing values explicitly.
+2. The result is inherently a tidy, structured dataset. There's no separate "procedure output window" vs "output dataset." You just assign the result directly: `summary_stats <- advs %>% summarize(...)`
+
+## Summarizing Multiple Variables at Once 
+
+What if you want the mean of multiple variables? SAS makes this easy by listing them in the `var` statement. 
+
+In R, `{dplyr}` provides the incredibly powerful `across()` function. 
+
+```{r}
+# R: Summarizing multiple numeric variables
+advs %>%
+  group_by(paramcd) %>%
+  summarize(
+    across(
+      .cols = where(is.numeric), 
+      .fns = list(
+        mean = ~mean(.x, na.rm = TRUE),
+        sd = ~sd(.x, na.rm = TRUE)
+      ),
+      .names = "{.col}_{.fn}"
+    )
+  )
+```
+This single block of code takes every numeric column in your dataset, calculates the mean and standard deviation, and automatically names the new columns (e.g., `aval_mean`, `aval_sd`). It is essentially a programmatic macro built right into the syntax.
+
+## Conclusion
+
+Letting go of `PROC FREQ` and `PROC MEANS` feels strange at first. But once you realize that R functions like `count()` and `summarize()` instantly return structured data frames instead of static printouts, you'll wonder how you ever lived without them. 
+
+Next up: The great missing data mismatch. We’ll explore why R’s `NA` is a totally different beast than SAS's period (`.`).

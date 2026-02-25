@@ -1,0 +1,96 @@
+---
+title: "Traceability in R: Ensuring Your ADaMs and SDTMs Meet Regulatory Standards"
+date: "2026-03-05"
+author: "Harsh Verma"
+categories: [CDISC, Regulatory, Traceability, R]
+description: "How to ensure data lineage from raw EDC all the way to ADaMs when programming in R."
+---
+
+## The Regulatory Mandate
+
+When the FDA or EMA receives a submission, their reviewers expect a clear, unbroken chain of evidence from the final Tables, Figures, and Listings (TFLs) all the way back to the raw source data (EDC). This concept is called **traceability**.
+
+Regulatory agencies don't care if you used SAS, R, Python, or an abacus—so long as the final outputs conform strictly to CDISC standards and the lineage of the data is auditable.
+
+Historically, SAS has dominated this space because the industry spent decades building macro libraries designed to ensure traceability. Since R is open-source and highly flexible, critics often ask: *"Can R guarantee traceability?"*
+
+Yes. Here’s how.
+
+## Defining Traceability 
+
+In CDISC, traceability exists at two levels:
+1. **Data-level traceability:** An ADaM dataset (`ADAE`) must contain the sequence numbers (`AESEQ`) that tie it back to the SDTM domain (`AE`).
+2. **Analysis-level traceability:** The Define.xml document must clearly articulate the computational methods used to create derived variables.
+
+## Coding for Traceability in R
+
+### 1. Retaining Sequence Variables
+
+When creating an ADaM from an SDTM, you must ensure that variables like `xxSEQ` (Sequence Number), `USUBJID`, and `DOMAIN` are carefully preserved. In `{dplyr}`, this means being explicit in your `select()` or `keep` logic.
+
+```{r}
+#| eval: false
+library(dplyr)
+library(admiral)
+
+# Building ADAE and ensuring traceability to AE
+adae <- ae %>%
+  # Merge in ADSL, but keep the core AE traceability keys
+  derive_vars_merged(
+    dataset_add = adsl,
+    by_vars = exprs(USUBJID),
+    new_vars = exprs(TRTSDT)
+  ) %>%
+  # Ensure AESEQ remains untouched!
+  mutate(TRTEMFL = if_else(ASTDT >= TRTSDT, "Y", "N")) %>%
+  select(STUDYID, USUBJID, AESEQ, AETERM, TRTSDT, ASTDT, TRTEMFL)
+```
+
+Never drop `AESEQ` in an OCCDS domain. Without it, the reviewer cannot prove which specific headache in the SDTM dataset corresponds to the TEAE flag in the ADaM dataset.
+
+### 2. Traceability in Record Imputation (BDS)
+
+In BDS domains (like `ADVS`), we often create new records, such as calculating an average baseline value or imputing a Last Observation Carried Forward (LOCF) visit.
+
+When a record is mathematically invented by the programmer (it doesn’t exist in SDTM), the variable `DTYPE` (Derivation Type) **must** be populated.
+
+```{r}
+#| eval: false
+adlb <- adlb %>%
+  # Creating a new Baseline Average record
+  derive_summary_records(
+    by_vars = exprs(USUBJID, PARAMCD),
+    filter = ABLFL == "Y",
+    set_values_to = exprs(
+      AVAL = mean(AVAL, na.rm = TRUE),
+      DTYPE = "AVERAGE" # Traceability!
+    )
+  )
+```
+
+By explicitly setting `DTYPE = "AVERAGE"`, a reviewer instantly knows this record cannot be traced back to a specific `LBSEQ` in the SDTM dataset, because it is an aggregate.
+
+## Generating Define.xml from R
+
+The biggest traceability deliverable is the `Define.xml`. This metadata document acts as the map for the FDA reviewer. 
+
+In the SAS world, Pinnacle 21 Enterprise or SAS Clinical Standards Toolkit handles this.
+
+In the R ecosystem, the pharmaverse community introduced the `{metacore}` and `{metatools}` packages. These packages ingest your data specifications (usually an Excel file) and automatically validate that your R data frames match your spec. 
+
+Furthermore, you can generate Define.xml entirely using R packages, bypassing proprietary enterprise tools if necessary.
+
+## R Markdown and Quarto for Documentation
+
+The ultimate advantage R holds over SAS in terms of traceability is **Literate Programming**. 
+
+Instead of hiding data derivation decisions inside a `.sas` file and hoping the reviewer reads the comments, clinical programmers can use Quarto or R Markdown to mix text, code, and output seamlessly.
+
+A reviewer doesn't just get a dataset; they get a rendered HTML or PDF document that explicitly states:
+*"According to SAP Section 4.1, missing partial dates were imputed to the 15th of the month. See code chunk below."*
+
+## Conclusion
+
+Traceability in R is not harder than in SAS; it simply requires adopting a standardized workflow (like `{admiral}`) and respecting CDISC Implementation Guidelines. 
+
+With SDTM and ADaMs sorted, it’s time to move to the main event: **TFL Generation!**

@@ -11,7 +11,42 @@
     "href": "blog/index.html",
     "title": "The KnowledgeCentRe Blog",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nAutomated Reporting with Quarto\n\n\n1 min\n\n\n\nQuarto\n\n\nReporting\n\n\nAutomation\n\n\n\nGenerating 100 HTML reports from a single parameterised template.\n\n\n\nData Science Team\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nDebugging Shiny Apps: A Survival Guide\n\n\n1 min\n\n\n\nShiny\n\n\nDebugging\n\n\n\nUsing browser(), reactlog, and print-debugging effectively.\n\n\n\nShiny Expert\n\n\nJun 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nStandardizing Company Plots with ggplot2\n\n\n1 min\n\n\n\nVisualization\n\n\nR\n\n\nBranding\n\n\n\nHow to apply the corporate theme to every plot automatically.\n\n\n\nViz Team\n\n\nJun 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nOrganizing Code with ‘box’ and Modules\n\n\n1 min\n\n\n\nR\n\n\nArchitecture\n\n\nPackages\n\n\n\nMoving away from library() calls towards modular, explicit imports.\n\n\n\nR Architect\n\n\nJun 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nWhy We Use renv (And You Should Too)\n\n\n1 min\n\n\n\nBest Practices\n\n\nDevOps\n\n\n\nManaging package versions to ensure your code works 5 years from now.\n\n\n\nAdmin\n\n\nJun 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nBeautiful Clinical Tables with gt\n\n\n1 min\n\n\n\nR\n\n\nReporting\n\n\nVisualization\n\n\n\nCreating publication-ready demographic tables without SAS.\n\n\n\nReporting Team\n\n\nJun 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nShiny: Reactivity vs Observe vs bindEvent\n\n\n1 min\n\n\n\nShiny\n\n\nAdvanced\n\n\nPerformance\n\n\n\nDemystifying the reactive graph. When to use what for optimal app performance.\n\n\n\nShiny Expert\n\n\nMay 28, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nAdmiral Package for Beginners\n\n\n1 min\n\n\n\nClinical\n\n\nADaM\n\n\nPackages\n\n\n\nYour first steps into CDISC ADaM generation using the admiral package.\n\n\n\nClinical Lead\n\n\nMay 25, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nThe purrr Way of Doing Things\n\n\n1 min\n\n\n\nR\n\n\nAdvanced\n\n\nFunctional Programming\n\n\n\nStop writing for-loops. Start mapping your way to cleaner code.\n\n\n\nR SME\n\n\nMay 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nUsing dplyr Like a Pro\n\n\n1 min\n\n\n\nR\n\n\nTidyverse\n\n\nIntermediate\n\n\n\nMove beyond filter and select. Learn across(), rowwise(), and cur_data().\n\n\n\nData Science Team\n\n\nMay 20, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nFrom Static TFLs to Interactive Shiny Dashboards: Exploring Safety & Efficacy Dynamically\n\n4 min\n\n\nShiny\n\nInteractive\n\nFuture Trends\n\nRegulatory\n\n\n\nAre static RTF tables obsolete? How the FDA and the pharmaceutical industry are moving toward interactive submissions.\n\n\n\nHarsh Verma\n\n\nApr 8, 2026\n\n\n\n\n\n\n\n\n\n\n\nHow I Built an Interactive Clinical App with {teal} (And Why You Should Too)\n\n4 min\n\n\nShiny\n\nteal\n\nInteractive\n\nClinical Apps\n\n\n\nStop emailing 500-page demographic listings. Build a standardized exploratory data analysis (EDA) app for clinical teams using {teal}.\n\n\n\nHarsh Verma\n\n\nApr 5, 2026\n\n\n\n\n\n\n\n\n\n\n\n{data.table} vs {dplyr}: When Speed Matters for Massive Clinical Datasets\n\n3 min\n\n\nOptimization\n\nPerformance\n\ndata.table\n\nR\n\n\n\nExplore the blistering speed of the {data.table} package and learn when to step away from {dplyr} for massive clinical data.\n\n\n\nHarsh Verma\n\n\nApr 1, 2026\n\n\n\n\n\n\n\n\n\n\n\nHow to Optimize Your R Code: Best Practices in Clinical Trial Analysis\n\n3 min\n\n\nOptimization\n\nPerformance\n\nR\n\nTidyverse\n\n\n\nWhy your R code is slow (and how to fix it). Covering vectorization, memory management, and avoiding the dreaded for-loop.\n\n\n\nHarsh Verma\n\n\nMar 28, 2026\n\n\n\n\n\n\n\n\n\n\n\nClinical Listings in R: Creating Patient Profiles that Rival PROC REPORT\n\n4 min\n\n\nListings\n\nTFL\n\nQuarto\n\nflextable\n\n\n\nHow to move beyond simple datasets and build paginated, formatted RTF/Word document listings using {flextable} and Quarto.\n\n\n\nHarsh Verma\n\n\nMar 25, 2026\n\n\n\n\n\n\n\n\n\n\n\nEfficacy TFLs: Creating Waterfall and Spider Plots for Tumor Response\n\n4 min\n\n\nEfficacy\n\nOncology\n\nggplot2\n\nVisualizations\n\n\n\nA step-by-step guide to plotting RECIST tumor responses using Waterfall and Spider plots in R.\n\n\n\nHarsh Verma\n\n\nMar 22, 2026\n\n\n\n\n\n\n\n\n\n\n\nEfficacy TFLs: Survival Analysis and Kaplan-Meier Plots using {survival} and {survminer}\n\n3 min\n\n\nEfficacy\n\nSurvival\n\nggplot2\n\nClinical\n\n\n\nHow to fit Cox Proportional Hazard models and draw beautiful Kaplan-Meier curves natively in R without SAS LIFETEST.\n\n\n\nHarsh Verma\n\n\nMar 18, 2026\n\n\n\n\n\n\n\n\n\n\n\nSafety TFLs: Visualizing Lab Shifts and Vital Sign Trends in R\n\n4 min\n\n\nFigures\n\nSafety\n\nggplot2\n\nClinical\n\n\n\nMove beyond tables: Using {ggplot2} to create powerful visual representations of laboratory shift tables and vital sign trends.\n\n\n\nHarsh Verma\n\n\nMar 15, 2026\n\n\n\n\n\n\n\n\n\n\n\nSafety TFLs: Creating Complex Adverse Event (AE) Summary Tables with {rtables}\n\n4 min\n\n\nTFL\n\nSafety\n\nrtables\n\nClinical\n\n\n\nHow to program an AE Summary Table (System Organ Class by Preferred Term) cleanly using the {rtables} layout engine.\n\n\n\nHarsh Verma\n\n\nMar 12, 2026\n\n\n\n\n\n\n\n\n\n\n\nTFL Generation with R: A SAS Programmer’s Overview\n\n4 min\n\n\nTFL\n\nClinical\n\nR\n\nrtables\n\ngt\n\n\n\nA high-level overview of how clinical Tables, Figures, and Listings differ when programmed in R vs SAS.\n\n\n\nHarsh Verma\n\n\nMar 8, 2026\n\n\n\n\n\n\n\n\n\n\n\nTraceability in R: Ensuring Your ADaMs and SDTMs Meet Regulatory Standards\n\n4 min\n\n\nCDISC\n\nRegulatory\n\nTraceability\n\nR\n\n\n\nHow to ensure data lineage from raw EDC all the way to ADaMs when programming in R.\n\n\n\nHarsh Verma\n\n\nMar 5, 2026\n\n\n\n\n\n\n\n\n\n\n\nBDS (Basic Data Structure) ADaMs with {admiral}: Doing What SAS Did, But Better\n\n4 min\n\n\nADaM\n\nBDS\n\nCDISC\n\nadmiral\n\n\n\nMastering the complexities of BDS datasets (ADVS, ADLB) in R, including baseline derivations and LOCF.\n\n\n\nHarsh Verma\n\n\nMar 1, 2026\n\n\n\n\n\n\n\n\n\n\n\nBuilding OCCDS (Occurrence Data) ADaMs in R: Handling Adverse Events the R Way\n\n4 min\n\n\nADaM\n\nOCCDS\n\nCDISC\n\nadmiral\n\n\n\nHow to merge ADSL into ADAE, derive treatment emergence flags, and handle occurrence data using {admiral}.\n\n\n\nHarsh Verma\n\n\nFeb 25, 2026\n\n\n\n\n\n\n\n\n\n\n\nCreating ADSL (Subject Level Analysis Dataset) in R: Moving Away from SAS\n\n3 min\n\n\nADaM\n\nCDISC\n\nadmiral\n\nClinical\n\n\n\nHow to build your first ADaM dataset (ADSL) using {dplyr} and the pharmaverse {admiral} package.\n\n\n\nHarsh Verma\n\n\nFeb 22, 2026\n\n\n\n\n\n\n\n\n\n\n\nValidating SDTM Domains Programmatically in R: A New Approach\n\n3 min\n\n\nSDTM\n\nData Quality\n\nValidation\n\nCDISC\n\n\n\nHow to use R packages to QC your SDTM domains and catch systematic errors before sending them to Pinnacle 21.\n\n\n\nHarsh Verma\n\n\nFeb 18, 2026\n\n\n\n\n\n\n\n\n\n\n\nMapping Raw Data to SDTM in R: A SAS Programmer’s Guide\n\n4 min\n\n\nSDTM\n\nCDISC\n\nSAS-to-R\n\nData Management\n\n\n\nHow to migrate your raw-to-SDTM programming pipelines from SAS into R using tidy data principles.\n\n\n\nHarsh Verma\n\n\nFeb 15, 2026\n\n\n\n\n\n\n\n\n\n\n\nReplicating SAS Formats and Informats in R (Using Factors and Lookups)\n\n4 min\n\n\nSAS-to-R\n\nCategorical Data\n\nClinical\n\n\n\nHow to translate PROC FORMAT logic into R using {forcats}, named vectors, and joins.\n\n\n\nHarsh Verma\n\n\nFeb 12, 2026\n\n\n\n\n\n\n\n\n\n\n\nHandling Missing Data: How R Does It Differently Than SAS\n\n4 min\n\n\nSAS-to-R\n\nData Cleaning\n\nClinical\n\n\n\nWhy R’s NA is completely different from SAS’s period (.) and how missing data propagates.\n\n\n\nHarsh Verma\n\n\nFeb 8, 2026\n\n\n\n\n\n\n\n\n\n\n\nTranslating PROC FREQ and PROC MEANS into R: A Practical Guide\n\n4 min\n\n\nSAS-to-R\n\nTidyverse\n\nSummary Statistics\n\nClinical\n\n\n\nHow to summarize your clinical data without relying on PROC FREQ or PROC MEANS.\n\n\n\nHarsh Verma\n\n\nFeb 5, 2026\n\n\n\n\n\n\n\n\n\n\n\nThe Mindset Shift: Moving from SAS Data Steps to {dplyr}\n\n4 min\n\n\nSAS-to-R\n\nTidyverse\n\nClinical\n\nData Manipulation\n\n\n\nStop thinking row-by-row and iterative loops. Learn how to embrace vectorization and the dplyr pipeline for clinical data manipulation.\n\n\n\nHarsh Verma\n\n\nFeb 1, 2026\n\n\n\n\n\n\n\n\n\n\n\nAutomated Reporting with Quarto\n\n1 min\n\n\nQuarto\n\nReporting\n\nAutomation\n\n\n\nGenerating 100 HTML reports from a single parameterised template.\n\n\n\nData Science Team\n\n\nJun 25, 2024\n\n\n\n\n\n\n\n\n\n\n\nDebugging Shiny Apps: A Survival Guide\n\n1 min\n\n\nShiny\n\nDebugging\n\n\n\nUsing browser(), reactlog, and print-debugging effectively.\n\n\n\nShiny Expert\n\n\nJun 20, 2024\n\n\n\n\n\n\n\n\n\n\n\nStandardizing Company Plots with ggplot2\n\n1 min\n\n\nVisualization\n\nR\n\nBranding\n\n\n\nHow to apply the corporate theme to every plot automatically.\n\n\n\nViz Team\n\n\nJun 15, 2024\n\n\n\n\n\n\n\n\n\n\n\nOrganizing Code with ‘box’ and Modules\n\n1 min\n\n\nR\n\nArchitecture\n\nPackages\n\n\n\nMoving away from library() calls towards modular, explicit imports.\n\n\n\nR Architect\n\n\nJun 10, 2024\n\n\n\n\n\n\n\n\n\n\n\nWhy We Use renv (And You Should Too)\n\n1 min\n\n\nBest Practices\n\nDevOps\n\n\n\nManaging package versions to ensure your code works 5 years from now.\n\n\n\nAdmin\n\n\nJun 5, 2024\n\n\n\n\n\n\n\n\n\n\n\nBeautiful Clinical Tables with gt\n\n1 min\n\n\nR\n\nReporting\n\nVisualization\n\n\n\nCreating publication-ready demographic tables without SAS.\n\n\n\nReporting Team\n\n\nJun 1, 2024\n\n\n\n\n\n\n\n\n\n\n\nShiny: Reactivity vs Observe vs bindEvent\n\n1 min\n\n\nShiny\n\nAdvanced\n\nPerformance\n\n\n\nDemystifying the reactive graph. When to use what for optimal app performance.\n\n\n\nShiny Expert\n\n\nMay 28, 2024\n\n\n\n\n\n\n\n\n\n\n\nAdmiral Package for Beginners\n\n1 min\n\n\nClinical\n\nADaM\n\nPackages\n\n\n\nYour first steps into CDISC ADaM generation using the admiral package.\n\n\n\nClinical Lead\n\n\nMay 25, 2024\n\n\n\n\n\n\n\n\n\n\n\nThe purrr Way of Doing Things\n\n1 min\n\n\nR\n\nAdvanced\n\nFunctional Programming\n\n\n\nStop writing for-loops. Start mapping your way to cleaner code.\n\n\n\nR SME\n\n\nMay 22, 2024\n\n\n\n\n\n\n\n\n\n\n\nUsing dplyr Like a Pro\n\n1 min\n\n\nR\n\nTidyverse\n\nIntermediate\n\n\n\nMove beyond filter and select. Learn across(), rowwise(), and cur_data().\n\n\n\nData Science Team\n\n\nMay 20, 2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/posts/2026-02-25-occds-adams.html",
+    "href": "blog/posts/2026-02-25-occds-adams.html",
+    "title": "Building OCCDS (Occurrence Data) ADaMs in R: Handling Adverse Events the R Way",
+    "section": "",
+    "text": "OCCDS datasets like ADAE (Adverse Events), ADCM (Concomitant Medications), and ADMH (Medical History) deal with occurrences. These datasets usually merge the core domain (AE, CM, MH) with subject-level demographics (ADSL) to calculate flags based on timing relative to treatment.\nThe most critical calculation in ADAE is determining if an adverse event is Treatment Emergent (TEAE).\nIn SAS, this involves a data step comparing the AE start date (ASTDT) to the Treatment Start Date (TRTSDT) from ADSL.\n/* SAS Code: TEAE Derivation */\ndata adae;\n  merge sdtm_ae(in=a) adsl(in=b keep=USUBJID TRTSDT);\n  by USUBJID;\n  if a;\n\n  TRTEMFL = '';\n  if ASTDT &gt;= TRTSDT and ASTDT ne . then TRTEMFL = 'Y';\nrun;"
+  },
+  {
+    "objectID": "blog/posts/2026-02-25-occds-adams.html#occurrence-data-occds-basics",
+    "href": "blog/posts/2026-02-25-occds-adams.html#occurrence-data-occds-basics",
+    "title": "Building OCCDS (Occurrence Data) ADaMs in R: Handling Adverse Events the R Way",
+    "section": "",
+    "text": "OCCDS datasets like ADAE (Adverse Events), ADCM (Concomitant Medications), and ADMH (Medical History) deal with occurrences. These datasets usually merge the core domain (AE, CM, MH) with subject-level demographics (ADSL) to calculate flags based on timing relative to treatment.\nThe most critical calculation in ADAE is determining if an adverse event is Treatment Emergent (TEAE).\nIn SAS, this involves a data step comparing the AE start date (ASTDT) to the Treatment Start Date (TRTSDT) from ADSL.\n/* SAS Code: TEAE Derivation */\ndata adae;\n  merge sdtm_ae(in=a) adsl(in=b keep=USUBJID TRTSDT);\n  by USUBJID;\n  if a;\n\n  TRTEMFL = '';\n  if ASTDT &gt;= TRTSDT and ASTDT ne . then TRTEMFL = 'Y';\nrun;"
+  },
+  {
+    "objectID": "blog/posts/2026-02-25-occds-adams.html#building-adae-with-admiral",
+    "href": "blog/posts/2026-02-25-occds-adams.html#building-adae-with-admiral",
+    "title": "Building OCCDS (Occurrence Data) ADaMs in R: Handling Adverse Events the R Way",
+    "section": "Building ADAE with {admiral}",
+    "text": "Building ADAE with {admiral}\nThe {admiral} package streamlines OCCDS derivations. The workflow generally follows: 1. Load AE and ADSL. 2. Merge ADSL variables (like TRTSDT) into AE. 3. Derive partial dates/times (ASTDT, AENDT). 4. Derive population and occurrence flags (TRTEMFL, CQ01NAM).\nHere is a simplified R script:\n\nlibrary(dplyr)\nlibrary(admiral)\nlibrary(lubridate)\n\n# Mock Data\nae &lt;- data.frame(\n  USUBJID = c(\"101\", \"101\", \"102\"),\n  AETERM = c(\"HEADACHE\", \"NAUSEA\", \"FATIGUE\"),\n  AESTDTC = c(\"2024-01-10\", \"2024-01-20\", \"2024-02-05\")\n)\n\nadsl &lt;- data.frame(\n  USUBJID = c(\"101\", \"102\"),\n  TRTSDT = as.Date(c(\"2024-01-15\", \"2024-02-01\"))\n)\n\n# 1. Merge ADSL\nadae &lt;- ae %&gt;%\n  derive_vars_merged(\n    dataset_add = adsl,\n    by_vars = exprs(USUBJID),\n    new_vars = exprs(TRTSDT)\n  ) %&gt;%\n  \n  # 2. Convert ISO character dates to numeric R dates\n  mutate(ASTDT = as.Date(AESTDTC)) %&gt;%\n  \n  # 3. Derive Treatment Emergent Flag (TRTEMFL)\n  derive_var_extreme_flag(\n    by_vars = exprs(USUBJID),\n    order = exprs(ASTDT),\n    new_var = TRTEMFL,\n    condition = ASTDT &gt;= TRTSDT,\n    mode = \"first\" # Just an example if we wanted the first event\n  )\n\nprint(adae)\n\nWait, derive_var_extreme_flag() isn’t quite right for a TEAE flag since TEAEs apply to all events that occur after treatment, not just the “extreme” first or last one.\nInstead, {admiral} provides elegant logical evaluation via standard {dplyr} mutate(). Because {admiral} handles the complex merging (like the derive_vars_merged step above), the actual flag derivation is dead simple.\n\nadae &lt;- adae %&gt;%\n  mutate(\n    TRTEMFL = if_else(ASTDT &gt;= TRTSDT & !is.na(ASTDT), \"Y\", \"N\", missing = \"N\")\n  )"
+  },
+  {
+    "objectID": "blog/posts/2026-02-25-occds-adams.html#handling-first-occurrence-flags",
+    "href": "blog/posts/2026-02-25-occds-adams.html#handling-first-occurrence-flags",
+    "title": "Building OCCDS (Occurrence Data) ADaMs in R: Handling Adverse Events the R Way",
+    "section": "Handling First Occurrence Flags",
+    "text": "Handling First Occurrence Flags\nWhere {admiral} really shines is with extreme flags. In typical TFLs, we often report “Subjects with at least one AE.” To do this, we need a flag (AOCCIFL) that indicates the first occurrence of any AE for a subject.\nIn SAS, this requires PROC SORT followed by first.USUBJID.\nIn {admiral}:\n\nadae_first &lt;- adae %&gt;%\n  filter(TRTEMFL == \"Y\") %&gt;%\n  derive_var_extreme_flag(\n    by_vars = exprs(USUBJID),\n    order = exprs(ASTDT),\n    new_var = AOCCIFL,\n    mode = \"first\"\n  )\n\nadae &lt;- adae %&gt;%\n  left_join(adae_first, by = names(adae)) %&gt;%\n  mutate(AOCCIFL = if_else(is.na(AOCCIFL), \"\", AOCCIFL))\n\nprint(adae)\n\nThis single function handles the sorting, grouping by USUBJID, checking the condition (TRTEMFL == \"Y\"), and flagging only the first record chronologically (mode = \"first\")."
+  },
+  {
+    "objectID": "blog/posts/2026-02-25-occds-adams.html#summarizing-ae-counts",
+    "href": "blog/posts/2026-02-25-occds-adams.html#summarizing-ae-counts",
+    "title": "Building OCCDS (Occurrence Data) ADaMs in R: Handling Adverse Events the R Way",
+    "section": "Summarizing AE Counts",
+    "text": "Summarizing AE Counts\nOnce ADAE is built, we frequently need to count the number of AEs per subject and push that count back into ADSL.\n\n# Add total AEs per subject back to ADSL\nadsl_updated &lt;- adsl %&gt;%\n  derive_var_merged_summary(\n    dataset_add = adae,\n    by_vars = exprs(USUBJID),\n    new_var = AETOT,\n    analysis_var = USUBJID,\n    summary_fun = function(x) length(x)\n  ) %&gt;%\n  mutate(AETOT = if_else(is.na(AETOT), 0, AETOT))\n\nprint(adsl_updated)\n\nThe derive_var_merged_summary() function eliminates the need for separate PROC SQL count(*) block and subsequent merge.\nOCCDS derivations in R highlight a massive shift from multi-step data processing (sort -&gt; merge -&gt; derive) to a single, continuous, highly readable text pipeline.\nNext, we dive into the most complex of all ADaM structures: Basic Data Structure (BDS)."
   },
   {
     "objectID": "blog/posts/2024-06-10-box-modules.html",
@@ -28,46 +63,396 @@
     "text": "Welcome to this article on Organizing Code with ‘box’ and Modules.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
   },
   {
-    "objectID": "blog/posts/2024-06-25-quarto-reports.html",
-    "href": "blog/posts/2024-06-25-quarto-reports.html",
-    "title": "Automated Reporting with Quarto",
+    "objectID": "blog/posts/2024-06-20-debugging-shiny.html",
+    "href": "blog/posts/2024-06-20-debugging-shiny.html",
+    "title": "Debugging Shiny Apps: A Survival Guide",
     "section": "",
-    "text": "Welcome to this article on Automated Reporting with Quarto.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+    "text": "Welcome to this article on Debugging Shiny Apps: A Survival Guide.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
   },
   {
-    "objectID": "blog/posts/2024-06-25-quarto-reports.html#overview",
-    "href": "blog/posts/2024-06-25-quarto-reports.html#overview",
-    "title": "Automated Reporting with Quarto",
+    "objectID": "blog/posts/2024-06-20-debugging-shiny.html#overview",
+    "href": "blog/posts/2024-06-20-debugging-shiny.html#overview",
+    "title": "Debugging Shiny Apps: A Survival Guide",
     "section": "",
-    "text": "Welcome to this article on Automated Reporting with Quarto.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+    "text": "Welcome to this article on Debugging Shiny Apps: A Survival Guide.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
   },
   {
-    "objectID": "blog/posts/2024-05-25-admiral-intro.html",
-    "href": "blog/posts/2024-05-25-admiral-intro.html",
-    "title": "Admiral Package for Beginners",
+    "objectID": "blog/posts/2026-02-15-mapping-sdtm.html",
+    "href": "blog/posts/2026-02-15-mapping-sdtm.html",
+    "title": "Mapping Raw Data to SDTM in R: A SAS Programmer’s Guide",
     "section": "",
-    "text": "Welcome to this article on Admiral Package for Beginners.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+    "text": "For over two decades, SAS has been the unchallenged king of mapping raw clinical data (often from EDC systems like Medidata Rave or Veeva Vault) into the Study Data Tabulation Model (SDTM) format required by regulatory agencies like the FDA.\nCreating SDTM datasets involves joining multiple raw forms, deriving standard variables like STUDYID, DOMAIN, and USUBJID, applying dictionaries (MedDRA, WHODrug), and carefully structuring columns according to the CDISC Implementation Guide (IG).\nSo… how do we do this without SAS?"
   },
   {
-    "objectID": "blog/posts/2024-05-25-admiral-intro.html#overview",
-    "href": "blog/posts/2024-05-25-admiral-intro.html#overview",
-    "title": "Admiral Package for Beginners",
+    "objectID": "blog/posts/2026-02-15-mapping-sdtm.html#the-sdtm-challenge",
+    "href": "blog/posts/2026-02-15-mapping-sdtm.html#the-sdtm-challenge",
+    "title": "Mapping Raw Data to SDTM in R: A SAS Programmer’s Guide",
     "section": "",
-    "text": "Welcome to this article on Admiral Package for Beginners.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+    "text": "For over two decades, SAS has been the unchallenged king of mapping raw clinical data (often from EDC systems like Medidata Rave or Veeva Vault) into the Study Data Tabulation Model (SDTM) format required by regulatory agencies like the FDA.\nCreating SDTM datasets involves joining multiple raw forms, deriving standard variables like STUDYID, DOMAIN, and USUBJID, applying dictionaries (MedDRA, WHODrug), and carefully structuring columns according to the CDISC Implementation Guide (IG).\nSo… how do we do this without SAS?"
   },
   {
-    "objectID": "blog/posts/2024-06-05-renv-reproducibility.html",
-    "href": "blog/posts/2024-06-05-renv-reproducibility.html",
-    "title": "Why We Use renv (And You Should Too)",
-    "section": "",
-    "text": "Welcome to this article on Why We Use renv (And You Should Too).\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+    "objectID": "blog/posts/2026-02-15-mapping-sdtm.html#the-mental-map-sas-data-steps-vs-r",
+    "href": "blog/posts/2026-02-15-mapping-sdtm.html#the-mental-map-sas-data-steps-vs-r",
+    "title": "Mapping Raw Data to SDTM in R: A SAS Programmer’s Guide",
+    "section": "The Mental Map: SAS Data Steps vs R",
+    "text": "The Mental Map: SAS Data Steps vs R\nA typical SAS program to create the DM (Demographics) domain might look like this:\n/* SAS Code: Creating DM */\ndata dm;\n  set raw.demog (rename=(subject=SUBJID sex_raw=SEX));\n  length DOMAIN $2. STUDYID $15. USUBJID $20.;\n  \n  STUDYID = \"ABC-123\";\n  DOMAIN = \"DM\";\n  USUBJID = catx(\"-\", STUDYID, SUBJID);\n  \n  /* Apply formats or derivations */\n  AGE = int(yrdif(BRTHDAT, RANDDAT, 'AGE'));\n  \n  keep STUDYID DOMAIN USUBJID SUBJID RFSTDTC RFENDTC BRTHDTC AGE SEX;\nrun;\nWhen building this in R, we rely heavily on the {dplyr}, {lubridate}, and {stringr} packages."
   },
   {
-    "objectID": "blog/posts/2024-06-05-renv-reproducibility.html#overview",
-    "href": "blog/posts/2024-06-05-renv-reproducibility.html#overview",
-    "title": "Why We Use renv (And You Should Too)",
+    "objectID": "blog/posts/2026-02-15-mapping-sdtm.html#the-r-implementation",
+    "href": "blog/posts/2026-02-15-mapping-sdtm.html#the-r-implementation",
+    "title": "Mapping Raw Data to SDTM in R: A SAS Programmer’s Guide",
+    "section": "The R Implementation",
+    "text": "The R Implementation\nHere is how we build the conceptual equivalent in R.\n\nlibrary(dplyr)\nlibrary(lubridate)\nlibrary(stringr)\n\n# Simulating raw data\nraw_demog &lt;- data.frame(\n  subject = c(\"001\", \"002\", \"003\"),\n  sex_raw = c(\"M\", \"F\", \"F\"),\n  BRTHDAT = as.Date(c(\"1980-01-15\", \"1975-06-20\", \"1990-11-05\")),\n  RANDDAT = as.Date(c(\"2024-01-10\", \"2024-01-12\", \"2024-01-15\"))\n)\n\n# Creating the DM Domain\ndm_domain &lt;- raw_demog %&gt;%\n  # Rename columns (new_name = old_name)\n  rename(\n    SUBJID = subject,\n    SEX = sex_raw\n  ) %&gt;%\n  # Derive new columns\n  mutate(\n    STUDYID = \"ABC-123\",\n    DOMAIN = \"DM\",\n    USUBJID = paste(STUDYID, SUBJID, sep = \"-\"),\n    \n    # Date formatting to ISO 8601 (often YYYY-MM-DD)\n    BRTHDTC = as.character(BRTHDAT),\n    RFSTDTC = as.character(RANDDAT),\n    \n    # Age derivation using lubridate\n    AGE = time_length(interval(BRTHDAT, RANDDAT), \"years\") %&gt;% floor()\n  ) %&gt;%\n  # Select and order final columns\n  select(STUDYID, DOMAIN, USUBJID, SUBJID, RFSTDTC, BRTHDTC, AGE, SEX)\n\nprint(dm_domain)\n\n  STUDYID DOMAIN     USUBJID SUBJID    RFSTDTC    BRTHDTC AGE SEX\n1 ABC-123     DM ABC-123-001    001 2024-01-10 1980-01-15  43   M\n2 ABC-123     DM ABC-123-002    002 2024-01-12 1975-06-20  48   F\n3 ABC-123     DM ABC-123-003    003 2024-01-15 1990-11-05  33   F\n\n\n\nKey Differences and Advantages\n\npaste() replaces catx(): In R, paste() or paste0() (or stringr::str_c()) is used to concatenate strings to build the USUBJID.\nlubridate makes dates easier: Calculating age in SAS requires remembering esoteric functions like yrdif. In R, {lubridate} makes time intervals mathematically logical.\nNo Length / Type Declarations: In SAS, you must declare length DOMAIN $2. to avoid truncation. R dynamically handles string lengths, so you never have to worry about a string being truncated because of an earlier column definition.\nColumn Selection: The select() function perfectly replaces the keep and retain statements, simultaneously defining which columns to keep and what order they should appear in."
+  },
+  {
+    "objectID": "blog/posts/2026-02-15-mapping-sdtm.html#handing-iso-8601-dates",
+    "href": "blog/posts/2026-02-15-mapping-sdtm.html#handing-iso-8601-dates",
+    "title": "Mapping Raw Data to SDTM in R: A SAS Programmer’s Guide",
+    "section": "Handing ISO 8601 Dates",
+    "text": "Handing ISO 8601 Dates\nOne of the most complex parts of SDTM is formatting partial dates into ISO 8601 character strings (e.g., 2024-05 if the day is missing). In SAS, this usually involves painful substring manipulation.\nIn R, packages like {parsedate} or custom {stringr} functions make this incredibly concise.\n\n# Simple example of handling a missing day\nraw_dates &lt;- c(\"2024-Jan-01\", \"2024-Feb-Unknown\")\n\n# Using stringr to extract Year and Month \nclean_dates &lt;- raw_dates %&gt;%\n  str_replace_all(\"-Unknown\", \"\") %&gt;%\n  as.Date(format = \"%Y-%b-%d\") # The second one will become NA\n\nprint(clean_dates)\n\n[1] \"2024-01-01\" NA          \n\n\n(Note: Clinical date imputation can get complex depending on your SAP, but vectorized string manipulation in R is infinitely more powerful than SAS’s substr and index functions)."
+  },
+  {
+    "objectID": "blog/posts/2026-02-15-mapping-sdtm.html#conclusion",
+    "href": "blog/posts/2026-02-15-mapping-sdtm.html#conclusion",
+    "title": "Mapping Raw Data to SDTM in R: A SAS Programmer’s Guide",
+    "section": "Conclusion",
+    "text": "Conclusion\nMigrating SDTM generation to R forces you to write code in functional pipelines. The code becomes highly readable, self-documenting, and free from the strict column-length restrictions of SAS data types.\nIn the next post, we’ll talk about how to validate these SDTM domains programmatically before they ever hit Pinnacle 21."
+  },
+  {
+    "objectID": "blog/posts/2026-02-22-adsl-in-r.html",
+    "href": "blog/posts/2026-02-22-adsl-in-r.html",
+    "title": "Creating ADSL (Subject Level Analysis Dataset) in R: Moving Away from SAS",
     "section": "",
-    "text": "Welcome to this article on Why We Use renv (And You Should Too).\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+    "text": "Every clinical trial analysis starts with ADSL (Analysis Dataset Subject Level). It contains one record per subject and houses all baseline characteristics, treatment assignments, and demographic flags required for the rest of the ADaMs and the eventual TFLs (Tables, Figures, and Listings).\nIn SAS, building ADSL involves merging DM with EX (Exposure), DS (Disposition), VS (Vitals), and applying your Statistical Analysis Plan (SAP) derivations.\nHow do we do this in R? Enter {admiral}."
+  },
+  {
+    "objectID": "blog/posts/2026-02-22-adsl-in-r.html#the-core-of-clinical-analysis",
+    "href": "blog/posts/2026-02-22-adsl-in-r.html#the-core-of-clinical-analysis",
+    "title": "Creating ADSL (Subject Level Analysis Dataset) in R: Moving Away from SAS",
+    "section": "",
+    "text": "Every clinical trial analysis starts with ADSL (Analysis Dataset Subject Level). It contains one record per subject and houses all baseline characteristics, treatment assignments, and demographic flags required for the rest of the ADaMs and the eventual TFLs (Tables, Figures, and Listings).\nIn SAS, building ADSL involves merging DM with EX (Exposure), DS (Disposition), VS (Vitals), and applying your Statistical Analysis Plan (SAP) derivations.\nHow do we do this in R? Enter {admiral}."
+  },
+  {
+    "objectID": "blog/posts/2026-02-22-adsl-in-r.html#what-is-admiral",
+    "href": "blog/posts/2026-02-22-adsl-in-r.html#what-is-admiral",
+    "title": "Creating ADSL (Subject Level Analysis Dataset) in R: Moving Away from SAS",
+    "section": "What is {admiral}?",
+    "text": "What is {admiral}?\nThe {admiral} package is part of the Pharmaverse—a collaborative effort by major pharmaceutical companies to create a standardized suite of R packages for clinical reporting. {admiral} provides modular, pre-tested functions specifically designed to build ADaM datasets following CDISC standards.\nLet’s look at how to build ADSL."
+  },
+  {
+    "objectID": "blog/posts/2026-02-22-adsl-in-r.html#step-1-merging-the-raw-sdtms",
+    "href": "blog/posts/2026-02-22-adsl-in-r.html#step-1-merging-the-raw-sdtms",
+    "title": "Creating ADSL (Subject Level Analysis Dataset) in R: Moving Away from SAS",
+    "section": "Step 1: Merging the Raw SDTMs",
+    "text": "Step 1: Merging the Raw SDTMs\nIn SAS, you might merge your datasets. In R, we use joins.\n\nlibrary(dplyr)\nlibrary(admiral)\n\nWarning: package 'admiral' was built under R version 4.4.3\n\nlibrary(lubridate)\n\n# Simulating SDTM Data\ndm &lt;- data.frame(\n  USUBJID = c(\"001\", \"002\"),\n  ARM = c(\"Placebo\", \"Active\"),\n  AGE = c(45, 60),\n  SEX = c(\"M\", \"F\")\n)\n\nds &lt;- data.frame(\n  USUBJID = c(\"001\", \"001\", \"002\", \"002\"),\n  DSCAT = c(\"DISPOSITION EVENT\", \"OTHER EVENT\", \"DISPOSITION EVENT\", \"OTHER EVENT\"),\n  DSDECOD = c(\"COMPLETED\", \"RANDOMIZED\", \"ADVERSE EVENT\", \"RANDOMIZED\")\n)"
+  },
+  {
+    "objectID": "blog/posts/2026-02-22-adsl-in-r.html#step-2-deriving-flags-using-admiral",
+    "href": "blog/posts/2026-02-22-adsl-in-r.html#step-2-deriving-flags-using-admiral",
+    "title": "Creating ADSL (Subject Level Analysis Dataset) in R: Moving Away from SAS",
+    "section": "Step 2: Deriving Flags using {admiral}",
+    "text": "Step 2: Deriving Flags using {admiral}\nInstead of writing custom conditional logic to figure out if someone completed the study, {admiral} gives us functions like derive_var_merged_cat().\nLet’s derive COMPLFL (Completer Flag) based on the Disposition (DS) domain.\n\n# Build ADSL using a dplyr pipeline\nadsl &lt;- dm %&gt;%\n  # 1. Convert ARM to TRT01P (Planned Treatment)\n  mutate(TRT01P = ARM) %&gt;%\n  \n  # 2. Derive Completer Flag (COMPLFL) from DS\n  derive_var_merged_exist_flag(\n    dataset_add = ds,\n    by_vars = exprs(USUBJID),\n    new_var = COMPLFL,\n    condition = DSCAT == \"DISPOSITION EVENT\" & DSDECOD == \"COMPLETED\"\n  )\n\nprint(adsl)\n\n  USUBJID     ARM AGE SEX  TRT01P COMPLFL\n1     001 Placebo  45   M Placebo       Y\n2     002  Active  60   F  Active    &lt;NA&gt;\n\n\nNotice how derive_var_merged_exist_flag() handles the logic seamlessly. We tell it: - Which dataset to look at (dataset_add = ds) - How to link them (by_vars = exprs(USUBJID)) - What to name the new flag (new_var = COMPLFL) - What condition triggers a “Y” (condition = ...)\nIf the condition is met, the subject gets a Y. If not, they get an NA (which you can easily convert to an N if your SAP requires it)."
+  },
+  {
+    "objectID": "blog/posts/2026-02-22-adsl-in-r.html#step-3-deriving-age-categories",
+    "href": "blog/posts/2026-02-22-adsl-in-r.html#step-3-deriving-age-categories",
+    "title": "Creating ADSL (Subject Level Analysis Dataset) in R: Moving Away from SAS",
+    "section": "Step 3: Deriving Age Categories",
+    "text": "Step 3: Deriving Age Categories\nSAS requires PROC FORMAT or nested if/else loops to create AGEGR1 (e.g., &lt;65, &gt;=65).\nIn R, it’s a breeze.\n\nadsl &lt;- adsl %&gt;%\n  mutate(\n    AGEGR1 = case_when(\n      AGE &lt; 65 ~ \"&lt;65\",\n      AGE &gt;= 65 ~ \"&gt;=65\",\n      TRUE ~ \"Missing\"\n    )\n  )\n\nprint(adsl)\n\n  USUBJID     ARM AGE SEX  TRT01P COMPLFL AGEGR1\n1     001 Placebo  45   M Placebo       Y    &lt;65\n2     002  Active  60   F  Active    &lt;NA&gt;    &lt;65"
+  },
+  {
+    "objectID": "blog/posts/2026-02-22-adsl-in-r.html#why-admiral-beats-custom-macros",
+    "href": "blog/posts/2026-02-22-adsl-in-r.html#why-admiral-beats-custom-macros",
+    "title": "Creating ADSL (Subject Level Analysis Dataset) in R: Moving Away from SAS",
+    "section": "Why {admiral} Beats Custom Macros",
+    "text": "Why {admiral} Beats Custom Macros\nIn SAS programming, companies build massive libraries of proprietary macros (like %derive_trt() or %derive_flags()). These macros are notoriously difficult to debug, poorly documented, and non-transferable between companies.\nBy using {admiral} in R: 1. It’s open source: The code is transparent and peer-reviewed by the industry. 2. Standardized: A programmer from Company A can read Company B’s ADSL code because they both use {admiral} syntax. 3. Traceable: Every {admiral} function integrates beautifully with {dplyr} pipes, making the transformation logic incredibly easy to read from top to bottom.\nADSL is only the beginning. In the next post, we’ll tackle OCCDS (Occurrence Data) domains like ADAE!"
+  },
+  {
+    "objectID": "blog/posts/2026-03-08-tfl-generation-overview.html",
+    "href": "blog/posts/2026-03-08-tfl-generation-overview.html",
+    "title": "TFL Generation with R: A SAS Programmer’s Overview",
+    "section": "",
+    "text": "In the pharmaceutical industry, everything we do—SDTM mapping, ADaM derivations, and statistical modeling—culminates in the generation of TFLs (Tables, Figures, and Listings). These are the definitive outputs reviewed by medical writers, statisticians, and regulatory agencies.\nIf you are a SAS programmer, you probably have a template PROC REPORT macro that looks like this:\n/* SAS Code: The Classic TFL Macro */\n%let title1 = \"Table 14.1.1: Demographics and Baseline Characteristics\";\n%let title2 = \"Full Analysis Set\";\n\nproc report data=final_adsl split='|' headline headskip missing spacing=2;\n  column page _PB_page1 trt_ord group_ord row_ord indent label (\"Placebo |(N=&n_pbo.)\" stat1) (\"Active |(N=&n_act.)\" stat2);\n  define trt_ord / order noprint;\n  define group_ord / order noprint;\n  define row_ord / order noprint;\n  define indent / display noprint;\n  \n  /* Extremely complex compute blocks to handle bolding and indentation */\n  compute label;\n    if indent=1 then label = \"  \"||strip(label);\n  endcomp;\nrun;\nIt works, but modifying it to handle complex nested headers or dynamic column spanning requires deep expertise in ODS (Output Delivery System) escape characters."
+  },
+  {
+    "objectID": "blog/posts/2026-03-08-tfl-generation-overview.html#the-ultimate-deliverable-tfls",
+    "href": "blog/posts/2026-03-08-tfl-generation-overview.html#the-ultimate-deliverable-tfls",
+    "title": "TFL Generation with R: A SAS Programmer’s Overview",
+    "section": "",
+    "text": "In the pharmaceutical industry, everything we do—SDTM mapping, ADaM derivations, and statistical modeling—culminates in the generation of TFLs (Tables, Figures, and Listings). These are the definitive outputs reviewed by medical writers, statisticians, and regulatory agencies.\nIf you are a SAS programmer, you probably have a template PROC REPORT macro that looks like this:\n/* SAS Code: The Classic TFL Macro */\n%let title1 = \"Table 14.1.1: Demographics and Baseline Characteristics\";\n%let title2 = \"Full Analysis Set\";\n\nproc report data=final_adsl split='|' headline headskip missing spacing=2;\n  column page _PB_page1 trt_ord group_ord row_ord indent label (\"Placebo |(N=&n_pbo.)\" stat1) (\"Active |(N=&n_act.)\" stat2);\n  define trt_ord / order noprint;\n  define group_ord / order noprint;\n  define row_ord / order noprint;\n  define indent / display noprint;\n  \n  /* Extremely complex compute blocks to handle bolding and indentation */\n  compute label;\n    if indent=1 then label = \"  \"||strip(label);\n  endcomp;\nrun;\nIt works, but modifying it to handle complex nested headers or dynamic column spanning requires deep expertise in ODS (Output Delivery System) escape characters."
+  },
+  {
+    "objectID": "blog/posts/2026-03-08-tfl-generation-overview.html#the-r-tfl-ecosystem",
+    "href": "blog/posts/2026-03-08-tfl-generation-overview.html#the-r-tfl-ecosystem",
+    "title": "TFL Generation with R: A SAS Programmer’s Overview",
+    "section": "The R TFL Ecosystem",
+    "text": "The R TFL Ecosystem\nR approaches TFL generation totally differently. Instead of relying on a single, massive procedure like PROC REPORT, R provides specialized packages tailored for specific types of outputs.\n\n1. Tables: {rtables} vs {gt} vs {gtsummary}\nTables are incredibly complex structural objects in clinical trials. They are not just data frames; they have spanning headers (“Active vs Placebo”), footnotes, multiple nested rows (System Organ Class &gt; Preferred Term), and specific alignment rules.\n\n{rtables}: Built by the Pharmaverse community (heavily supported by Roche). It is explicitly designed to replicate the complex, nested trees of clinical trial tables. It is declarative (you define the layout first, then apply the data).\n{gt} (Grammar of Tables): Built by Posit. It is excellent for highly customized, beautiful static tables. It treats tables like ggplot treats charts—building them piece by piece (title, spanners, body, stub, footnotes).\n{gtsummary}: A wrapper package that takes an ADaM dataset and automatically calculates standard summary statistics (mean, SD, n, p-values) and outputs a {gt} or {flextable} object. Perfect for quick Demographic tables.\n\n\n\n2. Figures: {ggplot2}\nWhen it comes to Figures, SAS isn’t even in the same league as R. PROC SGPLOT is highly functional, but R’s {ggplot2} (Grammar of Graphics) is arguably the most powerful data visualization framework on the planet.\nWith {ggplot2}, creating Kaplan-Meier curves, Waterfall plots, and adverse event volcano plots isn’t just possible—it’s intuitive. We will explore {survival} and {survminer} for efficacy plots later in this series.\n\n\n3. Listings: {flextable} and Quarto\nListings are essentially the raw data dumped into a PDF or Word document with pagination.\nIn SAS, this is PROC PRINT or PROC REPORT. In R, you can use packages like {flextable} which export perfectly to Microsoft Word (Docx) with repeating column headers on new pages.\nHowever, the biggest paradigm shift in R is Quarto (the successor to R Markdown). Quarto allows you to generate paginated RTF, PDF, or Word documents dynamically. Instead of creating 50 separate RTF files using ODS, you can knit a single Quarto document that loops through your datasets and generates 50 listings with automatic tables of contents."
+  },
+  {
+    "objectID": "blog/posts/2026-03-08-tfl-generation-overview.html#the-workflow-shift",
+    "href": "blog/posts/2026-03-08-tfl-generation-overview.html#the-workflow-shift",
+    "title": "TFL Generation with R: A SAS Programmer’s Overview",
+    "section": "The Workflow Shift",
+    "text": "The Workflow Shift\nIn SAS: 1. Load dataset. 2. Run PROC SUMMARY to get stats. 3. Run Data step to format stats into strings (\"15 (30.0%)\"). 4. Run PROC TRANSPOSE to put Placebo and Active side-by-side. 5. Run PROC SORT to order the rows correctly. 6. Run PROC REPORT with an ODS RTF wrapper to print.\nIn R (e.g., using {rtables}): 1. Load dataset. 2. Define the tree layout (lyt &lt;- basic_table() %&gt;% split_cols_by(\"ARM\") %&gt;% analyze(\"AGE\")). 3. Build the table (build_table(lyt, adsl)). 4. Export to RTF or PDF.\nIn R, the computation (summary stats) and the rendering (printing the table) happen in a single step.\nNext, we’ll look at real code for building an Adverse Event Summary table using {rtables}!"
+  },
+  {
+    "objectID": "blog/posts/2026-03-22-efficacy-waterfall.html",
+    "href": "blog/posts/2026-03-22-efficacy-waterfall.html",
+    "title": "Efficacy TFLs: Creating Waterfall and Spider Plots for Tumor Response",
+    "section": "",
+    "text": "Survival curves tell us when a patient failed therapy. But in early-phase solid tumor oncology trials (measuring RECIST criteria), we are deeply interested in how much their tumors grew or shrank over time relative to baseline.\nTwo plots dominated this space: The Waterfall Plot (Best Overall Response per patient) and the Spider Plot (Tumor burden trajectory over time).\nGetting these right in SAS PROC SGPLOT requires massive data manipulation to generate sorted dummy variables for the categorical axes. In {ggplot2}, it’s incredibly straightforward."
+  },
+  {
+    "objectID": "blog/posts/2026-03-22-efficacy-waterfall.html#oncology-visualizations",
+    "href": "blog/posts/2026-03-22-efficacy-waterfall.html#oncology-visualizations",
+    "title": "Efficacy TFLs: Creating Waterfall and Spider Plots for Tumor Response",
+    "section": "",
+    "text": "Survival curves tell us when a patient failed therapy. But in early-phase solid tumor oncology trials (measuring RECIST criteria), we are deeply interested in how much their tumors grew or shrank over time relative to baseline.\nTwo plots dominated this space: The Waterfall Plot (Best Overall Response per patient) and the Spider Plot (Tumor burden trajectory over time).\nGetting these right in SAS PROC SGPLOT requires massive data manipulation to generate sorted dummy variables for the categorical axes. In {ggplot2}, it’s incredibly straightforward."
+  },
+  {
+    "objectID": "blog/posts/2026-03-22-efficacy-waterfall.html#the-waterfall-plot",
+    "href": "blog/posts/2026-03-22-efficacy-waterfall.html#the-waterfall-plot",
+    "title": "Efficacy TFLs: Creating Waterfall and Spider Plots for Tumor Response",
+    "section": "The Waterfall Plot",
+    "text": "The Waterfall Plot\nA Waterfall Plot aligns every patient on the X-axis (sorted by their tumor shrinkage) and plots a vertical bar representing their maximum percentage change from baseline in the sum of target lesion diameters.\n\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(forcats)\n\n# Simulated ADTR (Tumor Response) data\nset.seed(42)\nadtr_bor &lt;- data.frame(\n  USUBJID = paste0(\"S-\", 1:40),\n  PCHG = rnorm(40, mean = -10, sd = 30), # % Change from Baseline\n  BOR = sample(c(\"CR\", \"PR\", \"SD\", \"PD\"), 40, replace = TRUE, prob = c(0.1, 0.3, 0.4, 0.2))\n)\n\n# Cap growth at +100% just for visualization scaling (Standard practice)\nadtr_bor &lt;- adtr_bor %&gt;%\n  mutate(PCHG_CAP = if_else(PCHG &gt; 100, 100, PCHG))\n\n# The key step for Waterfall: Reordering the X-axis by the Y-value\n# We use forcats::fct_reorder to sort USUBJID factor levels by PCHG_CAP (descending)\nggplot(adtr_bor, aes(x = fct_reorder(USUBJID, -PCHG_CAP), y = PCHG_CAP, fill = BOR)) +\n  \n  geom_bar(stat = \"identity\", width = 0.8) +\n  \n  # Standard RECIST reference lines \n  # PR boundary: -30%\n  # PD boundary: +20%\n  geom_hline(yintercept = -30, linetype = \"dashed\", color = \"black\") +\n  geom_hline(yintercept = 20, linetype = \"dashed\", color = \"black\") +\n  \n  # Axis modifications\n  scale_y_continuous(breaks = seq(-100, 100, 20), limits = c(-100, 100)) +\n  scale_fill_manual(values = c(\"CR\" = \"#1A85FF\", \"PR\" = \"#D41159\", \"SD\" = \"#FFC20A\", \"PD\" = \"#000000\")) +\n  \n  theme_minimal() +\n  theme(\n    axis.text.x = element_blank(), # Hide individual subject IDs\n    axis.ticks.x = element_blank(),\n    panel.grid.major.x = element_blank()\n  ) +\n  labs(\n    title = \"Best Overall Response (Waterfall Plot)\",\n    x = \"Individual Subjects\",\n    y = \"Maximum % Change in Sum of Lesions from Baseline\",\n    fill = \"Best Response\"\n  )\n\n\n\n\n\n\n\n\nThe trick here is fct_reorder(). In SAS, sorting a categorical axis by a numeric value requires creating an artificial order variable, sorting the dataset, and enforcing X-axis tick ordering. R handles it as an aesthetic mapping."
+  },
+  {
+    "objectID": "blog/posts/2026-03-22-efficacy-waterfall.html#the-spider-plot",
+    "href": "blog/posts/2026-03-22-efficacy-waterfall.html#the-spider-plot",
+    "title": "Efficacy TFLs: Creating Waterfall and Spider Plots for Tumor Response",
+    "section": "The Spider Plot",
+    "text": "The Spider Plot\nA Spider Plot draws a line for each individual subject, tracking their tumor percent change across study visits.\n\n# Simulated longitudinal ADTR data\nadtr_long &lt;- data.frame(\n  USUBJID = rep(paste0(\"S-\", 1:10), each = 5),\n  AVISITN = rep(seq(0, 24, by = 6), 10),\n  PCHG = runif(50, -60, 40)\n) %&gt;%\n  # Force baseline to 0\n  mutate(PCHG = if_else(AVISITN == 0, 0, PCHG))\n\n# Sorting subjects into \"Responders\" vs \"Non-Responders\" just for color coding\nadtr_long &lt;- adtr_long %&gt;%\n  group_by(USUBJID) %&gt;%\n  mutate(MIN_PCHG = min(PCHG)) %&gt;%\n  ungroup() %&gt;%\n  mutate(RespGroup = if_else(MIN_PCHG &lt;= -30, \"Objective Response\", \"No Objective Response\"))\n\n\nggplot(adtr_long, aes(x = AVISITN, y = PCHG, group = USUBJID, color = RespGroup)) +\n  geom_line(size = 0.8, alpha = 0.7) +\n  geom_point(size = 2, alpha = 0.9) +\n  \n  # Standard RECIST reference lines\n  geom_hline(yintercept = -30, linetype = \"dashed\", color = \"black\") +\n  geom_hline(yintercept = 20, linetype = \"dashed\", color = \"black\") +\n  \n  scale_color_manual(values = c(\"Objective Response\" = \"#1A85FF\", \"No Objective Response\" = \"#D41159\")) +\n  \n  theme_bw() +\n  labs(\n    title = \"Longitudinal Tumor Burden (Spider Plot)\",\n    x = \"Study Visit (Weeks)\",\n    y = \"% Change in Sum of Lesions from Baseline\",\n    color = \"Response Status\"\n  )\n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead.\n\n\n\n\n\n\n\n\n\nWith ggplot2, the group = USUBJID mapping instinctively knows to draw a unique, connected line for each subject across the discrete time points (AVISITN), ensuring zero “jump” lines between data points.\nWith both SAS and R now capable of creating these visualizations, the critical difference is sheer speed of development. Once your ggplot2 syntax is locked in, R produces these complex oncology metrics significantly faster and with less code complexity than traditional SAS macros.\nNext up, we wrap up the TFL category by exploring Data Listings using Quarto!"
+  },
+  {
+    "objectID": "blog/posts/2026-02-08-handling-missing-data.html",
+    "href": "blog/posts/2026-02-08-handling-missing-data.html",
+    "title": "Handling Missing Data: How R Does It Differently Than SAS",
+    "section": "",
+    "text": "If there’s one thing that initially frustrates SAS programmers transitioning to R, it’s missing data.\nIn SAS, missing numeric data is denoted by a period (.) and missing character data is denoted by a blank (\"\"). It’s simple, it’s consistent across datasets, and SAS procedures are built to politely ignore them.\n/* SAS Code */\ndata example;\n  x = 10;\n  y = .;\n  total = sum(x, y); /* total evaluates to 10 */\n  mean_val = mean(x, y); /* mean evaluates to 10 */\nrun;\nIf you run this in SAS, total is 10 and mean_val is 10. SAS assumes you want it to ignore the missing value and proceed with what it has."
+  },
+  {
+    "objectID": "blog/posts/2026-02-08-handling-missing-data.html#the-missing-data-shock",
+    "href": "blog/posts/2026-02-08-handling-missing-data.html#the-missing-data-shock",
+    "title": "Handling Missing Data: How R Does It Differently Than SAS",
+    "section": "",
+    "text": "If there’s one thing that initially frustrates SAS programmers transitioning to R, it’s missing data.\nIn SAS, missing numeric data is denoted by a period (.) and missing character data is denoted by a blank (\"\"). It’s simple, it’s consistent across datasets, and SAS procedures are built to politely ignore them.\n/* SAS Code */\ndata example;\n  x = 10;\n  y = .;\n  total = sum(x, y); /* total evaluates to 10 */\n  mean_val = mean(x, y); /* mean evaluates to 10 */\nrun;\nIf you run this in SAS, total is 10 and mean_val is 10. SAS assumes you want it to ignore the missing value and proceed with what it has."
+  },
+  {
+    "objectID": "blog/posts/2026-02-08-handling-missing-data.html#welcome-to-r-the-infection-of-na",
+    "href": "blog/posts/2026-02-08-handling-missing-data.html#welcome-to-r-the-infection-of-na",
+    "title": "Handling Missing Data: How R Does It Differently Than SAS",
+    "section": "Welcome to R: The Infection of NA",
+    "text": "Welcome to R: The Infection of NA\nIn R, missing data is denoted by NA (Not Available). And unlike SAS, R operates under the philosophy that missing data is infectious. If you don’t know part of an equation, you logically cannot know the result.\n\n# R Code\nx &lt;- 10\ny &lt;- NA\n\n# Basic arithmetic\ntotal &lt;- sum(x, y) \nmean_val &lt;- mean(c(x, y))\n\nprint(total)\n\n[1] NA\n\n# [1] NA\nprint(mean_val)\n\n[1] NA\n\n# [1] NA\n\nR refuses to guess. If you ask it for the sum of 10 and an unknown number, it sensibly concludes the answer is unknown.\n\nThe Fix: na.rm = TRUE\nTo make R behave somewhat like SAS, you simply have to instruct it to “remove NAs” before performing an operation. This is done with the na.rm = TRUE argument inside functions like sum(), mean(), and sd().\n\n# R Code\ntotal_rm      &lt;- sum(x, y, na.rm = TRUE)\nmean_val_rm   &lt;- mean(c(x, y), na.rm = TRUE)\n\nprint(total_rm)\n\n[1] 10\n\n# [1] 10\nprint(mean_val_rm)\n\n[1] 10\n\n# [1] 10\n\nThis is incredibly important when summarizing clinical data. If one patient out of 500 is missing a baseline lab value, your overall baseline mean calculation will fail (NA) unless you explicitly set na.rm = TRUE."
+  },
+  {
+    "objectID": "blog/posts/2026-02-08-handling-missing-data.html#the-great-equality-trap",
+    "href": "blog/posts/2026-02-08-handling-missing-data.html#the-great-equality-trap",
+    "title": "Handling Missing Data: How R Does It Differently Than SAS",
+    "section": "The Great Equality Trap",
+    "text": "The Great Equality Trap\nHere is another massive gotcha for SAS programmers.\nIn SAS, if you want to find all rows where AGE is missing, you do this:\n/* SAS Code */\ndata missing_age;\n  set adsl;\n  if age = .;\nrun;\nIf you try to perfectly translate that to R, you will crash and burn.\n\n# Bad R Code - Do not do this\n# adsl %&gt;% filter(age == NA)\n\nWhy doesn’t this work? In R, the expression NA == NA evaluates to NA. You cannot check if something is equal to “unknown.” So comparing age == NA doesn’t return TRUE or FALSE; it returns a vector of NAs, which causes filter() to fail.\nTo check for missingness in R, you must use the is.na() function.\n\n# Mock ADSL Data\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nadsl &lt;- data.frame(\n  usubjid = 1:5,\n  age = c(45, NA, 60, NA, 30),\n  status = c(\"Completed\", \"Dropout\", \"Completed\", \"Randomized\", \"Dropout\"),\n  weight = c(80, 75, 90, 85, 78)\n)\n\n# Correct R Code\n# To find missing values\n# missing_age &lt;- adsl %&gt;% filter(is.na(age))\n\n# To drop missing values\n# complete_age &lt;- adsl %&gt;% filter(!is.na(age))\n# or using tidyr\n# complete_age &lt;- adsl %&gt;% drop_na(age)"
+  },
+  {
+    "objectID": "blog/posts/2026-02-08-handling-missing-data.html#creating-missing-data",
+    "href": "blog/posts/2026-02-08-handling-missing-data.html#creating-missing-data",
+    "title": "Handling Missing Data: How R Does It Differently Than SAS",
+    "section": "Creating Missing Data",
+    "text": "Creating Missing Data\nIn SAS, you might conditionally wipe out a value like this:\n/* SAS Code */\nif (status = 'Dropout') then weight = .;\nIn R, we typically use {dplyr}’s mutate() and ifelse() or if_else() or case_when().\n\n# R Code\n# adsl &lt;- adsl %&gt;%\n#  mutate(weight = if_else(status == \"Dropout\", NA_real_, weight))\n\nWait, what is NA_real_?\nR is a strictly typed language. Under the hood, standard NA is a logical vector. When you are replacing numeric values (reals), {dplyr} functions like if_else() (which are stricter than base R’s ifelse()) require the replacement value to be of the exact same type as the original column. Thus, you use NA_real_ for double precision floating-point numbers, NA_integer_ for whole numbers, and NA_character_ for text."
+  },
+  {
+    "objectID": "blog/posts/2026-02-08-handling-missing-data.html#final-thoughts",
+    "href": "blog/posts/2026-02-08-handling-missing-data.html#final-thoughts",
+    "title": "Handling Missing Data: How R Does It Differently Than SAS",
+    "section": "Final Thoughts",
+    "text": "Final Thoughts\nR’s strict handling of missing data forces you to be deliberate. In clinical reporting, this is a massive advantage! You want to be violently thrown an error if you try to average a column containing hidden missing data, because quietly dropping it could lead to incorrect efficacy results.\nIn the next post, we’ll cover how to replicate SAS’s mighty PROC FORMAT."
+  },
+  {
+    "objectID": "blog/posts/2026-03-15-safety-lab-shifts.html",
+    "href": "blog/posts/2026-03-15-safety-lab-shifts.html",
+    "title": "Safety TFLs: Visualizing Lab Shifts and Vital Sign Trends in R",
+    "section": "",
+    "text": "We spend hours making Laboratory Shift Tables—those massive matrices showing how many subjects went from “Low” at baseline to “High” at Week 12.\nThe problem? Most medical reviewers glance at these 100-page tables and immediately look for a figure instead. Large cross-tabulations are terrible at conveying magnitude. Yes, 5 patients shifted to “High” ALT, but did they barely cross the threshold, or did their liver enzymes spike 10x the Upper Limit of Normal (ULN)?\nIn SAS, creating complex interactive or highly customized graphics (PROC SGPLOT / GTL) is cumbersome. In R, we have the gold standard: {ggplot2}."
+  },
+  {
+    "objectID": "blog/posts/2026-03-15-safety-lab-shifts.html#the-limitations-of-tables",
+    "href": "blog/posts/2026-03-15-safety-lab-shifts.html#the-limitations-of-tables",
+    "title": "Safety TFLs: Visualizing Lab Shifts and Vital Sign Trends in R",
+    "section": "",
+    "text": "We spend hours making Laboratory Shift Tables—those massive matrices showing how many subjects went from “Low” at baseline to “High” at Week 12.\nThe problem? Most medical reviewers glance at these 100-page tables and immediately look for a figure instead. Large cross-tabulations are terrible at conveying magnitude. Yes, 5 patients shifted to “High” ALT, but did they barely cross the threshold, or did their liver enzymes spike 10x the Upper Limit of Normal (ULN)?\nIn SAS, creating complex interactive or highly customized graphics (PROC SGPLOT / GTL) is cumbersome. In R, we have the gold standard: {ggplot2}."
+  },
+  {
+    "objectID": "blog/posts/2026-03-15-safety-lab-shifts.html#building-a-spaghetti-plot-for-vitals",
+    "href": "blog/posts/2026-03-15-safety-lab-shifts.html#building-a-spaghetti-plot-for-vitals",
+    "title": "Safety TFLs: Visualizing Lab Shifts and Vital Sign Trends in R",
+    "section": "Building a Spaghetti Plot for Vitals",
+    "text": "Building a Spaghetti Plot for Vitals\nLet’s map out how a SAS programmer would build a trend plot of Systolic Blood Pressure (SBP) over time for individual patients, overlaid with a mean trend line.\n\nlibrary(dplyr)\nlibrary(ggplot2)\n\n# Simulated Vitals Data\nset.seed(123)\nadvs &lt;- data.frame(\n  USUBJID = rep(c(\"101\", \"102\", \"103\", \"104\", \"105\"), each = 4),\n  TRTA = rep(c(\"Placebo\", \"Active\", \"Placebo\", \"Active\", \"Active\"), each = 4),\n  AVISITN = rep(c(0, 4, 8, 12), times = 5),\n  AVISIT = rep(c(\"Baseline\", \"Week 4\", \"Week 8\", \"Week 12\"), times = 5)\n) %&gt;%\n  mutate(AVAL = round(rnorm(n(), mean = 120, sd = 15))) # Random SBP values\n\n# Ensure AVISIT is ordered correctly as a factor!\nadvs$AVISIT &lt;- factor(advs$AVISIT, levels = c(\"Baseline\", \"Week 4\", \"Week 8\", \"Week 12\"))\n\n\nThe {ggplot2} Pipeline\nIn {ggplot2}, we define the dataset, map the axes (aesthetics or aes()), and then add geometric layers (geom_line(), geom_point()).\n\n# Basic Spaghetti Plot\nggplot(advs, aes(x = AVISIT, y = AVAL, group = USUBJID, color = TRTA)) +\n  geom_line(alpha = 0.5) +  # Faded lines for individual subjects\n  geom_point(alpha = 0.5) + # Faded points\n  \n  # Overlay a LOESS smoothing curve (overall trend) grouping by TRTA\n  geom_smooth(aes(group = TRTA), method = \"loess\", se = FALSE, size = 1.5) +\n  \n  # Clinical Formatting\n  theme_minimal() +\n  labs(\n    title = \"Systolic Blood Pressure Trends by Treatment Arm\",\n    x = \"Visit\",\n    y = \"Systolic Blood Pressure (mmHg)\",\n    color = \"Treatment Arm\"\n  ) +\n  scale_color_manual(values = c(\"Active\" = \"#0072B2\", \"Placebo\" = \"#D55E00\"))\n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead.\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: pseudoinverse used at 0.985\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: neighborhood radius 2.015\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: reciprocal condition number 1.4885e-17\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: There are other near singularities as well. 4.0602\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: pseudoinverse used at 0.985\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: neighborhood radius 2.015\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: reciprocal condition number 5.2575e-17\n\n\nWarning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,\n: There are other near singularities as well. 4.0602\n\n\n\n\n\n\n\n\n\nIn a single block of code, we created individual patient trajectories while automatically calculating and overlaying a non-parametric smoothing line (geom_smooth) representing the treatment arm average."
+  },
+  {
+    "objectID": "blog/posts/2026-03-15-safety-lab-shifts.html#visualizing-lab-shifts-the-boxplot-approach",
+    "href": "blog/posts/2026-03-15-safety-lab-shifts.html#visualizing-lab-shifts-the-boxplot-approach",
+    "title": "Safety TFLs: Visualizing Lab Shifts and Vital Sign Trends in R",
+    "section": "Visualizing Lab Shifts: The Boxplot Approach",
+    "text": "Visualizing Lab Shifts: The Boxplot Approach\nShift tables lack magnitude. A better approach is to plot the actual lab values at Baseline vs. Maximum Post-Baseline grouped by their Baseline Status.\nLet’s say we have derived baseline grades for Bilirubin (BILI). We want to see the distribution of maximum post-baseline values.\n\n# Simulated Lab Data\nadlb_max &lt;- data.frame(\n  USUBJID = 1:50,\n  TRTA = sample(c(\"Placebo\", \"Active\"), 50, replace = TRUE),\n  BBASE_GRADE = sample(c(\"Normal\", \"High\"), 50, replace = TRUE, prob = c(0.8, 0.2)),\n  AVAL = rnorm(50, mean = 1.5, sd = 0.5) # Max Post-Baseline values\n)\n\nggplot(adlb_max, aes(x = BBASE_GRADE, y = AVAL, fill = TRTA)) +\n  geom_boxplot(outlier.color = \"red\", outlier.size = 2) +\n  \n  # Add a horizontal line representing the Upper Limit of Normal (e.g., 1.2)\n  geom_hline(yintercept = 1.2, linetype = \"dashed\", color = \"black\") +\n  \n  annotate(\"text\", x = 1, y = 1.25, label = \"ULN Threshold\", size = 3, hjust = 0) +\n  \n  theme_bw() +\n  labs(\n    title = \"Max Post-Baseline Bilirubin by Baseline Grade\",\n    subtitle = \"Red points indicate significant outliers\",\n    x = \"Baseline Grade\",\n    y = \"Maximum Post-Baseline Bilirubin (mg/dL)\",\n    fill = \"Treatment Arm\"\n  )\n\n\n\n\n\n\n\n\n\nWhy this beats a table\nIf a reviewer looks at this plot, they can instantly see: 1. Did the “Normal” baseline subjects trend higher in the Active arm? (Look at the median line of the boxplot). 2. Are there any catastrophic outliers? (The red dots). 3. How many people crossed the ULN threshold who were previously normal? (The distribution above the dashed line)."
+  },
+  {
+    "objectID": "blog/posts/2026-03-15-safety-lab-shifts.html#reproducibility-through-code",
+    "href": "blog/posts/2026-03-15-safety-lab-shifts.html#reproducibility-through-code",
+    "title": "Safety TFLs: Visualizing Lab Shifts and Vital Sign Trends in R",
+    "section": "Reproducibility Through Code",
+    "text": "Reproducibility Through Code\nThe greatest benefit of generating figures in R is reproducibility. You can wrap these ggplot objects into generalized functions, stick them into an internal company R package (e.g., KnowledgeCentReggplots), and instantly generate stylized, branded, SAP-approved figures for every study with a single line of code.\nNext up, we dive into Efficacy! We will tackle Survival Analysis and the legendary Kaplan-Meier plot."
+  },
+  {
+    "objectID": "blog/posts/2026-02-12-replicating-formats.html",
+    "href": "blog/posts/2026-02-12-replicating-formats.html",
+    "title": "Replicating SAS Formats and Informats in R (Using Factors and Lookups)",
+    "section": "",
+    "text": "There are few features SAS programmers love more than PROC FORMAT. It allows you to store the underlying raw data (like 1, 2, 3) but display beautiful, human-readable labels (\"Mild\", \"Moderate\", \"Severe\") in all your outputs, without modifying the actual dataset. It’s clean, efficient, and essential for clinical TFLs.\nWhen attempting to do this in R, SAS programmers often try to permanently overwrite the column string with nested conditional logic. “Wait, do I actually have to replace my 1s with ‘Mild’ in the dataframe?”\nThe answer is: Not necessarily! R has robust systems for handling categorical data and lookups that mimic what PROC FORMAT does, but they work quite differently."
+  },
+  {
+    "objectID": "blog/posts/2026-02-12-replicating-formats.html#life-without-proc-format",
+    "href": "blog/posts/2026-02-12-replicating-formats.html#life-without-proc-format",
+    "title": "Replicating SAS Formats and Informats in R (Using Factors and Lookups)",
+    "section": "",
+    "text": "There are few features SAS programmers love more than PROC FORMAT. It allows you to store the underlying raw data (like 1, 2, 3) but display beautiful, human-readable labels (\"Mild\", \"Moderate\", \"Severe\") in all your outputs, without modifying the actual dataset. It’s clean, efficient, and essential for clinical TFLs.\nWhen attempting to do this in R, SAS programmers often try to permanently overwrite the column string with nested conditional logic. “Wait, do I actually have to replace my 1s with ‘Mild’ in the dataframe?”\nThe answer is: Not necessarily! R has robust systems for handling categorical data and lookups that mimic what PROC FORMAT does, but they work quite differently."
+  },
+  {
+    "objectID": "blog/posts/2026-02-12-replicating-formats.html#method-1-factors-the-closest-native-equivalent",
+    "href": "blog/posts/2026-02-12-replicating-formats.html#method-1-factors-the-closest-native-equivalent",
+    "title": "Replicating SAS Formats and Informats in R (Using Factors and Lookups)",
+    "section": "Method 1: Factors (The Closest Native Equivalent)",
+    "text": "Method 1: Factors (The Closest Native Equivalent)\nIn R, a factor is used to store categorical data. It is literally an integer vector with an associated set of character “labels” (or levels). This makes it conceptually very similar to applying a format.\n/* SAS Code */\nproc format;\n  value sev\n    1 = \"Mild\"\n    2 = \"Moderate\"\n    3 = \"Severe\";\nrun;\n\ndata adae;\n  set adae;\n  format aesev sev.;\nrun;\nIn R, we create factors either using base R factor() or the {forcats} package (part of the tidyverse).\n\n# R Code\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(forcats)\n\n# Sample data\nadae &lt;- data.frame(subjid = 1:5, aesev_n = c(1, 3, 2, 2, 1))\n\n# Creating a factor\nadae &lt;- adae %&gt;%\n  mutate(\n    aesev = factor(\n      aesev_n,\n      levels = c(1, 2, 3),\n      labels = c(\"Mild\", \"Moderate\", \"Severe\")\n    )\n  )\n\nprint(adae)\n\n  subjid aesev_n    aesev\n1      1       1     Mild\n2      2       3   Severe\n3      3       2 Moderate\n4      4       2 Moderate\n5      5       1     Mild\n\n\nWhy Factors are Powerful for Clinical Work: 1. Sorting: By default, R sorts characters alphabetically (Mild, Moderate, Severe). But ‘Mild’ shouldn’t come after ‘Severe’. Factors remember the underlying integer order you define in levels. This is critical for TFLs! 2. Missing levels: If an adverse event dataset doesn’t contain any “Severe” events, table(adae$aesev) in R will still show a count of 0 for Severe because R knows it’s a valid possible level. This ensures your tables don’t suddenly drop columns!"
+  },
+  {
+    "objectID": "blog/posts/2026-02-12-replicating-formats.html#method-2-lookup-tables-joins",
+    "href": "blog/posts/2026-02-12-replicating-formats.html#method-2-lookup-tables-joins",
+    "title": "Replicating SAS Formats and Informats in R (Using Factors and Lookups)",
+    "section": "Method 2: Lookup Tables (Joins)",
+    "text": "Method 2: Lookup Tables (Joins)\nIf you are mapping complex text, ICD-10 codes, or MedDRA dictionaries, you shouldn’t hard-code factors. Instead, you create a lookup table (a data frame) and join it. This is similar to creating a format from a dataset in SAS (cntlin).\n/* SAS Code */\nproc sql;\n  create table adae_mapped as\n  select a.*, f.term_text\n  from adae a\n  left join meddra_dict f\n  on a.pt_code = f.pt_code;\nquit;\nIn R, we use {dplyr}’s left_join().\n\n# R Code\n# Dictionary dataset\nmeddra_dict &lt;- data.frame(\n  pt_code = c(1001, 1002, 1003),\n  term_text = c(\"Headache\", \"Nausea\", \"Fatigue\")\n)\n\n# Patient data\nadae &lt;- data.frame(subjid = 1:3, pt_code = c(1002, 1001, 1002))\n\n# Applying the format via left join\nadae_mapped &lt;- adae %&gt;%\n  left_join(meddra_dict, by = \"pt_code\")\n\nprint(adae_mapped)\n\n  subjid pt_code term_text\n1      1    1002    Nausea\n2      2    1001  Headache\n3      3    1002    Nausea\n\n\nThis is the standard approach for merging in decodes (e.g., merging PARAMCD and PARAM)."
+  },
+  {
+    "objectID": "blog/posts/2026-02-12-replicating-formats.html#method-3-named-vectors-the-swiss-army-knife",
+    "href": "blog/posts/2026-02-12-replicating-formats.html#method-3-named-vectors-the-swiss-army-knife",
+    "title": "Replicating SAS Formats and Informats in R (Using Factors and Lookups)",
+    "section": "Method 3: Named Vectors (The Swiss Army Knife)",
+    "text": "Method 3: Named Vectors (The Swiss Army Knife)\nSometimes you just want a quick inline format replacement without building a whole data frame. In SAS, you might use a messy if/else if/else block. In R, you can use a named vector.\nA named vector is like a tiny dictionary where the “names” are your raw values, and the “values” are your formatted labels. You can use R’s subsetting [ operator to replace values quickly.\n\n# Define our \"format\"\nfmt_sex &lt;- c(\"M\" = \"Male\", \"F\" = \"Female\", \"U\" = \"Unknown\")\n\nadsl &lt;- data.frame(subjid = 1:4, sex = c(\"M\", \"F\", \"F\", \"U\"))\n\n# Apply the format by using the raw column to subset the named vector\nadsl$sex_decoded &lt;- unname(fmt_sex[adsl$sex])\n\nprint(adsl)\n\n  subjid sex sex_decoded\n1      1   M        Male\n2      2   F      Female\n3      3   F      Female\n4      4   U     Unknown\n\n\nAlternatively, in a #dplyr pipeline, you can use recode() or case_match().\n\nadsl &lt;- adsl %&gt;%\n  mutate(\n    sex_decoded = case_match(sex, \n      \"M\" ~ \"Male\",\n      \"F\" ~ \"Female\",\n      \"U\" ~ \"Unknown\"\n    )\n  )\n\nWarning: There was 1 warning in `mutate()`.\nℹ In argument: `sex_decoded = case_match(sex, \"M\" ~ \"Male\", \"F\" ~ \"Female\", \"U\"\n  ~ \"Unknown\")`.\nCaused by warning:\n! `case_match()` was deprecated in dplyr 1.2.0.\nℹ Please use `recode_values()` instead."
+  },
+  {
+    "objectID": "blog/posts/2026-02-12-replicating-formats.html#wrapping-up",
+    "href": "blog/posts/2026-02-12-replicating-formats.html#wrapping-up",
+    "title": "Replicating SAS Formats and Informats in R (Using Factors and Lookups)",
+    "section": "Wrapping Up",
+    "text": "Wrapping Up\nR doesn’t give you a direct 1-to-1 substitute for PROC FORMAT. Instead, it forces you to think about what you actually want to achieve: * Need distinct ordering for tables? Use factor(). * Need to merge a dictionary of thousands of terms? Use left_join(). * Need a quick, hard-coded string replacement? Use a named vector or case_match().\nYou are now well-equipped to handle the primary hurdles of moving your data operations from SAS to R. Up next: Building SDTMs directly in R!"
+  },
+  {
+    "objectID": "blog/posts/2026-03-12-safety-ae-tables.html",
+    "href": "blog/posts/2026-03-12-safety-ae-tables.html",
+    "title": "Safety TFLs: Creating Complex Adverse Event (AE) Summary Tables with {rtables}",
+    "section": "",
+    "text": "If you ask any clinical SAS programmer what the most tedious table to code is from scratch, 90% will say: The Adverse Event System Organ Class / Preferred Term Summary.\nLet’s review the requirements for a standard Table 14.3.1.2: 1. Column headers must be Split by Treatment Arm. 2. Column headers must include (N=xx) counts down from the ADSL population. 3. Row headers must list the AEBODSYS (System Organ Class). 4. Beneath AEBODSYS, rows must indent and list the AEDECOD (Preferred Term). 5. The statistics must show n (%) where n is the number of subjects with at least one AE of that type, and % is (n / N) * 100. 6. Rows should ideally sort by frequency (highest to lowest), not alphabetically.\nIn SAS, this requires macro calls inside of macro calls, heavily parameterized PROC SQL joins, and intense PROC REPORT compute blocks.\nLet’s do it in R using {rtables}."
+  },
+  {
+    "objectID": "blog/posts/2026-03-12-safety-ae-tables.html#the-dreaded-ae-summary-table",
+    "href": "blog/posts/2026-03-12-safety-ae-tables.html#the-dreaded-ae-summary-table",
+    "title": "Safety TFLs: Creating Complex Adverse Event (AE) Summary Tables with {rtables}",
+    "section": "",
+    "text": "If you ask any clinical SAS programmer what the most tedious table to code is from scratch, 90% will say: The Adverse Event System Organ Class / Preferred Term Summary.\nLet’s review the requirements for a standard Table 14.3.1.2: 1. Column headers must be Split by Treatment Arm. 2. Column headers must include (N=xx) counts down from the ADSL population. 3. Row headers must list the AEBODSYS (System Organ Class). 4. Beneath AEBODSYS, rows must indent and list the AEDECOD (Preferred Term). 5. The statistics must show n (%) where n is the number of subjects with at least one AE of that type, and % is (n / N) * 100. 6. Rows should ideally sort by frequency (highest to lowest), not alphabetically.\nIn SAS, this requires macro calls inside of macro calls, heavily parameterized PROC SQL joins, and intense PROC REPORT compute blocks.\nLet’s do it in R using {rtables}."
+  },
+  {
+    "objectID": "blog/posts/2026-03-12-safety-ae-tables.html#meet-rtables",
+    "href": "blog/posts/2026-03-12-safety-ae-tables.html#meet-rtables",
+    "title": "Safety TFLs: Creating Complex Adverse Event (AE) Summary Tables with {rtables}",
+    "section": "Meet {rtables}",
+    "text": "Meet {rtables}\nThe {rtables} package operates on a declarative tree structure. You define the Layout first. The Layout is a set of instructions on how the table should look before data is applied.\n\nlibrary(dplyr)\nlibrary(rtables)\n\nWarning: package 'rtables' was built under R version 4.4.3\n\n\nWarning: package 'formatters' was built under R version 4.4.3\n\n# Define a function to calculate incidence (n and %)\ns_incidence &lt;- function(x, .N_col) {\n  # x is a vector of USUBJIDs who had the event\n  # .N_col is the total number of subjects in the column (from ADSL)\n  \n  n &lt;- length(unique(x)) # number of unique subjects\n  pct &lt;- if_else(.N_col == 0, 0, (n / .N_col) * 100)\n  \n  # Return a formatted string\n  in_rows(\n    \"n (%)\" = rcell(c(n, pct), format = \"xx (xx.x%)\")\n  )\n}\n\nWait, what did we just do? We created a tiny function (s_incidence) that {rtables} will call internally every time it needs to populate a cell. rcell() handles the string formatting (no PROC FORMAT or put() needed!)."
+  },
+  {
+    "objectID": "blog/posts/2026-03-12-safety-ae-tables.html#constructing-the-layout",
+    "href": "blog/posts/2026-03-12-safety-ae-tables.html#constructing-the-layout",
+    "title": "Safety TFLs: Creating Complex Adverse Event (AE) Summary Tables with {rtables}",
+    "section": "Constructing the Layout",
+    "text": "Constructing the Layout\nNow, we dictate the structure of the table.\n\n# Define the Layout\nlyt &lt;- basic_table() %&gt;%\n  # 1. Split columns by Treatment Arm\n  split_cols_by(\"TRTA\") %&gt;%\n  \n  # 2. Add the column (N=xx) counts based on the ADSL population\n  add_colcounts() %&gt;%\n  \n  # 3. Analyze the overall subjects with any AE at the top\n  analyze_num_patients(\"USUBJID\", .stats = \"unique\", .labels = c(unique = \"Any Adverse Event\")) %&gt;%\n  \n  # 4. Split rows by System Organ Class (AEBODSYS)\n  split_rows_by(\"AEBODSYS\", split_fun = drop_split_levels) %&gt;% # Drops empty SOCs\n  summarize_row_groups() %&gt;% # Automatically sums up the SOC level\n  \n  # 5. Nested within SOC, analyze the Preferred Term (AEDECOD)\n  analyze(\"AEDECOD\", afun = s_incidence) # Calls our custom function!\n\nThis layout code is remarkable. It reads exactly like the SAP mockup shell. - “Split columns by Arm” - “Add N counts” - “Analyze total patients” - “Split rows by SOC” - “Analyze Preferred Term”"
+  },
+  {
+    "objectID": "blog/posts/2026-03-12-safety-ae-tables.html#building-and-printing-the-table",
+    "href": "blog/posts/2026-03-12-safety-ae-tables.html#building-and-printing-the-table",
+    "title": "Safety TFLs: Creating Complex Adverse Event (AE) Summary Tables with {rtables}",
+    "section": "Building and Printing the Table",
+    "text": "Building and Printing the Table\nOnce the layout (lyt) is defined, we apply the ADAE data and the ADSL data to it.\n\n# Mock Datasets (Pre-filtered for TEAEs only!)\nadsl &lt;- source_adsl # Must contain USUBJID and TRTA\nadae &lt;- source_adae # Must contain USUBJID, TRTA, AEBODSYS, AEDECOD\n\n# Build the final table object\nfinal_ae_table &lt;- build_table(lyt, df = adae, alt_counts_df = adsl)\n\n# Print it to the console (or export to RTF/PDF)\nprint(final_ae_table)\n\nBy providing alt_counts_df = adsl, {rtables} knows exactly where to pull the column denominators (.N_col) for its percentage calculations, without you having to pre-merge ADSL totals into ADAE manually!"
+  },
+  {
+    "objectID": "blog/posts/2026-03-12-safety-ae-tables.html#the-advantages",
+    "href": "blog/posts/2026-03-12-safety-ae-tables.html#the-advantages",
+    "title": "Safety TFLs: Creating Complex Adverse Event (AE) Summary Tables with {rtables}",
+    "section": "The Advantages",
+    "text": "The Advantages\nIf a Medical Writer comes to you and asks, “Can we add a column spanning header above the Treatment Arms that says ‘Study Phase IIb’?”\nIn SAS, you might have to rewrite your PROC REPORT column definitions entirely. In {rtables}, you just add split_cols_by_multivar() or change the layout specification before the build_table step.\nBecause {rtables} separates the Layout from the Data Frame, your clinical reporting pipelines become robust, modular, and instantly adaptable to mid-study SAP changes.\nIn our next post, we will look at how to visualize Safety Data—specifically Lab Shifts—using {ggplot2}!"
+  },
+  {
+    "objectID": "blog/posts/2024-05-20-dplyr-pro.html",
+    "href": "blog/posts/2024-05-20-dplyr-pro.html",
+    "title": "Using dplyr Like a Pro",
+    "section": "",
+    "text": "Welcome to this article on Using dplyr Like a Pro.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-20-dplyr-pro.html#overview",
+    "href": "blog/posts/2024-05-20-dplyr-pro.html#overview",
+    "title": "Using dplyr Like a Pro",
+    "section": "",
+    "text": "Welcome to this article on Using dplyr Like a Pro.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-01-gt-tables.html",
+    "href": "blog/posts/2024-06-01-gt-tables.html",
+    "title": "Beautiful Clinical Tables with gt",
+    "section": "",
+    "text": "Welcome to this article on Beautiful Clinical Tables with gt.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-01-gt-tables.html#overview",
+    "href": "blog/posts/2024-06-01-gt-tables.html#overview",
+    "title": "Beautiful Clinical Tables with gt",
+    "section": "",
+    "text": "Welcome to this article on Beautiful Clinical Tables with gt.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2026-02-01-sas-to-r-mindset.html",
+    "href": "blog/posts/2026-02-01-sas-to-r-mindset.html",
+    "title": "The Mindset Shift: Moving from SAS Data Steps to {dplyr}",
+    "section": "",
+    "text": "If you’ve spent the better part of your career looking at the familiar blueness of the SAS environment, typing out data ... set ... run;, transitioning to R can feel a bit like learning to write with your non-dominant hand. The concepts are all there, but the muscle memory is completely wrong.\nThe biggest hurdle for experienced SAS programmers isn’t syntax—it’s mindset.\nIn SAS, the Data Step processes data row-by-row (the Program Data Vector or PDV). We naturally think about “retaining” variables, “first.var” and “last.var”, and looping sequentially. In R, particularly when using the {dplyr} package (part of the {tidyverse}), we need to think in terms of vectors and pipelines.\nLet’s explore this mindset shift."
+  },
+  {
+    "objectID": "blog/posts/2026-02-01-sas-to-r-mindset.html#the-great-migration",
+    "href": "blog/posts/2026-02-01-sas-to-r-mindset.html#the-great-migration",
+    "title": "The Mindset Shift: Moving from SAS Data Steps to {dplyr}",
+    "section": "",
+    "text": "If you’ve spent the better part of your career looking at the familiar blueness of the SAS environment, typing out data ... set ... run;, transitioning to R can feel a bit like learning to write with your non-dominant hand. The concepts are all there, but the muscle memory is completely wrong.\nThe biggest hurdle for experienced SAS programmers isn’t syntax—it’s mindset.\nIn SAS, the Data Step processes data row-by-row (the Program Data Vector or PDV). We naturally think about “retaining” variables, “first.var” and “last.var”, and looping sequentially. In R, particularly when using the {dplyr} package (part of the {tidyverse}), we need to think in terms of vectors and pipelines.\nLet’s explore this mindset shift."
+  },
+  {
+    "objectID": "blog/posts/2026-02-01-sas-to-r-mindset.html#the-classic-sas-data-step",
+    "href": "blog/posts/2026-02-01-sas-to-r-mindset.html#the-classic-sas-data-step",
+    "title": "The Mindset Shift: Moving from SAS Data Steps to {dplyr}",
+    "section": "The classic SAS Data Step",
+    "text": "The classic SAS Data Step\nConsider a common scenario: we have a dataset of patient weights baseline and week 12, and we want to calculate the percentage change from baseline, but only for patients in the active treatment arm.\nIn SAS, you might write something like this:\n/* SAS Code */\ndata weight_change;\n  set adsl;\n  where arm = 'Active';\n  pct_change = ((weight_w12 - weight_bl) / weight_bl) * 100;\n  \n  if pct_change &gt;= 5 then flag = 'Y';\n  else flag = 'N';\nrun;\nIt’s beautiful in its simplicity. You read a record, filter it, calculate a new variable, assign a flag, and output."
+  },
+  {
+    "objectID": "blog/posts/2026-02-01-sas-to-r-mindset.html#the-r-way-enter-the-pipeline",
+    "href": "blog/posts/2026-02-01-sas-to-r-mindset.html#the-r-way-enter-the-pipeline",
+    "title": "The Mindset Shift: Moving from SAS Data Steps to {dplyr}",
+    "section": "The R Way: Enter the Pipeline",
+    "text": "The R Way: Enter the Pipeline\nIn R, the {dplyr} package provides a set of “verbs” that allow you to manipulate data frames elegantly. Instead of a Data Step block, we use the pipe operator (%&gt;% or |&gt;) to pass data from one verb to the next.\nHere is the exact same logic written in R:\n\nlibrary(dplyr)\n\n# Mock ADSL Data\nadsl &lt;- data.frame(\n  usubjid = c(\"001\", \"002\", \"003\", \"004\"),\n  arm = c(\"Active\", \"Placebo\", \"Active\", \"Placebo\"),\n  weight_bl = c(80, 75, 90, 85),\n  weight_w12 = c(78, 76, 82, 85)\n)\n\n# R Code using dplyr\nweight_change &lt;- adsl %&gt;%\n  filter(arm == \"Active\") %&gt;%\n  mutate(\n    pct_change = ((weight_w12 - weight_bl) / weight_bl) * 100,\n    flag = if_else(pct_change &gt;= 5, \"Y\", \"N\")\n  )\n\n\nBreaking It Down\nNotice the shift in thinking: 1. The Pipe (%&gt;%): Think of this as “and then.” Take adsl, and then filter it, and then mutate it. 2. filter(): This is your where statement. It operates on the whole dataset at once, returning only rows where the condition is TRUE. 3. mutate(): This creates new columns or modifies existing ones. 4. Vectorized Logic: The if_else() function applies the condition to the entire column (pct_change) simultaneously, rather than checking it row-by-row."
+  },
+  {
+    "objectID": "blog/posts/2026-02-01-sas-to-r-mindset.html#what-about-first.-and-last.-processing",
+    "href": "blog/posts/2026-02-01-sas-to-r-mindset.html#what-about-first.-and-last.-processing",
+    "title": "The Mindset Shift: Moving from SAS Data Steps to {dplyr}",
+    "section": "What about FIRST. and LAST. processing?",
+    "text": "What about FIRST. and LAST. processing?\nThis is where SAS programmers often panic. If there’s no PDV sequentially reading rows, how do we identify the first or last record of a patient?\nIn R, we solve this with grouping.\nLet’s say we want to find the maximum weight for each subject across multiple visits.\n/* SAS Code */\nproc sort data=weights;\n  by usubjid descending weight;\nrun;\n\ndata max_weight;\n  set weights;\n  by usubjid;\n  if first.usubjid;\nrun;\nIn R, {dplyr} does this incredibly cleanly:\n\n# Mock Weights Data\nweights &lt;- data.frame(\n  usubjid = c(\"001\", \"001\", \"002\", \"002\", \"002\"),\n  visit = c(\"Baseline\", \"Week 4\", \"Baseline\", \"Week 4\", \"Week 8\"),\n  weight = c(80, 81, 75, 74, 73)\n)\n\n# R Code using dplyr\nmax_weight &lt;- weights %&gt;%\n  group_by(usubjid) %&gt;%\n  slice_max(weight, n = 1, with_ties = FALSE) %&gt;%\n  ungroup()\n\nOr similarly, just arranging and slicing:\n\nmax_weight2 &lt;- weights %&gt;%\n  arrange(usubjid, desc(weight)) %&gt;%\n  group_by(usubjid) %&gt;%\n  slice(1) %&gt;%\n  ungroup()\n\nBy grouping the data frame, {dplyr} verbs suddenly operate within those groups. We don’t need to manually check first.usubjid—we just tell R to grab the first row (slice(1)) or the maximum value (slice_max) for each group."
+  },
+  {
+    "objectID": "blog/posts/2026-02-01-sas-to-r-mindset.html#final-thoughts",
+    "href": "blog/posts/2026-02-01-sas-to-r-mindset.html#final-thoughts",
+    "title": "The Mindset Shift: Moving from SAS Data Steps to {dplyr}",
+    "section": "Final Thoughts",
+    "text": "Final Thoughts\nThe transition from SAS to R is really a shift from row-wise iteration to vectorized operations on columns. Once you stop trying to force R to behave like a SAS Data Step and embrace the {dplyr} pipeline, your code will become more readable, more efficient, and surprisingly fun to write.\nReady to make the jump? In the next posts, we’ll cover how to replace trusty PROCs like FREQ and MEANS. Stay tuned!"
   },
   {
     "objectID": "blog/posts/2024-05-22-purrr-basics.html",
@@ -618,14 +1003,14 @@
     "href": "index.html",
     "title": "Bridge the Gap: SAS to R",
     "section": "",
-    "text": "The definitive guide for clinical programmers transitioning to modern data science.\n  \n    Start the Migration\n    New to Programming?\n::::::::::::"
+    "text": "The definitive guide for clinical programmers transitioning to modern data science.\n  \n  \n    Start the Migration\n    New to Programming?\n  \n\n\n\n\n🎯 Select Your Path\n\n\nExplore our curated learning tracks designed for eveRy level.\n\n\n\n\n\n ### SAS to R Migration Master the mapping of SAS procedures to R functions, specifically tailored for clinical standards.\nStart Learning\n\n\n ### R-Hub Your centralized library for eveRything R. From basic syntax to advanced validation.\nR you ready!\n\n\n ### The Shinyverse Build high-impact interactive clinical dashboards and validated analytical applications.\nExplore Shiny\n\n\n\n\n ### SME Help Facing a complex migration hurdle? Our Subject Matter Experts are available for immediate rescue.\nGet Rescue\n\n\n ### Expert Blog Deep dives into clinical R trends, admiral tutorials, and the latest from the pharmaverse.\nRead Blog\n\n\n\n\n\nQuestions? Let’s Connect\n\n\nHave questions about the migration or want to contribute? Reach out directly.\n\n  Contact Author: Harsh Verma"
   },
   {
     "objectID": "index.html#select-your-path",
     "href": "index.html#select-your-path",
     "title": "Bridge the Gap: SAS to R",
     "section": "🎯 Select Your Path",
-    "text": "🎯 Select Your Path\n\nExplore our curated learning tracks.\n\n\n\n\n\n\n\n SAS to R Migration\nDetailed chapters mapping SAS procedures to R functions, specifically for clinical trials.  Start Learning\n\n\n R-Hub\nR Hub. Your one stop solution to eveRything!  R you ready!\n\n\n The Shinyverse\nBuild interactive clinical dashboards using R Shiny.  Explore Shiny\n\n\n\n\n SME Help\nNeed immediate assistance? Our experts are here.  Get Rescue\n\n\n Blog\nArticles you don’t know you need.  Learn something new"
+    "text": "🎯 Select Your Path\n\nExplore our curated learning tracks.\n\n\n\n\n SAS to R Migration\nDetailed chapters mapping SAS procedures to R functions, specifically for clinical trials.  Start Learning\n\n\n R-Hub\nR Hub. Your one stop solution to eveRything!  R you ready!\n\n\n The Shinyverse\nBuild interactive clinical dashboards using R Shiny.  Explore Shiny\n\n\n\n\n SME Help\nNeed immediate assistance? Our experts are here.  Get Rescue\n\n\n Blog\nArticles you don’t know you need.  Learn something new"
   },
   {
     "objectID": "index.html#quick-access-resources",
@@ -635,32 +1020,228 @@
     "text": "📚 Quick Access Resources\n\n\nFor Clinical Programmers\n\nCDISC in R - Using admiral for ADaM.\nReporting - Creating TF-compliant tables.\nValidation - Ensuring regulatory compliance.\n\n\n\nFor General R Users\n\nR Basics - Syntax and data structures.\nAdvanced Topics - Metaprogramming and packages.\nBlog - Latest updates and tutorials."
   },
   {
-    "objectID": "blog/posts/2024-06-01-gt-tables.html",
-    "href": "blog/posts/2024-06-01-gt-tables.html",
-    "title": "Beautiful Clinical Tables with gt",
+    "objectID": "blog/posts/2026-02-18-validating-sdtm.html",
+    "href": "blog/posts/2026-02-18-validating-sdtm.html",
+    "title": "Validating SDTM Domains Programmatically in R: A New Approach",
     "section": "",
-    "text": "Welcome to this article on Beautiful Clinical Tables with gt.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+    "text": "Every clinical programmer knows the ritual: you build your SDTM domains, you export them to XPT, you load them into Pinnacle 21 Community (or Enterprise), and you pray that the validation report doesn’t generate 500 pages of errors.\nPinnacle 21 is phenomenal, but it functions as a black-box end-of-pipeline check. What if we want to catch structural, data-type, and referential integrity errors while we are building the domains in R?"
   },
   {
-    "objectID": "blog/posts/2024-06-01-gt-tables.html#overview",
-    "href": "blog/posts/2024-06-01-gt-tables.html#overview",
-    "title": "Beautiful Clinical Tables with gt",
+    "objectID": "blog/posts/2026-02-18-validating-sdtm.html#beyond-pinnacle-21",
+    "href": "blog/posts/2026-02-18-validating-sdtm.html#beyond-pinnacle-21",
+    "title": "Validating SDTM Domains Programmatically in R: A New Approach",
     "section": "",
-    "text": "Welcome to this article on Beautiful Clinical Tables with gt.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+    "text": "Every clinical programmer knows the ritual: you build your SDTM domains, you export them to XPT, you load them into Pinnacle 21 Community (or Enterprise), and you pray that the validation report doesn’t generate 500 pages of errors.\nPinnacle 21 is phenomenal, but it functions as a black-box end-of-pipeline check. What if we want to catch structural, data-type, and referential integrity errors while we are building the domains in R?"
   },
   {
-    "objectID": "blog/posts/2024-05-20-dplyr-pro.html",
-    "href": "blog/posts/2024-05-20-dplyr-pro.html",
-    "title": "Using dplyr Like a Pro",
-    "section": "",
-    "text": "Welcome to this article on Using dplyr Like a Pro.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+    "objectID": "blog/posts/2026-02-18-validating-sdtm.html#programmatic-qc-in-r",
+    "href": "blog/posts/2026-02-18-validating-sdtm.html#programmatic-qc-in-r",
+    "title": "Validating SDTM Domains Programmatically in R: A New Approach",
+    "section": "Programmatic QC in R",
+    "text": "Programmatic QC in R\nBecause R is an interactive, memory-based language, we can run validation suites directly against our data frames before we ever write them to disk. Several packages in the open-source clinical R community (like {pointblank} or {validate}) allow us to define rule sets.\n\nSetting Up Rules with {validate}\nLet’s look at how we might validate the DM domain using the {validate} package.\n\nlibrary(dplyr)\nlibrary(validate)\n\nWarning: package 'validate' was built under R version 4.4.3\n\n# Our theoretical DM domain\ndm_target &lt;- data.frame(\n  STUDYID = c(\"ABC\", \"ABC\", \"ABC\"),\n  DOMAIN = c(\"DM\", \"DM\", \"AE\"), # Intentional error here\n  USUBJID = c(\"ABC-01\", \"ABC-02\", \"ABC-01\"), # Intentional duplicate\n  AGE = c(45, -5, 60), # Intentional negative age\n  SEX = c(\"M\", \"F\", \"UNKNOWN\") # Intentional non-standard codelist\n)\n\n# Define CDISC IG rules\nrules &lt;- validator(\n  check_domain = DOMAIN == \"DM\",\n  check_unique = is_unique(USUBJID),\n  check_age_positive = AGE &gt;= 0 & AGE &lt;= 120,\n  check_sex_codelist = SEX %in% c(\"M\", \"F\", \"U\")\n)\n\n# Run the validation\nqc_results &lt;- confront(dm_target, rules)\nsummary(qc_results)\n\n                name items passes fails nNA error warning\n1       check_domain     3      2     1   0 FALSE   FALSE\n2       check_unique     3      1     2   0 FALSE   FALSE\n3 check_age_positive     3      2     1   0 FALSE   FALSE\n4 check_sex_codelist     3      2     1   0 FALSE   FALSE\n                              expression\n1                         DOMAIN == \"DM\"\n2                     is_unique(USUBJID)\n3 AGE - 0 &gt;= -1e-08 & AGE - 120 &lt;= 1e-08\n4             SEX %vin% c(\"M\", \"F\", \"U\")\n\n\nLook at how cleanly that outputs! Instead of scrolling through logs or waiting for Pinnacle 21, summary(qc_results) immediately shows us: - check_domain: Fails (one row has “AE”) - check_unique: Fails (we have duplicate USUBJIDs) - check_age_positive: Fails (we have an age of -5) - check_sex_codelist: Fails (“UNKNOWN” is not standard “U”)\n\n\nExtracting the Failures\nYou can easily extract the exact rows that failed to investigate them.\n\n# Extract rows that failed the age check\nviolating(dm_target, qc_results[3]) \n\n  STUDYID DOMAIN USUBJID AGE SEX\n2     ABC     DM  ABC-02  -5   F"
   },
   {
-    "objectID": "blog/posts/2024-05-20-dplyr-pro.html#overview",
-    "href": "blog/posts/2024-05-20-dplyr-pro.html#overview",
-    "title": "Using dplyr Like a Pro",
+    "objectID": "blog/posts/2026-02-18-validating-sdtm.html#cross-domain-validation",
+    "href": "blog/posts/2026-02-18-validating-sdtm.html#cross-domain-validation",
+    "title": "Validating SDTM Domains Programmatically in R: A New Approach",
+    "section": "Cross-Domain Validation",
+    "text": "Cross-Domain Validation\nPinnacle 21 often flags issues where an Adverse Event (USUBJID in AE) does not exist in the Demographics domain (DM). We can proactively check referential integrity using {dplyr} anti-joins.\n\n# AE Domain\nae_domain &lt;- data.frame(\n  USUBJID = c(\"ABC-01\", \"ABC-02\", \"ABC-99\"), # ABC-99 is not in DM!\n  AETERM = c(\"HEADACHE\", \"NAUSEA\", \"FATIGUE\")\n)\n\n# Find subjects in AE that are missing from DM\nmissing_from_dm &lt;- ae_domain %&gt;%\n  anti_join(dm_target, by = \"USUBJID\")\n\nprint(missing_from_dm)\n\n  USUBJID  AETERM\n1  ABC-99 FATIGUE\n\n\nIn SAS, this requires a SQL query or a merged data step with IN= variables. In R, anti_join() performs this exact check in one readable line of code."
+  },
+  {
+    "objectID": "blog/posts/2026-02-18-validating-sdtm.html#the-future-sdtmchecks",
+    "href": "blog/posts/2026-02-18-validating-sdtm.html#the-future-sdtmchecks",
+    "title": "Validating SDTM Domains Programmatically in R: A New Approach",
+    "section": "The Future: {sdtmchecks}",
+    "text": "The Future: {sdtmchecks}\nThe pharmaverse community is actively building packages like {sdtmchecks} specifically designed to run CDISC-specific data quality checks natively in R.\nBy integrating these tools into your development pipeline, your code becomes self-testing. This drastically reduces the back-and-forth iteration required when solely relying on external validation engines.\nNext up, we’ll move beyond SDTM and look into building analysis datasets (ADaMs) using the powerful {admiral} package!"
+  },
+  {
+    "objectID": "blog/posts/2026-02-05-translating-freq-means.html",
+    "href": "blog/posts/2026-02-05-translating-freq-means.html",
+    "title": "Translating PROC FREQ and PROC MEANS into R: A Practical Guide",
     "section": "",
-    "text": "Welcome to this article on Using dplyr Like a Pro.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+    "text": "If you write SAS code for clinical trials, you likely type PROC FREQ and PROC MEANS in your sleep. These two procedures form the backbone of exploratory data analysis, data checking, and baseline characteristic tables.\nWhen migrating to R, SAS programmers inevitably ask: “What’s the R equivalent of PROC MEANS?”\nThe good news? The R ecosystem (specifically the {tidyverse}) provides tools that are just as powerful, but vastly more flexible for integration into downstream operations.\nLet’s break down how to handle tabulations and summary statistics in R."
+  },
+  {
+    "objectID": "blog/posts/2026-02-05-translating-freq-means.html#the-bread-and-butter-of-clinical-reporting",
+    "href": "blog/posts/2026-02-05-translating-freq-means.html#the-bread-and-butter-of-clinical-reporting",
+    "title": "Translating PROC FREQ and PROC MEANS into R: A Practical Guide",
+    "section": "",
+    "text": "If you write SAS code for clinical trials, you likely type PROC FREQ and PROC MEANS in your sleep. These two procedures form the backbone of exploratory data analysis, data checking, and baseline characteristic tables.\nWhen migrating to R, SAS programmers inevitably ask: “What’s the R equivalent of PROC MEANS?”\nThe good news? The R ecosystem (specifically the {tidyverse}) provides tools that are just as powerful, but vastly more flexible for integration into downstream operations.\nLet’s break down how to handle tabulations and summary statistics in R."
+  },
+  {
+    "objectID": "blog/posts/2026-02-05-translating-freq-means.html#replacing-proc-freq",
+    "href": "blog/posts/2026-02-05-translating-freq-means.html#replacing-proc-freq",
+    "title": "Translating PROC FREQ and PROC MEANS into R: A Practical Guide",
+    "section": "Replacing PROC FREQ",
+    "text": "Replacing PROC FREQ\nLet’s look at a standard frequency table for adverse event severity (AETOXGR).\n/* SAS Code: PROC FREQ */\nproc freq data=adae;\n  tables aetoxgr / missing;\nrun;\n\nThe Base R Way\nIn Base R, you have the table() function, which is functional but lacks the modern structure we usually want.\n\n# Mock ADAE Data\nadae &lt;- data.frame(\n  subjid = 1:50,\n  trta = sample(c(\"Placebo\", \"Active\"), 50, replace = TRUE),\n  aetoxgr = sample(c(\"MILD\", \"MODERATE\", \"SEVERE\"), 50, replace = TRUE)\n)\n\n# Base R\ntable(adae$aetoxgr, useNA = \"always\")\n\n\n    MILD MODERATE   SEVERE     &lt;NA&gt; \n      23       14       13        0 \n\n\nUsing {dplyr}, the replacement is the count() function. It’s elegant and returns a data frame (which SAS users appreciate, given that PROC FREQ requires an ods output statement to capture the results!).\n\nlibrary(dplyr)\n\n# dplyr equivalent\nadae %&gt;%\n  count(aetoxgr)\n\n   aetoxgr  n\n1     MILD 23\n2 MODERATE 14\n3   SEVERE 13\n\n\nNeed percentages like SAS provides natively? Combine count() with a simple mutate():\n\nadae %&gt;%\n  count(aetoxgr) %&gt;%\n  mutate(percent = (n / sum(n)) * 100)\n\n   aetoxgr  n percent\n1     MILD 23      46\n2 MODERATE 14      28\n3   SEVERE 13      26\n\n\n\n\nCross-Tabulations\nSAS:\nproc freq data=adae;\n  tables trta * aetoxgr;\nrun;\nR {dplyr} + {tidyr}:\n\nlibrary(tidyr)\n\nadae %&gt;%\n  count(trta, aetoxgr) %&gt;%\n  pivot_wider(names_from = aetoxgr, values_from = n, values_fill = 0)\n\n# A tibble: 2 × 4\n  trta     MILD MODERATE SEVERE\n  &lt;chr&gt;   &lt;int&gt;    &lt;int&gt;  &lt;int&gt;\n1 Active     12        7      7\n2 Placebo    11        7      6\n\n\nNotice how pivot_wider() reshapes the data frame exactly the way you need it for reporting—no PROC TRANSPOSE required!"
+  },
+  {
+    "objectID": "blog/posts/2026-02-05-translating-freq-means.html#replacing-proc-means",
+    "href": "blog/posts/2026-02-05-translating-freq-means.html#replacing-proc-means",
+    "title": "Translating PROC FREQ and PROC MEANS into R: A Practical Guide",
+    "section": "Replacing PROC MEANS",
+    "text": "Replacing PROC MEANS\nPROC MEANS (or its twin, PROC SUMMARY) is used to calculate N, mean, standard deviation, median, min, and max.\n/* SAS Code: PROC MEANS */\nproc means data=advs n mean std median min max;\n  class paramcd;\n  var aval;\nrun;\n\nThe Tidyverse Way: group_by() + summarize()\nIn R, calculating summary statistics is a two-step pipeline: group the data, then summarize it.\n\n# Mock ADVS Data\nadvs &lt;- data.frame(\n  subjid = rep(1:10, each = 2),\n  paramcd = rep(c(\"SYSBP\", \"DIABP\"), times = 10),\n  aval = c(rnorm(10, 120, 10), rnorm(10, 80, 5))\n)\n\n# dplyr equivalent\nadvs %&gt;%\n  group_by(paramcd) %&gt;%\n  summarize(\n    n = n(),\n    mean_val = mean(aval, na.rm = TRUE),\n    std_dev = sd(aval, na.rm = TRUE),\n    median_val = median(aval, na.rm = TRUE),\n    min_val = min(aval, na.rm = TRUE),\n    max_val = max(aval, na.rm = TRUE)\n  )\n\n# A tibble: 2 × 7\n  paramcd     n mean_val std_dev median_val min_val max_val\n  &lt;chr&gt;   &lt;int&gt;    &lt;dbl&gt;   &lt;dbl&gt;      &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;\n1 DIABP      10    102.     25.1      101.     72.9    139.\n2 SYSBP      10     99.8    24.5       93.5    74.9    135.\n\n\nTwo key things to note here for SAS transplants: 1. R is unforgiving with missing data. In SAS, mean(1, 2, .) is 1.5. In R, mean(c(1, 2, NA)) is NA. You almost always need to add na.rm = TRUE to your statistical functions to skip missing values explicitly. 2. The result is inherently a tidy, structured dataset. There’s no separate “procedure output window” vs “output dataset.” You just assign the result directly: summary_stats &lt;- advs %&gt;% summarize(...)"
+  },
+  {
+    "objectID": "blog/posts/2026-02-05-translating-freq-means.html#summarizing-multiple-variables-at-once",
+    "href": "blog/posts/2026-02-05-translating-freq-means.html#summarizing-multiple-variables-at-once",
+    "title": "Translating PROC FREQ and PROC MEANS into R: A Practical Guide",
+    "section": "Summarizing Multiple Variables at Once",
+    "text": "Summarizing Multiple Variables at Once\nWhat if you want the mean of multiple variables? SAS makes this easy by listing them in the var statement.\nIn R, {dplyr} provides the incredibly powerful across() function.\n\n# R: Summarizing multiple numeric variables\nadvs %&gt;%\n  group_by(paramcd) %&gt;%\n  summarize(\n    across(\n      .cols = where(is.numeric), \n      .fns = list(\n        mean = ~mean(.x, na.rm = TRUE),\n        sd = ~sd(.x, na.rm = TRUE)\n      ),\n      .names = \"{.col}_{.fn}\"\n    )\n  )\n\n# A tibble: 2 × 5\n  paramcd subjid_mean subjid_sd aval_mean aval_sd\n  &lt;chr&gt;         &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;\n1 DIABP           5.5      3.03     102.     25.1\n2 SYSBP           5.5      3.03      99.8    24.5\n\n\nThis single block of code takes every numeric column in your dataset, calculates the mean and standard deviation, and automatically names the new columns (e.g., aval_mean, aval_sd). It is essentially a programmatic macro built right into the syntax."
+  },
+  {
+    "objectID": "blog/posts/2026-02-05-translating-freq-means.html#conclusion",
+    "href": "blog/posts/2026-02-05-translating-freq-means.html#conclusion",
+    "title": "Translating PROC FREQ and PROC MEANS into R: A Practical Guide",
+    "section": "Conclusion",
+    "text": "Conclusion\nLetting go of PROC FREQ and PROC MEANS feels strange at first. But once you realize that R functions like count() and summarize() instantly return structured data frames instead of static printouts, you’ll wonder how you ever lived without them.\nNext up: The great missing data mismatch. We’ll explore why R’s NA is a totally different beast than SAS’s period (.)."
+  },
+  {
+    "objectID": "blog/posts/2024-06-05-renv-reproducibility.html",
+    "href": "blog/posts/2024-06-05-renv-reproducibility.html",
+    "title": "Why We Use renv (And You Should Too)",
+    "section": "",
+    "text": "Welcome to this article on Why We Use renv (And You Should Too).\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-05-renv-reproducibility.html#overview",
+    "href": "blog/posts/2024-06-05-renv-reproducibility.html#overview",
+    "title": "Why We Use renv (And You Should Too)",
+    "section": "",
+    "text": "Welcome to this article on Why We Use renv (And You Should Too).\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2026-03-28-optimize-r-code.html",
+    "href": "blog/posts/2026-03-28-optimize-r-code.html",
+    "title": "How to Optimize Your R Code: Best Practices in Clinical Trial Analysis",
+    "section": "",
+    "text": "A common complaint from SAS programmers transitioning to R is that R is “too slow.” They write a script to derive baseline flags on a 5-million-record lab dataset, and R grinds to a halt while SAS blazed through it.\nUsually, the problem is not R. The problem is writing SAS code in R.\nR is optimized for vectorized operations. If you attempt to force R to read data sequentially row-by-row (like a SAS data step), it will aggressively punish you with terrible performance.\nLet’s look at the three Golden Rules of optimizing R code for clinical analysis."
+  },
+  {
+    "objectID": "blog/posts/2026-03-28-optimize-r-code.html#the-r-is-slow-myth",
+    "href": "blog/posts/2026-03-28-optimize-r-code.html#the-r-is-slow-myth",
+    "title": "How to Optimize Your R Code: Best Practices in Clinical Trial Analysis",
+    "section": "",
+    "text": "A common complaint from SAS programmers transitioning to R is that R is “too slow.” They write a script to derive baseline flags on a 5-million-record lab dataset, and R grinds to a halt while SAS blazed through it.\nUsually, the problem is not R. The problem is writing SAS code in R.\nR is optimized for vectorized operations. If you attempt to force R to read data sequentially row-by-row (like a SAS data step), it will aggressively punish you with terrible performance.\nLet’s look at the three Golden Rules of optimizing R code for clinical analysis."
+  },
+  {
+    "objectID": "blog/posts/2026-03-28-optimize-r-code.html#stop-using-for-loops",
+    "href": "blog/posts/2026-03-28-optimize-r-code.html#stop-using-for-loops",
+    "title": "How to Optimize Your R Code: Best Practices in Clinical Trial Analysis",
+    "section": "1. Stop Using For-Loops!",
+    "text": "1. Stop Using For-Loops!\nIf you write a for(i in 1:nrow(df)) loop in R to calculate a value, you are doing it wrong.\nIn R, vectors are processed natively in C behind the scenes. When you loop over a vector element by element, R has to evaluate the code environment and dispatch the function on every single iteration. This causes massive overhead.\nBad (Row-by-Row Iteration):\n\n# Example: Categorizing Ages\nadsl$AGEGR1 &lt;- character(nrow(adsl))\n\nfor (i in seq_len(nrow(adsl))) {\n  if (adsl$AGE[i] &lt; 65) {\n    adsl$AGEGR1[i] &lt;- \"&lt;65\"\n  } else {\n    adsl$AGEGR1[i] &lt;- \"&gt;=65\"\n  }\n}\n\nGood (Vectorization):\n\nlibrary(dplyr)\n\n# R applies this completely in parallel (vectorized)\nadsl &lt;- adsl %&gt;%\n  mutate(AGEGR1 = if_else(AGE &lt; 65, \"&lt;65\", \"&gt;=65\"))\n\nThe vectorized {dplyr} code above is not just cleaner; it runs literally thousands of times faster on massive datasets."
+  },
+  {
+    "objectID": "blog/posts/2026-03-28-optimize-r-code.html#memory-management-pre-allocation",
+    "href": "blog/posts/2026-03-28-optimize-r-code.html#memory-management-pre-allocation",
+    "title": "How to Optimize Your R Code: Best Practices in Clinical Trial Analysis",
+    "section": "2. Memory Management: Pre-Allocation",
+    "text": "2. Memory Management: Pre-Allocation\nAnother classic SAS habit is creating empty data sets and iteratively appending (rbind) rows to them inside a macro loop.\nIn SAS, the APPEND procedure writes directly to disk. In R, everything lives in RAM.\nIf you rbind() a new row to a 100,000-row dataframe inside a loop, R responds by copying the entire 100,000-row dataframe in memory, adding one row, and destroying the old copy. It does this 100,000 times! This is why your memory spikes and your computer crashes.\nThe Solution: Use lists. R handles lists incredibly efficiently. If you must iterate, save your results to a list, and bind_rows() only once at the very end.\n\n# 1. Pre-allocate an empty list\nresults_list &lt;- list()\n\n# 2. Assign chunks of data to list elements\nfor (i in 1:100) {\n  # Perform some complex simulation or derivation\n  temp_df &lt;- run_complex_derivation(i)\n  \n  # Store the dataframe in the list (Fast!)\n  results_list[[i]] &lt;- temp_df\n}\n\n# 3. Bind them all together exactly ONE TIME\nfinal_dataset &lt;- bind_rows(results_list)\n\nAlternatively, use the {purrr} package’s map_dfr() to handle this functional iteration natively."
+  },
+  {
+    "objectID": "blog/posts/2026-03-28-optimize-r-code.html#avoid-re-reading-datasets",
+    "href": "blog/posts/2026-03-28-optimize-r-code.html#avoid-re-reading-datasets",
+    "title": "How to Optimize Your R Code: Best Practices in Clinical Trial Analysis",
+    "section": "3. Avoid Re-Reading Datasets",
+    "text": "3. Avoid Re-Reading Datasets\nA common inefficiency in SDTM mapping is reading the raw data multiple times. “I need to create DM, so I’ll read Demog.csv. Now I need to create VS, so I’ll read Demog.csv to get the Treatment Date.”\nBecause R holds objects in memory, you should adopt a modular architecture: 1. Create a 01_load_data.R script that reads all primary CSV/SAS7bDAT files into raw R datasets. 2. Build your domains (DM, VS, AE). 3. Let your scripts reference those objects naturally in the global environment."
+  },
+  {
+    "objectID": "blog/posts/2026-03-28-optimize-r-code.html#when-dplyr-isnt-fast-enough",
+    "href": "blog/posts/2026-03-28-optimize-r-code.html#when-dplyr-isnt-fast-enough",
+    "title": "How to Optimize Your R Code: Best Practices in Clinical Trial Analysis",
+    "section": "When {dplyr} Isn’t Fast Enough",
+    "text": "When {dplyr} Isn’t Fast Enough\nFor 95% of clinical trials, {dplyr} is more than fast enough. The mutate() and filter() verbs are highly optimized.\nHowever, what if you are working with Real World Evidence (RWE) or genomic data? What if your simulated baseline dataset is 50 gigabytes with 200 million rows, and you need to calculate LOCF groupings?\nIn those rare, hyper-massive scenarios, {dplyr} will face bottlenecks. For those cases, we turn to the king of R performance optimization. In the next post, we will explore {data.table}."
+  },
+  {
+    "objectID": "blog/posts/2024-05-25-admiral-intro.html",
+    "href": "blog/posts/2024-05-25-admiral-intro.html",
+    "title": "Admiral Package for Beginners",
+    "section": "",
+    "text": "Welcome to this article on Admiral Package for Beginners.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-05-25-admiral-intro.html#overview",
+    "href": "blog/posts/2024-05-25-admiral-intro.html#overview",
+    "title": "Admiral Package for Beginners",
+    "section": "",
+    "text": "Welcome to this article on Admiral Package for Beginners.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2026-03-25-clinical-listings.html",
+    "href": "blog/posts/2026-03-25-clinical-listings.html",
+    "title": "Clinical Listings in R: Creating Patient Profiles that Rival PROC REPORT",
+    "section": "",
+    "text": "Tables and Figures get all the glory, but Data Listings are often where the heaviest regulatory review actually happens. Medical monitors and FDA reviewers read Appendix 16.2 listings to verify individual patient journeys (Patient Profiles), track serious adverse events line-by-line, and check vital sign out-of-range flags.\nIn SAS, the undisputed king of Data Listings is PROC REPORT outputting via ODS RTF. It handles pagination beautifully and repeats column headers endlessly across hundreds of pages.\nCan R do this natively? Yes, but you must shift your perspective away from Base R print() statements and embrace the world of Quarto and {flextable}."
+  },
+  {
+    "objectID": "blog/posts/2026-03-25-clinical-listings.html#the-unsophisticated-cousin-of-tfls",
+    "href": "blog/posts/2026-03-25-clinical-listings.html#the-unsophisticated-cousin-of-tfls",
+    "title": "Clinical Listings in R: Creating Patient Profiles that Rival PROC REPORT",
+    "section": "",
+    "text": "Tables and Figures get all the glory, but Data Listings are often where the heaviest regulatory review actually happens. Medical monitors and FDA reviewers read Appendix 16.2 listings to verify individual patient journeys (Patient Profiles), track serious adverse events line-by-line, and check vital sign out-of-range flags.\nIn SAS, the undisputed king of Data Listings is PROC REPORT outputting via ODS RTF. It handles pagination beautifully and repeats column headers endlessly across hundreds of pages.\nCan R do this natively? Yes, but you must shift your perspective away from Base R print() statements and embrace the world of Quarto and {flextable}."
+  },
+  {
+    "objectID": "blog/posts/2026-03-25-clinical-listings.html#building-a-listing-with-flextable",
+    "href": "blog/posts/2026-03-25-clinical-listings.html#building-a-listing-with-flextable",
+    "title": "Clinical Listings in R: Creating Patient Profiles that Rival PROC REPORT",
+    "section": "Building a Listing with {flextable}",
+    "text": "Building a Listing with {flextable}\nThe {flextable} package is designed specifically for tabular reporting in Microsoft Word and PowerPoint (and HTML/PDF). Because clinical organizations heavily rely on DOCX/RTF formats for collaborative review, this is the perfect package for listings.\nLet’s build a Lab Abnormalities Listing (Table 16.2.8).\n\nlibrary(dplyr)\nlibrary(flextable)\n\nWarning: package 'flextable' was built under R version 4.4.3\n\nlibrary(officer)\n\nWarning: package 'officer' was built under R version 4.4.3\n\n# Simulated Extreme Lab Values\nadlb_abn &lt;- data.frame(\n  USUBJID = c(\"101\", \"101\", \"102\", \"102\", \"103\"),\n  PARAM = c(\"Alanine Aminotransferase\", \"Aspartate Aminotransferase\", \"Potassium\", \"Sodium\", \"Hemoglobin\"),\n  AVISIT = c(\"Week 4\", \"Week 4\", \"Baseline\", \"Week 12\", \"EOT\"),\n  AVAL = c(120, 85, 2.5, 150, 7.2),\n  ANRIND = c(\"HIGH\", \"HIGH\", \"LOW\", \"HIGH\", \"LOW\"),\n  FLAG = c(\"*\", \"*\", \"*\", \"\", \"**\")\n)\n\n# Create the basic flextable object\nft_listing &lt;- flextable(adlb_abn) %&gt;%\n  \n  # Format the headers\n  set_header_labels(\n    USUBJID = \"Subject ID\",\n    PARAM = \"Laboratory Parameter\",\n    AVISIT = \"Visit\",\n    AVAL = \"Result\\n(Numeric)\",\n    ANRIND = \"Reference\\nIndicator\",\n    FLAG = \"Clinical\\nFlag\"\n  ) %&gt;%\n  \n  # Styling \n  theme_vanilla() %&gt;%\n  align(align = \"center\", part = \"all\") %&gt;%\n  align(j = \"PARAM\", align = \"left\", part = \"body\") %&gt;% # Left align text strings\n  \n  # Emphasize rows with flags\n  bold(i = ~ FLAG == \"**\", j = \"AVAL\") %&gt;%\n  color(i = ~ ANRIND == \"HIGH\", j = \"ANRIND\", color = \"red\") %&gt;%\n  color(i = ~ ANRIND == \"LOW\", j = \"ANRIND\", color = \"blue\") %&gt;%\n  \n  # Merge repeated Subject IDs vertically (like a BREAK variable in PROC REPORT)\n  merge_v(j = \"USUBJID\")\n\n# View the result (in HTML usually)\nft_listing\n\nSubject IDLaboratory ParameterVisitResult(Numeric)ReferenceIndicatorClinicalFlag101Alanine AminotransferaseWeek 4120.0HIGH*Aspartate AminotransferaseWeek 485.0HIGH*102PotassiumBaseline2.5LOW*SodiumWeek 12150.0HIGH103HemoglobinEOT7.2LOW**\n\n\nNotice the merge_v(j = \"USUBJID\") command. This acts exactly like the order or group option in PROC REPORT, hiding duplicate Subject IDs on subsequent rows so the reviewer’s eye tracks cleanly across the patient’s data block."
+  },
+  {
+    "objectID": "blog/posts/2026-03-25-clinical-listings.html#handling-pagination-in-listings",
+    "href": "blog/posts/2026-03-25-clinical-listings.html#handling-pagination-in-listings",
+    "title": "Clinical Listings in R: Creating Patient Profiles that Rival PROC REPORT",
+    "section": "Handling Pagination in Listings",
+    "text": "Handling Pagination in Listings\nIf your listing is 500 pages long, you need column headers to repeat on every page of your RTF/Word document.\nWhile {flextable} inherently repeats headers in MS Word when rendered, controlling exactly when a page breaks is critical for Patient Profiles (e.g., breaking the page on a new USUBJID).\nTo accomplish this programmatically, you use Quarto. Quarto allows you to loop through unique subjects in your R code, generate a specific {flextable} for just that subject, and insert raw Markdown page breaks (\\pagebreak) into the document dynamically using knitr::asis_output().\n\n# A conceptual example of a Quarto loop for Patient Profiles\n\ncat(\"# Patient Profiles: Severe Adverse Events\\n\")\n\nunique_patients &lt;- unique(adae_severe$USUBJID)\n\nfor (pt in unique_patients) {\n  \n  # Subset data\n  pt_data &lt;- adae_severe %&gt;% filter(USUBJID == pt)\n  \n  cat(paste(\"## Subject Details for\", pt, \"\\n\"))\n  \n  # Print flextable to Word Document\n  ft &lt;- flextable(pt_data) %&gt;% theme_vanilla()\n  print(ft)\n  \n  # Force a Microsoft Word Page Break!\n  cat('\\n\\n\\\\pagebreak\\n\\n')\n}"
+  },
+  {
+    "objectID": "blog/posts/2026-03-25-clinical-listings.html#the-verification-advantage",
+    "href": "blog/posts/2026-03-25-clinical-listings.html#the-verification-advantage",
+    "title": "Clinical Listings in R: Creating Patient Profiles that Rival PROC REPORT",
+    "section": "The Verification Advantage",
+    "text": "The Verification Advantage\nBecause R treats the generation of a listing as manipulating an R object (flextable), you can run unit tests on the document generation script. Your verification programmer can programmatically assert that the output object contains exactly the right columns, values, and styling attributes before a single PDF or DOCX is ever physically opened by a user.\nTables, Figures, and Data Listings in R are completely mature. Next, we are going to look at computationally intensive optimization: How to make your R code execute at lightning speed."
+  },
+  {
+    "objectID": "blog/posts/2026-04-05-clinical-app-teal.html",
+    "href": "blog/posts/2026-04-05-clinical-app-teal.html",
+    "title": "How I Built an Interactive Clinical App with {teal} (And Why You Should Too)",
+    "section": "",
+    "text": "We’ve all been there. The clinical team reviews Table 14.1.1 (Demographics). A medical monitor emails you: “Table 14.1.1 shows a higher proportion of elderly subjects in the Active arm. Can you break this table down further by Region and rerun it for only the subjects who experienced a Severe Adverse Event?”\nTo fulfill this in SAS, you copy your .sas program, change the where clause in the data step, add REGION to the PROC REPORT split variable, run the whole pipeline, and generate a new RTF.\nThree days later, they reply: “Ah, I meant Region AND Sex. Can you rerun it again?”\nThis cycle of iterative manual requests wastes hundreds of programming hours. What if, instead, we gave the medical monitor a dashboard where they could change those filters themselves in real time?"
+  },
+  {
+    "objectID": "blog/posts/2026-04-05-clinical-app-teal.html#the-request-that-started-it-all",
+    "href": "blog/posts/2026-04-05-clinical-app-teal.html#the-request-that-started-it-all",
+    "title": "How I Built an Interactive Clinical App with {teal} (And Why You Should Too)",
+    "section": "",
+    "text": "We’ve all been there. The clinical team reviews Table 14.1.1 (Demographics). A medical monitor emails you: “Table 14.1.1 shows a higher proportion of elderly subjects in the Active arm. Can you break this table down further by Region and rerun it for only the subjects who experienced a Severe Adverse Event?”\nTo fulfill this in SAS, you copy your .sas program, change the where clause in the data step, add REGION to the PROC REPORT split variable, run the whole pipeline, and generate a new RTF.\nThree days later, they reply: “Ah, I meant Region AND Sex. Can you rerun it again?”\nThis cycle of iterative manual requests wastes hundreds of programming hours. What if, instead, we gave the medical monitor a dashboard where they could change those filters themselves in real time?"
+  },
+  {
+    "objectID": "blog/posts/2026-04-05-clinical-app-teal.html#from-shiny-to-teal",
+    "href": "blog/posts/2026-04-05-clinical-app-teal.html#from-shiny-to-teal",
+    "title": "How I Built an Interactive Clinical App with {teal} (And Why You Should Too)",
+    "section": "From Shiny to {teal}",
+    "text": "From Shiny to {teal}\nA standard Shiny app solves this problem, but building a highly robust clinical data dashboard from scratch in Shiny requires heavy UI/UX design, State management, and reactive troubleshooting.\nThe Pharmaverse solved this by releasing {teal}—a standardized framework specifically designed for exploring CDISC data intuitively.\n{teal} modules are pre-built widgets that automatically understand ADSL, ADAE, ADLB, etc., and render them into dynamic tables, plots, and filters."
+  },
+  {
+    "objectID": "blog/posts/2026-04-05-clinical-app-teal.html#building-a-basic-teal-app-in-10-minutes",
+    "href": "blog/posts/2026-04-05-clinical-app-teal.html#building-a-basic-teal-app-in-10-minutes",
+    "title": "How I Built an Interactive Clinical App with {teal} (And Why You Should Too)",
+    "section": "Building a Basic {teal} App in 10 Minutes",
+    "text": "Building a Basic {teal} App in 10 Minutes\nLet’s build an app that allows a reviewer to interactively filter Demographics and explore an Adverse Event table.\n\n# NOTE: This code is meant to be run in a live R console/script, not evaluated statically in this blog.\n\nlibrary(teal)\nlibrary(teal.modules.clinical)\n\n# 1. Provide the datasets\n# We wrap them in teal_data() and tell teal to make them reproducible.\ndata &lt;- teal_data()\ndata &lt;- within(data, {\n  ADSL &lt;- source_adsl\n  ADAE &lt;- source_adae\n})\ndatanames(data) &lt;- c(\"ADSL\", \"ADAE\")\n\n# 2. Define the Application Structure\n# We define an app that contains two pre-built clinical modules.\napp &lt;- init(\n  data = data,\n  \n  # Inject the pre-built modules!\n  modules = modules(\n    # Module 1: An interactive Demographic Table\n    tm_t_summary(\n      label = \"Demographic Table\",\n      dataname = \"ADSL\",\n      arm_var = choices_selected(c(\"ARM\", \"SEX\"), \"ARM\"),\n      summarize_vars = choices_selected(\n        c(\"AGE\", \"SEX\", \"RACE\", \"BMI\"), \n        c(\"AGE\", \"SEX\")\n      )\n    ),\n    \n    # Module 2: An interactive Adverse Event Table\n    tm_t_events(\n      label = \"Adverse Event Summary\",\n      dataname = \"ADAE\",\n      arm_var = choices_selected(c(\"ARM\", \"SEX\"), \"ARM\"),\n      llt = choices_selected(c(\"AEDECOD\", \"AETERM\"), \"AEDECOD\"),\n      hlt = choices_selected(c(\"AEBODSYS\", \"AESOC\"), \"AEBODSYS\")\n    )\n  )\n)\n\n# 3. Launch the app!\nrunApp(app)"
+  },
+  {
+    "objectID": "blog/posts/2026-04-05-clinical-app-teal.html#the-magic-of-teal",
+    "href": "blog/posts/2026-04-05-clinical-app-teal.html#the-magic-of-teal",
+    "title": "How I Built an Interactive Clinical App with {teal} (And Why You Should Too)",
+    "section": "The Magic of {teal}",
+    "text": "The Magic of {teal}\nWith just 30 lines of code, you have launched a professional web application.\nHere is what the medical reviewer gets when they open the app: 1. The Filter Panel: On the right side, {teal} automatically generates a filter panel reading your dataset. The user can filter ADSL by AGE &gt; 65 or filter ADAE by AESEV == \"SEVERE\". The tables instantly update. 2. Dynamic UI: In the “Demographic Table” tab, the user can click dropdowns to change the grouping variable from ARM to SEX, and add BMI to the summary statistics. 3. Show R Code: Most importantly for validation, {teal} includes a “Show R Code” button. When the medical writer configures the exact table they want, they click this button, and {teal} provides the exact {rtables} R code necessary to perfectly reproduce that specific table in a validated script."
+  },
+  {
+    "objectID": "blog/posts/2026-04-05-clinical-app-teal.html#the-paradigm-shift",
+    "href": "blog/posts/2026-04-05-clinical-app-teal.html#the-paradigm-shift",
+    "title": "How I Built an Interactive Clinical App with {teal} (And Why You Should Too)",
+    "section": "The Paradigm Shift",
+    "text": "The Paradigm Shift\nWe are moving away from treating clinical programmers as “report vending machines.”\nBy using {teal}, we empower biostatisticians and medical monitors to perform Exploratory Data Analysis (EDA) on their own time. We shift our focus to delivering validated analysis datasets (ADaMs), and then providing interactive endpoints that sit on top of them.\nIn our final post of this series, we will explore the future of clinical submissions: replacing static TFL submissions with fully interactive regulatory Shiny apps!"
   },
   {
     "objectID": "blog/posts/2024-06-15-ggplot-themes.html",
@@ -677,18 +1258,207 @@
     "text": "Welcome to this article on Standardizing Company Plots with ggplot2.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
   },
   {
-    "objectID": "blog/posts/2024-06-20-debugging-shiny.html",
-    "href": "blog/posts/2024-06-20-debugging-shiny.html",
-    "title": "Debugging Shiny Apps: A Survival Guide",
+    "objectID": "blog/posts/2026-04-01-datatable-vs-dplyr.html",
+    "href": "blog/posts/2026-04-01-datatable-vs-dplyr.html",
+    "title": "{data.table} vs {dplyr}: When Speed Matters for Massive Clinical Datasets",
     "section": "",
-    "text": "Welcome to this article on Debugging Shiny Apps: A Survival Guide.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+    "text": "If you learn R today, you learn {dplyr}. The syntax is readable, the pipe operator (%&gt;% or |&gt;) flows logically from left to right, and the documentation is immaculate.\nBut there is a high-performance alternative that long-time R power users swear by: {data.table}.\nIf you are dealing with a standard Phase II trial dataset (e.g., 5,000 rows in ADLB), stay with {dplyr}. You will never notice the speed difference. However, if you are doing: - Massive Real-World Evidence (RWE) database queries with 50 million rows. - High-frequency sensor data analytics (continuous glucose monitors or vital sign wearables). - Heavy Monte Carlo clinical trial simulations.\nThen {data.table} is not just useful; it is mandatory."
   },
   {
-    "objectID": "blog/posts/2024-06-20-debugging-shiny.html#overview",
-    "href": "blog/posts/2024-06-20-debugging-shiny.html#overview",
-    "title": "Debugging Shiny Apps: A Survival Guide",
+    "objectID": "blog/posts/2026-04-01-datatable-vs-dplyr.html#the-tidyverse-monopoly",
+    "href": "blog/posts/2026-04-01-datatable-vs-dplyr.html#the-tidyverse-monopoly",
+    "title": "{data.table} vs {dplyr}: When Speed Matters for Massive Clinical Datasets",
     "section": "",
-    "text": "Welcome to this article on Debugging Shiny Apps: A Survival Guide.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+    "text": "If you learn R today, you learn {dplyr}. The syntax is readable, the pipe operator (%&gt;% or |&gt;) flows logically from left to right, and the documentation is immaculate.\nBut there is a high-performance alternative that long-time R power users swear by: {data.table}.\nIf you are dealing with a standard Phase II trial dataset (e.g., 5,000 rows in ADLB), stay with {dplyr}. You will never notice the speed difference. However, if you are doing: - Massive Real-World Evidence (RWE) database queries with 50 million rows. - High-frequency sensor data analytics (continuous glucose monitors or vital sign wearables). - Heavy Monte Carlo clinical trial simulations.\nThen {data.table} is not just useful; it is mandatory."
+  },
+  {
+    "objectID": "blog/posts/2026-04-01-datatable-vs-dplyr.html#the-core-concept-of-data.table",
+    "href": "blog/posts/2026-04-01-datatable-vs-dplyr.html#the-core-concept-of-data.table",
+    "title": "{data.table} vs {dplyr}: When Speed Matters for Massive Clinical Datasets",
+    "section": "The Core Concept of {data.table}",
+    "text": "The Core Concept of {data.table}\nThe {dplyr} package creates a completely fresh copy of a column whenever you modify it (mutate). The {data.table} package prefers to modify in place by reference. This means it doesn’t copy the data in RAM—it just reaches into memory and overwrites the exact bytes you asked it to.\nThis leads to staggering performance improvements and virtually zero RAM spikes."
+  },
+  {
+    "objectID": "blog/posts/2026-04-01-datatable-vs-dplyr.html#syntax-comparison",
+    "href": "blog/posts/2026-04-01-datatable-vs-dplyr.html#syntax-comparison",
+    "title": "{data.table} vs {dplyr}: When Speed Matters for Massive Clinical Datasets",
+    "section": "Syntax Comparison",
+    "text": "Syntax Comparison\nThe {data.table} syntax uses the fast [ operator, generally structured as DT[i, j, by]. - i: The row filter (where) - j: The column operations (select or mutate) - by: Grouping\nLet’s look at three standard operations.\n\n1. Filtering Rows (where)\n\nlibrary(dplyr)\nlibrary(data.table)\n\n# dplyr\nadlb_filt &lt;- adlb %&gt;% filter(PARAMCD == \"ALT\" & AVAL &gt; 40)\n\n# data.table\nsetDT(adlb) # Convert dataframe to data.table\nadlb_filt_dt &lt;- adlb[PARAMCD == \"ALT\" & AVAL &gt; 40]\n\n\n\n2. Group By and Summarize (PROC MEANS)\nLet’s calculate the mean and maximum lab result by Subject and Parameter.\n\n# dplyr\nadlb_summary &lt;- adlb %&gt;%\n  group_by(USUBJID, PARAMCD) %&gt;%\n  summarize(\n    Mean_AVAL = mean(AVAL, na.rm = TRUE),\n    Max_AVAL = max(AVAL, na.rm = TRUE)\n  ) %&gt;%\n  ungroup()\n\n# data.table\nadlb_summary_dt &lt;- adlb[, .(Mean_AVAL = mean(AVAL, na.rm = TRUE),\n                            Max_AVAL = max(AVAL, na.rm = TRUE)), \n                        by = .(USUBJID, PARAMCD)]\n\nNotice how {data.table} condenses the entire operation into the [i, j, by] structure. We leave i blank because we aren’t filtering. We define the summary stats in j (using .(), which is a list alias), and we group by.\n\n\n3. Modifying by Reference (The := Operator)\nThis is the secret weapon of {data.table}. Whenever you see the walrus operator (:=), {data.table} is modifying the column directly in RAM without a deep copy.\n\n# dplyr (Copies the dataset in memory)\nadsl &lt;- adsl %&gt;%\n  mutate(AGEGR1 = if_else(AGE &gt; 65, \"&gt;65\", \"&lt;=65\"))\n\n# data.table (Updates in place! Instantly fast, zero RAM spike)\nadsl[, AGEGR1 := fifelse(AGE &gt; 65, \"&gt;65\", \"&lt;=65\")]\n\nNotice we didn’t even use adsl &lt;-. Just executing that line updates the variable within adsl permanently."
+  },
+  {
+    "objectID": "blog/posts/2026-04-01-datatable-vs-dplyr.html#which-should-you-choose-for-clinical-work",
+    "href": "blog/posts/2026-04-01-datatable-vs-dplyr.html#which-should-you-choose-for-clinical-work",
+    "title": "{data.table} vs {dplyr}: When Speed Matters for Massive Clinical Datasets",
+    "section": "Which Should You Choose for Clinical Work?",
+    "text": "Which Should You Choose for Clinical Work?\nIn the pharmaceutical industry, readability is paramount for verification and peer review. For this reason, {dplyr} handles 90% of clinical trial derivations (especially when using {admiral}).\nHowever, {dplyr} provides the function dtplyr, which translates tidyverse code into {data.table} code automatically before running it! This gives you the readability of the tidyverse with the execution speed of {data.table}.\nFor standard Phase 1-3 trials: Stick to {dplyr}. For epidemiology, RWE, and billion-row wearable data: Master {data.table}.\nNext, we shift from back-end processing to front-end magic. We will explore how to put these numbers into the hands of medical reviewers via Interactive Shiny Apps and {teal}."
+  },
+  {
+    "objectID": "blog/posts/2024-06-25-quarto-reports.html",
+    "href": "blog/posts/2024-06-25-quarto-reports.html",
+    "title": "Automated Reporting with Quarto",
+    "section": "",
+    "text": "Welcome to this article on Automated Reporting with Quarto.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2024-06-25-quarto-reports.html#overview",
+    "href": "blog/posts/2024-06-25-quarto-reports.html#overview",
+    "title": "Automated Reporting with Quarto",
+    "section": "",
+    "text": "Welcome to this article on Automated Reporting with Quarto.\nThis is a placeholder for content that will help you master this topic.\n\n\n\nConcept 1: Understanding the basics.\nConcept 2: Applying it to clinical data.\nConcept 3: Best practices in our company.\n\n\nlibrary(tidyverse)\n# Example code placeholder\nprint('Hello KnowledgeCentRe!')\n\n[1] \"Hello KnowledgeCentRe!\""
+  },
+  {
+    "objectID": "blog/posts/2026-03-05-traceability-in-r.html",
+    "href": "blog/posts/2026-03-05-traceability-in-r.html",
+    "title": "Traceability in R: Ensuring Your ADaMs and SDTMs Meet Regulatory Standards",
+    "section": "",
+    "text": "When the FDA or EMA receives a submission, their reviewers expect a clear, unbroken chain of evidence from the final Tables, Figures, and Listings (TFLs) all the way back to the raw source data (EDC). This concept is called traceability.\nRegulatory agencies don’t care if you used SAS, R, Python, or an abacus—so long as the final outputs conform strictly to CDISC standards and the lineage of the data is auditable.\nHistorically, SAS has dominated this space because the industry spent decades building macro libraries designed to ensure traceability. Since R is open-source and highly flexible, critics often ask: “Can R guarantee traceability?”\nYes. Here’s how."
+  },
+  {
+    "objectID": "blog/posts/2026-03-05-traceability-in-r.html#the-regulatory-mandate",
+    "href": "blog/posts/2026-03-05-traceability-in-r.html#the-regulatory-mandate",
+    "title": "Traceability in R: Ensuring Your ADaMs and SDTMs Meet Regulatory Standards",
+    "section": "",
+    "text": "When the FDA or EMA receives a submission, their reviewers expect a clear, unbroken chain of evidence from the final Tables, Figures, and Listings (TFLs) all the way back to the raw source data (EDC). This concept is called traceability.\nRegulatory agencies don’t care if you used SAS, R, Python, or an abacus—so long as the final outputs conform strictly to CDISC standards and the lineage of the data is auditable.\nHistorically, SAS has dominated this space because the industry spent decades building macro libraries designed to ensure traceability. Since R is open-source and highly flexible, critics often ask: “Can R guarantee traceability?”\nYes. Here’s how."
+  },
+  {
+    "objectID": "blog/posts/2026-03-05-traceability-in-r.html#defining-traceability",
+    "href": "blog/posts/2026-03-05-traceability-in-r.html#defining-traceability",
+    "title": "Traceability in R: Ensuring Your ADaMs and SDTMs Meet Regulatory Standards",
+    "section": "Defining Traceability",
+    "text": "Defining Traceability\nIn CDISC, traceability exists at two levels: 1. Data-level traceability: An ADaM dataset (ADAE) must contain the sequence numbers (AESEQ) that tie it back to the SDTM domain (AE). 2. Analysis-level traceability: The Define.xml document must clearly articulate the computational methods used to create derived variables."
+  },
+  {
+    "objectID": "blog/posts/2026-03-05-traceability-in-r.html#coding-for-traceability-in-r",
+    "href": "blog/posts/2026-03-05-traceability-in-r.html#coding-for-traceability-in-r",
+    "title": "Traceability in R: Ensuring Your ADaMs and SDTMs Meet Regulatory Standards",
+    "section": "Coding for Traceability in R",
+    "text": "Coding for Traceability in R\n\n1. Retaining Sequence Variables\nWhen creating an ADaM from an SDTM, you must ensure that variables like xxSEQ (Sequence Number), USUBJID, and DOMAIN are carefully preserved. In {dplyr}, this means being explicit in your select() or keep logic.\n\nlibrary(dplyr)\nlibrary(admiral)\n\n# Building ADAE and ensuring traceability to AE\nadae &lt;- ae %&gt;%\n  # Merge in ADSL, but keep the core AE traceability keys\n  derive_vars_merged(\n    dataset_add = adsl,\n    by_vars = exprs(USUBJID),\n    new_vars = exprs(TRTSDT)\n  ) %&gt;%\n  # Ensure AESEQ remains untouched!\n  mutate(TRTEMFL = if_else(ASTDT &gt;= TRTSDT, \"Y\", \"N\")) %&gt;%\n  select(STUDYID, USUBJID, AESEQ, AETERM, TRTSDT, ASTDT, TRTEMFL)\n\nNever drop AESEQ in an OCCDS domain. Without it, the reviewer cannot prove which specific headache in the SDTM dataset corresponds to the TEAE flag in the ADaM dataset.\n\n\n2. Traceability in Record Imputation (BDS)\nIn BDS domains (like ADVS), we often create new records, such as calculating an average baseline value or imputing a Last Observation Carried Forward (LOCF) visit.\nWhen a record is mathematically invented by the programmer (it doesn’t exist in SDTM), the variable DTYPE (Derivation Type) must be populated.\n\nadlb &lt;- adlb %&gt;%\n  # Creating a new Baseline Average record\n  derive_summary_records(\n    by_vars = exprs(USUBJID, PARAMCD),\n    filter = ABLFL == \"Y\",\n    set_values_to = exprs(\n      AVAL = mean(AVAL, na.rm = TRUE),\n      DTYPE = \"AVERAGE\" # Traceability!\n    )\n  )\n\nBy explicitly setting DTYPE = \"AVERAGE\", a reviewer instantly knows this record cannot be traced back to a specific LBSEQ in the SDTM dataset, because it is an aggregate."
+  },
+  {
+    "objectID": "blog/posts/2026-03-05-traceability-in-r.html#generating-define.xml-from-r",
+    "href": "blog/posts/2026-03-05-traceability-in-r.html#generating-define.xml-from-r",
+    "title": "Traceability in R: Ensuring Your ADaMs and SDTMs Meet Regulatory Standards",
+    "section": "Generating Define.xml from R",
+    "text": "Generating Define.xml from R\nThe biggest traceability deliverable is the Define.xml. This metadata document acts as the map for the FDA reviewer.\nIn the SAS world, Pinnacle 21 Enterprise or SAS Clinical Standards Toolkit handles this.\nIn the R ecosystem, the pharmaverse community introduced the {metacore} and {metatools} packages. These packages ingest your data specifications (usually an Excel file) and automatically validate that your R data frames match your spec.\nFurthermore, you can generate Define.xml entirely using R packages, bypassing proprietary enterprise tools if necessary."
+  },
+  {
+    "objectID": "blog/posts/2026-03-05-traceability-in-r.html#r-markdown-and-quarto-for-documentation",
+    "href": "blog/posts/2026-03-05-traceability-in-r.html#r-markdown-and-quarto-for-documentation",
+    "title": "Traceability in R: Ensuring Your ADaMs and SDTMs Meet Regulatory Standards",
+    "section": "R Markdown and Quarto for Documentation",
+    "text": "R Markdown and Quarto for Documentation\nThe ultimate advantage R holds over SAS in terms of traceability is Literate Programming.\nInstead of hiding data derivation decisions inside a .sas file and hoping the reviewer reads the comments, clinical programmers can use Quarto or R Markdown to mix text, code, and output seamlessly.\nA reviewer doesn’t just get a dataset; they get a rendered HTML or PDF document that explicitly states: “According to SAP Section 4.1, missing partial dates were imputed to the 15th of the month. See code chunk below.”"
+  },
+  {
+    "objectID": "blog/posts/2026-03-05-traceability-in-r.html#conclusion",
+    "href": "blog/posts/2026-03-05-traceability-in-r.html#conclusion",
+    "title": "Traceability in R: Ensuring Your ADaMs and SDTMs Meet Regulatory Standards",
+    "section": "Conclusion",
+    "text": "Conclusion\nTraceability in R is not harder than in SAS; it simply requires adopting a standardized workflow (like {admiral}) and respecting CDISC Implementation Guidelines.\nWith SDTM and ADaMs sorted, it’s time to move to the main event: TFL Generation!"
+  },
+  {
+    "objectID": "blog/posts/2026-03-01-bds-adams-admiral.html",
+    "href": "blog/posts/2026-03-01-bds-adams-admiral.html",
+    "title": "BDS (Basic Data Structure) ADaMs with {admiral}: Doing What SAS Did, But Better",
+    "section": "",
+    "text": "If ADSL is the foundation and OCCDS is the occurrence log, then BDS (Basic Data Structure) is the engine room of clinical trial analysis. Datasets like ADVS (Vitals), ADLB (Labs), and ADEG (ECGs) track parameters repeatedly measured over time for each subject.\nThe defining characteristics of a BDS dataset are: 1. Multiple records per subject (long format). 2. A single analyzed parameter (PARAM, PARAMCD). 3. An analysis value (AVAL, AVALC). 4. Timings and visits (AVISIT, ATPT). 5. Complex baseline derivations (ABLFL, BASE)."
+  },
+  {
+    "objectID": "blog/posts/2026-03-01-bds-adams-admiral.html#the-complexity-of-bds",
+    "href": "blog/posts/2026-03-01-bds-adams-admiral.html#the-complexity-of-bds",
+    "title": "BDS (Basic Data Structure) ADaMs with {admiral}: Doing What SAS Did, But Better",
+    "section": "",
+    "text": "If ADSL is the foundation and OCCDS is the occurrence log, then BDS (Basic Data Structure) is the engine room of clinical trial analysis. Datasets like ADVS (Vitals), ADLB (Labs), and ADEG (ECGs) track parameters repeatedly measured over time for each subject.\nThe defining characteristics of a BDS dataset are: 1. Multiple records per subject (long format). 2. A single analyzed parameter (PARAM, PARAMCD). 3. An analysis value (AVAL, AVALC). 4. Timings and visits (AVISIT, ATPT). 5. Complex baseline derivations (ABLFL, BASE)."
+  },
+  {
+    "objectID": "blog/posts/2026-03-01-bds-adams-admiral.html#setting-the-baseline-ablfl",
+    "href": "blog/posts/2026-03-01-bds-adams-admiral.html#setting-the-baseline-ablfl",
+    "title": "BDS (Basic Data Structure) ADaMs with {admiral}: Doing What SAS Did, But Better",
+    "section": "Setting the Baseline (ABLFL)",
+    "text": "Setting the Baseline (ABLFL)\nIn SAS, determining the baseline record (the last measurement taken on or before the first dose of study drug) requires a dizzying array of PROC SORT by USUBJID PARAMCD ADT ATMN, followed by if last.PARAMCD and ADT &lt;= TRTSDT then ABLFL = 'Y'.\nIf there are duplicate visits or non-missing conditions, the SAS code becomes a nightmare to maintain.\nWith {admiral}, we use the derive_var_extreme_flag() function.\n\nlibrary(dplyr)\nlibrary(admiral)\n\nWarning: package 'admiral' was built under R version 4.4.3\n\n# Simulating Lab Data\nadlb &lt;- data.frame(\n  USUBJID = c(\"001\", \"001\", \"001\"),\n  PARAMCD = c(\"ALT\", \"ALT\", \"ALT\"),\n  AVAL = c(20, 22, 45),\n  ADTM = as.POSIXct(c(\"2024-01-01 08:00\", \"2024-01-10 09:00\", \"2024-01-20 10:00\")),\n  TRTSDTM = as.POSIXct(c(\"2024-01-10 12:00\", \"2024-01-10 12:00\", \"2024-01-10 12:00\"))\n)\n\n# 1. Derive ABLFL (Analysis Baseline Flag)\n# We pre-filter for baseline records, flag the last one, and join back\nadlb_bl &lt;- adlb %&gt;% \n  filter(ADTM &lt;= TRTSDTM) %&gt;%\n  derive_var_extreme_flag(\n    by_vars = exprs(USUBJID, PARAMCD),\n    order = exprs(ADTM),\n    new_var = ABLFL,\n    mode = \"last\"\n  )\n\nadlb &lt;- adlb %&gt;%\n  left_join(adlb_bl, by = c(\"USUBJID\", \"PARAMCD\", \"AVAL\", \"ADTM\", \"TRTSDTM\")) %&gt;%\n  mutate(ABLFL = if_else(is.na(ABLFL), \"\", ABLFL))\n\nprint(adlb)\n\n  USUBJID PARAMCD AVAL                ADTM             TRTSDTM ABLFL\n1     001     ALT   20 2024-01-01 08:00:00 2024-01-10 12:00:00      \n2     001     ALT   22 2024-01-10 09:00:00 2024-01-10 12:00:00     Y\n3     001     ALT   45 2024-01-20 10:00:00 2024-01-10 12:00:00      \n\n\nLook how explicit the R code is! Group it by USUBJID and PARAMCD. Order it chronologically (ADTM). Filter for records before or exactly on the treatment start time (condition). And pick the very last one (mode = \"last\")."
+  },
+  {
+    "objectID": "blog/posts/2026-03-01-bds-adams-admiral.html#populating-base-and-chg",
+    "href": "blog/posts/2026-03-01-bds-adams-admiral.html#populating-base-and-chg",
+    "title": "BDS (Basic Data Structure) ADaMs with {admiral}: Doing What SAS Did, But Better",
+    "section": "Populating BASE and CHG",
+    "text": "Populating BASE and CHG\nOnce the ABLFL flag is set to \"Y\" for the baseline record, we need to populate the numeric BASE value onto every record for that USUBJID and PARAMCD, so we can calculate the change from baseline (CHG).\nIn SAS, this requires if ABLFL = 'Y' then _BASE = AVAL; retain _BASE; BASE = _BASE.\nIn {admiral}:\n\n# 2. Derive BASE (Baseline Value)\nadlb &lt;- adlb %&gt;%\n  derive_var_base(\n    by_vars = exprs(USUBJID, PARAMCD),\n    source_var = AVAL,\n    new_var = BASE\n  ) %&gt;%\n  \n  # 3. Derive CHG (Change from Baseline)\n  derive_var_chg()\n\nprint(adlb)\n\n  USUBJID PARAMCD AVAL                ADTM             TRTSDTM ABLFL BASE CHG\n1     001     ALT   20 2024-01-01 08:00:00 2024-01-10 12:00:00         22  -2\n2     001     ALT   22 2024-01-10 09:00:00 2024-01-10 12:00:00     Y   22   0\n3     001     ALT   45 2024-01-20 10:00:00 2024-01-10 12:00:00         22  23\n\n\nYes, it really is that simple. derive_var_base() automatically looks for the record where ABLFL == \"Y\" and propagates that AVAL to the BASE column for all records in the group. Then, derive_var_chg() is literally a pre-built wrapper that calculates AVAL - BASE."
+  },
+  {
+    "objectID": "blog/posts/2026-03-01-bds-adams-admiral.html#handling-locf-last-observation-carried-forward",
+    "href": "blog/posts/2026-03-01-bds-adams-admiral.html#handling-locf-last-observation-carried-forward",
+    "title": "BDS (Basic Data Structure) ADaMs with {admiral}: Doing What SAS Did, But Better",
+    "section": "Handling LOCF (Last Observation Carried Forward)",
+    "text": "Handling LOCF (Last Observation Carried Forward)\nIn oncology and other therapeutic areas, if a subject misses a visit, we often impute their value using LOCF.\nIn SAS, LOCF involves heavily nested data step loops and retain statements. In {admiral}, we derive new records explicitly.\n\n# 4. Derive LOCF values for missing visits\nadlb_locf &lt;- adlb %&gt;%\n  derive_locf_records(\n    dataset_expected_obs = my_expected_visits_dataset, # A dataset defining what visits should exist\n    by_vars = exprs(USUBJID, PARAMCD),\n    order = exprs(AVISITN)\n  )\n\n(Note: Requires a definition of standard visits, which we skip in this mock code, but the function handles the forward propagation logic seamlessly)."
+  },
+  {
+    "objectID": "blog/posts/2026-03-01-bds-adams-admiral.html#the-shift-to-declarative-programming",
+    "href": "blog/posts/2026-03-01-bds-adams-admiral.html#the-shift-to-declarative-programming",
+    "title": "BDS (Basic Data Structure) ADaMs with {admiral}: Doing What SAS Did, But Better",
+    "section": "The Shift to Declarative Programming",
+    "text": "The Shift to Declarative Programming\nWhen building BDS datasets in SAS, you write imperative code: you tell the computer how to do the derivation row-by-row.\nWhen using {admiral} in R, you write declarative code: you declare what you want (e.g., derive_var_base()), and the package handles the row operations under the hood.\nThis results in BDS programming that is mathematically precise, faster to write, and vastly easier for a QC programmer to review."
+  },
+  {
+    "objectID": "blog/posts/2026-04-08-static-tfls-to-shiny.html",
+    "href": "blog/posts/2026-04-08-static-tfls-to-shiny.html",
+    "title": "From Static TFLs to Interactive Shiny Dashboards: Exploring Safety & Efficacy Dynamically",
+    "section": "",
+    "text": "If you have ever been involved in filing an NDA (New Drug Application) or BLA (Biologics License Application), you understand the sheer volume of paper (or digital paper) generated.\nA regulatory submission contains thousands of static Pages—forests worth of listings, hundreds of cross-tabulated baseline characteristic tables, and endless permutations of PROC SGPLOT outputs.\nWhen an FDA statistician reviews a submission, they don’t just look at the PDF. They load the provided XPT files into their own SAS or R environments and run their own analyses. Why? Because a static table can’t answer a dynamic question.\n“I see the Kaplan-Meier curve for the overall population here on Page 45. Now I want to see this same curve, but solely for patients who were negative for this specific biomarker. Oh, that’s not in the PDF… I guess I have to program it myself.”"
+  },
+  {
+    "objectID": "blog/posts/2026-04-08-static-tfls-to-shiny.html#the-2000-page-pdf",
+    "href": "blog/posts/2026-04-08-static-tfls-to-shiny.html#the-2000-page-pdf",
+    "title": "From Static TFLs to Interactive Shiny Dashboards: Exploring Safety & Efficacy Dynamically",
+    "section": "",
+    "text": "If you have ever been involved in filing an NDA (New Drug Application) or BLA (Biologics License Application), you understand the sheer volume of paper (or digital paper) generated.\nA regulatory submission contains thousands of static Pages—forests worth of listings, hundreds of cross-tabulated baseline characteristic tables, and endless permutations of PROC SGPLOT outputs.\nWhen an FDA statistician reviews a submission, they don’t just look at the PDF. They load the provided XPT files into their own SAS or R environments and run their own analyses. Why? Because a static table can’t answer a dynamic question.\n“I see the Kaplan-Meier curve for the overall population here on Page 45. Now I want to see this same curve, but solely for patients who were negative for this specific biomarker. Oh, that’s not in the PDF… I guess I have to program it myself.”"
+  },
+  {
+    "objectID": "blog/posts/2026-04-08-static-tfls-to-shiny.html#the-interactive-future-regulatory-shiny-apps",
+    "href": "blog/posts/2026-04-08-static-tfls-to-shiny.html#the-interactive-future-regulatory-shiny-apps",
+    "title": "From Static TFLs to Interactive Shiny Dashboards: Exploring Safety & Efficacy Dynamically",
+    "section": "The Interactive Future: Regulatory Shiny Apps",
+    "text": "The Interactive Future: Regulatory Shiny Apps\nThe modern solution is deploying a validated, interactive Shiny Application as part of the regulatory submission itself.\nThe FDA has been explicitly encouraging innovation in this space through the R Consortium’s Pilot Submissions project. We are reaching a point where sponsors can submit an open-source R package combined with a Shiny App wrapped in a Docker container.\n\nWhat an Interactive Efficacy App Achieves\nImagine shifting from standard TFLs to a dynamic Efficacy Explorer Dashboard.\n\n# A conceptual example of a custom efficacy tab in Shiny\ntabPanel(\"Efficacy Explorer\",\n         sidebarLayout(\n           sidebarPanel(\n             selectInput(\"endpoint\", \"Select Primary Endpoint\", choices = c(\"PFS\", \"OS\")),\n             sliderInput(\"age_filter\", \"Age Range\", min = 18, max = 99, value = c(18, 99)),\n             checkboxGroupInput(\"biomarker\", \"Biomarker Status\", choices = c(\"Positive\", \"Negative\", \"Unknown\"))\n           ),\n           mainPanel(\n             plotOutput(\"km_plot\"),      # Dynamic Survival Curve\n             tableOutput(\"cox_model\")    # Dynamic Hazard Ratio Table\n           )\n         )\n)\n\nIn this paradigm: 1. The Reviewer controls the data: They can tweak the specific populations, endpoints, and covariates themselves. 2. Instant answers: Instead of issuing an Information Request (IR) back to the sponsor (“Please supply the Hazard Ratios for the XYZ subpopulation”) and waiting 5 days, the reviewer moves a slider in the app and gets the answer instantly."
+  },
+  {
+    "objectID": "blog/posts/2026-04-08-static-tfls-to-shiny.html#the-demise-of-the-output-delivery-system-ods",
+    "href": "blog/posts/2026-04-08-static-tfls-to-shiny.html#the-demise-of-the-output-delivery-system-ods",
+    "title": "From Static TFLs to Interactive Shiny Dashboards: Exploring Safety & Efficacy Dynamically",
+    "section": "The Demise of the Output Delivery System (ODS)",
+    "text": "The Demise of the Output Delivery System (ODS)\nWhile we map the future of R, we have to look in the rearview mirror.\nThe SAS macro library approach to generating static .rtf outputs is inherently limited to 2D paper matrices. We try to hack interactivity using giant hyperlinked Excel documents (PROC EXPORT), but it falls flat.\nShiny Dashboards and {teal} represent a total paradigm shift from “Printing to Paper” to “Navigating Data.”"
+  },
+  {
+    "objectID": "blog/posts/2026-04-08-static-tfls-to-shiny.html#how-to-prepare-for-the-shift",
+    "href": "blog/posts/2026-04-08-static-tfls-to-shiny.html#how-to-prepare-for-the-shift",
+    "title": "From Static TFLs to Interactive Shiny Dashboards: Exploring Safety & Efficacy Dynamically",
+    "section": "How to Prepare for the Shift",
+    "text": "How to Prepare for the Shift\nIf you are a clinical data programmer looking to safeguard your career over the next ten years, simply translating your PROC REPORT knowledge to R’s {flextable} is not enough.\nTo stand out in the rapidly evolving R/Pharma landscape: 1. Master {admiral}: Understand how to build ADaMs natively in R. 2. Master APIs & Deployment: Learn how to host Shiny applications on Posit Connect or Shiny Server. 3. Master Git & Version Control: R projects are software development environments, not just linear scripts scattered in network drive folders. 4. Learn R Packages: Understand how to wrap your repetitive clinical derivations into KnowledgeCentReggplots style internal libraries.\nThe shift from row-by-row procedural coding to functional data pipelines has already happened. The shift from paper outputs to interactive applications is happening right now.\nEmbrace the change. The tidyverse is waiting!"
+  },
+  {
+    "objectID": "blog/posts/2026-03-18-efficacy-survival.html",
+    "href": "blog/posts/2026-03-18-efficacy-survival.html",
+    "title": "Efficacy TFLs: Survival Analysis and Kaplan-Meier Plots using {survival} and {survminer}",
+    "section": "",
+    "text": "In oncology trials, the primary efficacy endpoint is often a time-to-event variable, such as Overall Survival (OS) or Progression-Free Survival (PFS).\nIn SAS, analyzing these endpoints generally requires two heavy-hitting procedures: PROC LIFETEST (for generating Kaplan-Meier curves and Log-Rank tests) and PROC PHREG (for Cox Proportional Hazards modeling).\nIn R, the standard isn’t just “good enough”—it’s the industry standard across all academic statistics. We use the {survival} package, authored originally by Terry Therneau (who literally wrote the book on modeling survival data). We pair it with {survminer} for publication-ready graphics."
+  },
+  {
+    "objectID": "blog/posts/2026-03-18-efficacy-survival.html#the-efficacy-endpoint-time-to-event",
+    "href": "blog/posts/2026-03-18-efficacy-survival.html#the-efficacy-endpoint-time-to-event",
+    "title": "Efficacy TFLs: Survival Analysis and Kaplan-Meier Plots using {survival} and {survminer}",
+    "section": "",
+    "text": "In oncology trials, the primary efficacy endpoint is often a time-to-event variable, such as Overall Survival (OS) or Progression-Free Survival (PFS).\nIn SAS, analyzing these endpoints generally requires two heavy-hitting procedures: PROC LIFETEST (for generating Kaplan-Meier curves and Log-Rank tests) and PROC PHREG (for Cox Proportional Hazards modeling).\nIn R, the standard isn’t just “good enough”—it’s the industry standard across all academic statistics. We use the {survival} package, authored originally by Terry Therneau (who literally wrote the book on modeling survival data). We pair it with {survminer} for publication-ready graphics."
+  },
+  {
+    "objectID": "blog/posts/2026-03-18-efficacy-survival.html#fitting-the-model",
+    "href": "blog/posts/2026-03-18-efficacy-survival.html#fitting-the-model",
+    "title": "Efficacy TFLs: Survival Analysis and Kaplan-Meier Plots using {survival} and {survminer}",
+    "section": "Fitting the Model",
+    "text": "Fitting the Model\nLet’s assume our ADSL dataset contains AVAL (time in months to event) and CNSR (censor flag). Note: In {survival}, the censor indicator needs to be formulated as Event = 1 (Dead), Censor = 0 (Alive), whereas SAS sometimes defaults to the opposite.\n\nlibrary(dplyr)\nlibrary(survival)\n\nWarning: package 'survival' was built under R version 4.4.3\n\n# Simulated ADTTE (Time to Event) dataset\nadtte &lt;- data.frame(\n  USUBJID = 1:200,\n  TRTA = sample(c(\"Placebo\", \"Active\"), 200, replace = TRUE),\n  AVAL = rexp(200, rate = 0.1), # Simulated survival time\n  CNSR = sample(c(0, 1), 200, replace = TRUE, prob = c(0.7, 0.3)) # 0 = event, 1 = censored\n)\n\n# Convert SAS CNSR (1=Censored, 0=Event) to R Status (0=Censored, 1=Event)\nadtte &lt;- adtte %&gt;%\n  mutate(STATUS = if_else(CNSR == 0, 1, 0))\n\n# 1. Create the Survival Object\nsurv_obj &lt;- Surv(time = adtte$AVAL, event = adtte$STATUS)\n\n# 2. Fit the Kaplan-Meier model\nkm_fit &lt;- survfit(surv_obj ~ TRTA, data = adtte)\n\n# 3. Fit a Cox Proportional Hazards Model (for Hazard Ratio)\ncox_fit &lt;- coxph(surv_obj ~ TRTA, data = adtte)\n\n# Output summary\nsummary(cox_fit)\n\nCall:\ncoxph(formula = surv_obj ~ TRTA, data = adtte)\n\n  n= 200, number of events= 140 \n\n               coef exp(coef) se(coef)      z Pr(&gt;|z|)\nTRTAPlacebo -0.1843    0.8317   0.1705 -1.081     0.28\n\n            exp(coef) exp(-coef) lower .95 upper .95\nTRTAPlacebo    0.8317      1.202    0.5954     1.162\n\nConcordance= 0.532  (se = 0.024 )\nLikelihood ratio test= 1.17  on 1 df,   p=0.3\nWald test            = 1.17  on 1 df,   p=0.3\nScore (logrank) test = 1.17  on 1 df,   p=0.3\n\n\nThe output of summary(cox_fit) provides the Hazard Ratio (exp(coef)), the confidence intervals, and the p-values immediately. You can easily extract these using the {broom} package to populate your Table 14.2.1.X."
+  },
+  {
+    "objectID": "blog/posts/2026-03-18-efficacy-survival.html#visualizing-the-kaplan-meier-curve",
+    "href": "blog/posts/2026-03-18-efficacy-survival.html#visualizing-the-kaplan-meier-curve",
+    "title": "Efficacy TFLs: Survival Analysis and Kaplan-Meier Plots using {survival} and {survminer}",
+    "section": "Visualizing the Kaplan-Meier Curve",
+    "text": "Visualizing the Kaplan-Meier Curve\nNow, for the holy grail of oncology TFLs: The Kaplan-Meier Plot.\nIn SAS, customizing PROC SGPLOT to include a risk table at the bottom, adjusting the censor tick marks, and formatting the p-value text is notoriously finicky.\nWith {survminer} in R, it is handled automatically through a clean ggplot2 wrapper.\n\nlibrary(survminer)\n\nWarning: package 'ggpubr' was built under R version 4.4.3\n\nggsurvplot(\n  fit = km_fit,\n  data = adtte,\n  \n  # Styling the Lines\n  palette = c(\"#0072B2\", \"#D55E00\"), # Colorblind friendly\n  size = 1.2,\n  linetype = \"solid\",\n  \n  # Censor marks\n  censor = TRUE,\n  censor.shape = 124, # Represents a vertical tick\n  censor.size = 3,\n  \n  # Axes & Grid\n  xlim = c(0, max(adtte$AVAL)),\n  break.time.by = 5,\n  xlab = \"Time in Months\",\n  ylab = \"Probability of Survival\",\n  \n  # Confidence Intervals \n  conf.int = TRUE,\n  \n  # Risk Table at the bottom\n  risk.table = TRUE,\n  risk.table.height = 0.25,\n  risk.table.title = \"Number at risk\",\n  \n  # Statistical reporting\n  pval = TRUE, # Automatically calculates and prints Log-rank p-value\n  pval.coord = c(2, 0.2)\n)\n\n\n\n\n\n\n\n\n\nWhy this is highly superior for Clinical Trials:\n\nThe Risk Table: Adding risk.table = TRUE automatically generates an aligned table beneath the plot showing subjects at risk across the time bins.\nDynamic P-Values: It inherently understands the fitted model (km_fit) and calculates the test statistic dynamically, placing it on the chart.\nThemes: It inherits {ggplot2} theming, meaning your company can define a theme_company_km() and apply it globally to all charts.\n\nNext up, we will tackle the visually stunning (and often structurally complex) Waterfall and Spider Plots for solid tumor response (RECIST) criteria!"
   },
   {
     "objectID": "blog/posts/2024-05-28-shiny-reactivity.html",

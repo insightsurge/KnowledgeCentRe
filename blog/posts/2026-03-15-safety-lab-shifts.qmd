@@ -1,0 +1,112 @@
+---
+title: "Safety TFLs: Visualizing Lab Shifts and Vital Sign Trends in R"
+date: "2026-03-15"
+author: "Harsh Verma"
+categories: [Figures, Safety, ggplot2, Clinical]
+description: "Move beyond tables: Using {ggplot2} to create powerful visual representations of laboratory shift tables and vital sign trends."
+---
+
+## The Limitations of Tables
+
+We spend hours making Laboratory Shift Tables—those massive matrices showing how many subjects went from "Low" at baseline to "High" at Week 12. 
+
+The problem? Most medical reviewers glance at these 100-page tables and immediately look for a figure instead. Large cross-tabulations are terrible at conveying *magnitude*. Yes, 5 patients shifted to "High" ALT, but did they barely cross the threshold, or did their liver enzymes spike 10x the Upper Limit of Normal (ULN)?
+
+In SAS, creating complex interactive or highly customized graphics (`PROC SGPLOT` / `GTL`) is cumbersome. In R, we have the gold standard: `{ggplot2}`.
+
+## Building a Spaghetti Plot for Vitals
+
+Let's map out how a SAS programmer would build a trend plot of Systolic Blood Pressure (`SBP`) over time for individual patients, overlaid with a mean trend line.
+
+```{r}
+#| label: spaghetti-vitals
+#| message: false
+library(dplyr)
+library(ggplot2)
+
+# Simulated Vitals Data
+set.seed(123)
+advs <- data.frame(
+  USUBJID = rep(c("101", "102", "103", "104", "105"), each = 4),
+  TRTA = rep(c("Placebo", "Active", "Placebo", "Active", "Active"), each = 4),
+  AVISITN = rep(c(0, 4, 8, 12), times = 5),
+  AVISIT = rep(c("Baseline", "Week 4", "Week 8", "Week 12"), times = 5)
+) %>%
+  mutate(AVAL = round(rnorm(n(), mean = 120, sd = 15))) # Random SBP values
+
+# Ensure AVISIT is ordered correctly as a factor!
+advs$AVISIT <- factor(advs$AVISIT, levels = c("Baseline", "Week 4", "Week 8", "Week 12"))
+
+```
+
+### The `{ggplot2}` Pipeline
+
+In `{ggplot2}`, we define the dataset, map the axes (aesthetics or `aes()`), and then add geometric layers (`geom_line()`, `geom_point()`).
+
+```{r}
+# Basic Spaghetti Plot
+ggplot(advs, aes(x = AVISIT, y = AVAL, group = USUBJID, color = TRTA)) +
+  geom_line(alpha = 0.5) +  # Faded lines for individual subjects
+  geom_point(alpha = 0.5) + # Faded points
+  
+  # Overlay a LOESS smoothing curve (overall trend) grouping by TRTA
+  geom_smooth(aes(group = TRTA), method = "loess", se = FALSE, size = 1.5) +
+  
+  # Clinical Formatting
+  theme_minimal() +
+  labs(
+    title = "Systolic Blood Pressure Trends by Treatment Arm",
+    x = "Visit",
+    y = "Systolic Blood Pressure (mmHg)",
+    color = "Treatment Arm"
+  ) +
+  scale_color_manual(values = c("Active" = "#0072B2", "Placebo" = "#D55E00"))
+```
+
+In a single block of code, we created individual patient trajectories while automatically calculating and overlaying a non-parametric smoothing line (`geom_smooth`) representing the treatment arm average. 
+
+## Visualizing Lab Shifts: The Boxplot Approach
+
+Shift tables lack magnitude. A better approach is to plot the actual lab values at Baseline vs. Maximum Post-Baseline grouped by their Baseline Status.
+
+Let's say we have derived baseline grades for Bilirubin (`BILI`). We want to see the distribution of maximum post-baseline values.
+
+```{r}
+# Simulated Lab Data
+adlb_max <- data.frame(
+  USUBJID = 1:50,
+  TRTA = sample(c("Placebo", "Active"), 50, replace = TRUE),
+  BBASE_GRADE = sample(c("Normal", "High"), 50, replace = TRUE, prob = c(0.8, 0.2)),
+  AVAL = rnorm(50, mean = 1.5, sd = 0.5) # Max Post-Baseline values
+)
+
+ggplot(adlb_max, aes(x = BBASE_GRADE, y = AVAL, fill = TRTA)) +
+  geom_boxplot(outlier.color = "red", outlier.size = 2) +
+  
+  # Add a horizontal line representing the Upper Limit of Normal (e.g., 1.2)
+  geom_hline(yintercept = 1.2, linetype = "dashed", color = "black") +
+  
+  annotate("text", x = 1, y = 1.25, label = "ULN Threshold", size = 3, hjust = 0) +
+  
+  theme_bw() +
+  labs(
+    title = "Max Post-Baseline Bilirubin by Baseline Grade",
+    subtitle = "Red points indicate significant outliers",
+    x = "Baseline Grade",
+    y = "Maximum Post-Baseline Bilirubin (mg/dL)",
+    fill = "Treatment Arm"
+  )
+```
+
+### Why this beats a table
+
+If a reviewer looks at this plot, they can instantly see:
+1. Did the "Normal" baseline subjects trend higher in the Active arm? (Look at the median line of the boxplot).
+2. Are there any catastrophic outliers? (The red dots).
+3. How many people crossed the ULN threshold who were previously normal? (The distribution above the dashed line).
+
+## Reproducibility Through Code
+
+The greatest benefit of generating figures in R is reproducibility. You can wrap these `ggplot` objects into generalized functions, stick them into an internal company R package (`e.g., KnowledgeCentReggplots`), and instantly generate stylized, branded, SAP-approved figures for every study with a single line of code.
+
+Next up, we dive into Efficacy! We will tackle Survival Analysis and the legendary Kaplan-Meier plot.

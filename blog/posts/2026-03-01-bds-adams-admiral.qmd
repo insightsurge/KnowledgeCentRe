@@ -1,0 +1,114 @@
+---
+title: "BDS (Basic Data Structure) ADaMs with {admiral}: Doing What SAS Did, But Better"
+date: "2026-03-01"
+author: "Harsh Verma"
+categories: [ADaM, BDS, CDISC, admiral]
+description: "Mastering the complexities of BDS datasets (ADVS, ADLB) in R, including baseline derivations and LOCF."
+---
+
+## The Complexity of BDS
+
+If ADSL is the foundation and OCCDS is the occurrence log, then **BDS (Basic Data Structure)** is the engine room of clinical trial analysis. Datasets like `ADVS` (Vitals), `ADLB` (Labs), and `ADEG` (ECGs) track parameters repeatedly measured over time for each subject.
+
+The defining characteristics of a BDS dataset are:
+1. Multiple records per subject (long format).
+2. A single analyzed parameter (`PARAM`, `PARAMCD`).
+3. An analysis value (`AVAL`, `AVALC`).
+4. Timings and visits (`AVISIT`, `ATPT`).
+5. Complex baseline derivations (`ABLFL`, `BASE`).
+
+## Setting the Baseline (`ABLFL`)
+
+In SAS, determining the baseline record (the last measurement taken on or before the first dose of study drug) requires a dizzying array of `PROC SORT` by `USUBJID PARAMCD ADT ATMN`, followed by `if last.PARAMCD and ADT <= TRTSDT then ABLFL = 'Y'`.
+
+If there are duplicate visits or non-missing conditions, the SAS code becomes a nightmare to maintain.
+
+With `{admiral}`, we use the `derive_var_extreme_flag()` function.
+
+```{r}
+#| label: admiral-bds-baseline
+#| message: false
+library(dplyr)
+library(admiral)
+
+# Simulating Lab Data
+adlb <- data.frame(
+  USUBJID = c("001", "001", "001"),
+  PARAMCD = c("ALT", "ALT", "ALT"),
+  AVAL = c(20, 22, 45),
+  ADTM = as.POSIXct(c("2024-01-01 08:00", "2024-01-10 09:00", "2024-01-20 10:00")),
+  TRTSDTM = as.POSIXct(c("2024-01-10 12:00", "2024-01-10 12:00", "2024-01-10 12:00"))
+)
+
+# 1. Derive ABLFL (Analysis Baseline Flag)
+# We pre-filter for baseline records, flag the last one, and join back
+adlb_bl <- adlb %>% 
+  filter(ADTM <= TRTSDTM) %>%
+  derive_var_extreme_flag(
+    by_vars = exprs(USUBJID, PARAMCD),
+    order = exprs(ADTM),
+    new_var = ABLFL,
+    mode = "last"
+  )
+
+adlb <- adlb %>%
+  left_join(adlb_bl, by = c("USUBJID", "PARAMCD", "AVAL", "ADTM", "TRTSDTM")) %>%
+  mutate(ABLFL = if_else(is.na(ABLFL), "", ABLFL))
+
+print(adlb)
+```
+
+Look how explicit the R code is! 
+Group it by `USUBJID` and `PARAMCD`. Order it chronologically (`ADTM`). Filter for records before or exactly on the treatment start time (`condition`). And pick the very last one (`mode = "last"`). 
+
+## Populating `BASE` and `CHG`
+
+Once the `ABLFL` flag is set to `"Y"` for the baseline record, we need to populate the numeric `BASE` value onto *every* record for that `USUBJID` and `PARAMCD`, so we can calculate the change from baseline (`CHG`).
+
+In SAS, this requires `if ABLFL = 'Y' then _BASE = AVAL; retain _BASE; BASE = _BASE`.
+
+In `{admiral}`:
+
+```{r}
+# 2. Derive BASE (Baseline Value)
+adlb <- adlb %>%
+  derive_var_base(
+    by_vars = exprs(USUBJID, PARAMCD),
+    source_var = AVAL,
+    new_var = BASE
+  ) %>%
+  
+  # 3. Derive CHG (Change from Baseline)
+  derive_var_chg()
+
+print(adlb)
+```
+
+Yes, it really is that simple. `derive_var_base()` automatically looks for the record where `ABLFL == "Y"` and propagates that `AVAL` to the `BASE` column for all records in the group. Then, `derive_var_chg()` is literally a pre-built wrapper that calculates `AVAL - BASE`.
+
+## Handling LOCF (Last Observation Carried Forward)
+
+In oncology and other therapeutic areas, if a subject misses a visit, we often impute their value using LOCF. 
+
+In SAS, LOCF involves heavily nested data step loops and `retain` statements. In `{admiral}`, we derive new records explicitly.
+
+```{r}
+#| eval: false
+# 4. Derive LOCF values for missing visits
+adlb_locf <- adlb %>%
+  derive_locf_records(
+    dataset_expected_obs = my_expected_visits_dataset, # A dataset defining what visits should exist
+    by_vars = exprs(USUBJID, PARAMCD),
+    order = exprs(AVISITN)
+  )
+```
+
+*(Note: Requires a definition of standard visits, which we skip in this mock code, but the function handles the forward propagation logic seamlessly).*
+
+## The Shift to Declarative Programming
+
+When building BDS datasets in SAS, you write **imperative code**: you tell the computer *how* to do the derivation row-by-row.
+
+When using `{admiral}` in R, you write **declarative code**: you declare *what* you want (e.g., `derive_var_base()`), and the package handles the row operations under the hood. 
+
+This results in BDS programming that is mathematically precise, faster to write, and vastly easier for a QC programmer to review.

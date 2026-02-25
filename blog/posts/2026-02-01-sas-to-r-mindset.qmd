@@ -1,0 +1,129 @@
+---
+title: "The Mindset Shift: Moving from SAS Data Steps to {dplyr}"
+date: "2026-02-01"
+author: "Harsh Verma"
+categories: [SAS-to-R, Tidyverse, Clinical, Data Manipulation]
+description: "Stop thinking row-by-row and iterative loops. Learn how to embrace vectorization and the dplyr pipeline for clinical data manipulation."
+---
+
+## The Great Migration
+
+If you've spent the better part of your career looking at the familiar blueness of the SAS environment, typing out `data ... set ... run;`, transitioning to R can feel a bit like learning to write with your non-dominant hand. The concepts are all there, but the muscle memory is completely wrong.
+
+The biggest hurdle for experienced SAS programmers isn't syntax—it's **mindset**. 
+
+In SAS, the Data Step processes data row-by-row (the Program Data Vector or PDV). We naturally think about "retaining" variables, "first.var" and "last.var", and looping sequentially. In R, particularly when using the `{dplyr}` package (part of the `{tidyverse}`), we need to think in terms of **vectors** and **pipelines**.
+
+Let's explore this mindset shift.
+
+## The classic SAS Data Step
+
+Consider a common scenario: we have a dataset of patient weights baseline and week 12, and we want to calculate the percentage change from baseline, but only for patients in the active treatment arm. 
+
+In SAS, you might write something like this:
+
+```sas
+/* SAS Code */
+data weight_change;
+  set adsl;
+  where arm = 'Active';
+  pct_change = ((weight_w12 - weight_bl) / weight_bl) * 100;
+  
+  if pct_change >= 5 then flag = 'Y';
+  else flag = 'N';
+run;
+```
+
+It's beautiful in its simplicity. You read a record, filter it, calculate a new variable, assign a flag, and output. 
+
+## The R Way: Enter the Pipeline
+
+In R, the `{dplyr}` package provides a set of "verbs" that allow you to manipulate data frames elegantly. Instead of a Data Step block, we use the pipe operator (`%>%` or `|>`) to pass data from one verb to the next.
+
+Here is the exact same logic written in R:
+
+```{r}
+#| label: setup
+#| message: false
+library(dplyr)
+
+# Mock ADSL Data
+adsl <- data.frame(
+  usubjid = c("001", "002", "003", "004"),
+  arm = c("Active", "Placebo", "Active", "Placebo"),
+  weight_bl = c(80, 75, 90, 85),
+  weight_w12 = c(78, 76, 82, 85)
+)
+
+# R Code using dplyr
+weight_change <- adsl %>%
+  filter(arm == "Active") %>%
+  mutate(
+    pct_change = ((weight_w12 - weight_bl) / weight_bl) * 100,
+    flag = if_else(pct_change >= 5, "Y", "N")
+  )
+```
+
+### Breaking It Down
+
+Notice the shift in thinking:
+1. **The Pipe (`%>%`)**: Think of this as "and then." Take `adsl`, *and then* filter it, *and then* mutate it.
+2. **`filter()`**: This is your `where` statement. It operates on the whole dataset at once, returning only rows where the condition is TRUE.
+3. **`mutate()`**: This creates new columns or modifies existing ones. 
+4. **Vectorized Logic**: The `if_else()` function applies the condition to the entire column (`pct_change`) simultaneously, rather than checking it row-by-row. 
+
+## What about FIRST. and LAST. processing?
+
+This is where SAS programmers often panic. If there's no PDV sequentially reading rows, how do we identify the first or last record of a patient?
+
+In R, we solve this with **grouping**. 
+
+Let's say we want to find the maximum weight for each subject across multiple visits. 
+
+```sas
+/* SAS Code */
+proc sort data=weights;
+  by usubjid descending weight;
+run;
+
+data max_weight;
+  set weights;
+  by usubjid;
+  if first.usubjid;
+run;
+```
+
+In R, `{dplyr}` does this incredibly cleanly:
+
+```{r}
+# Mock Weights Data
+weights <- data.frame(
+  usubjid = c("001", "001", "002", "002", "002"),
+  visit = c("Baseline", "Week 4", "Baseline", "Week 4", "Week 8"),
+  weight = c(80, 81, 75, 74, 73)
+)
+
+# R Code using dplyr
+max_weight <- weights %>%
+  group_by(usubjid) %>%
+  slice_max(weight, n = 1, with_ties = FALSE) %>%
+  ungroup()
+```
+
+Or similarly, just arranging and slicing:
+
+```{r}
+max_weight2 <- weights %>%
+  arrange(usubjid, desc(weight)) %>%
+  group_by(usubjid) %>%
+  slice(1) %>%
+  ungroup()
+```
+
+By grouping the data frame, `{dplyr}` verbs suddenly operate *within* those groups. We don't need to manually check `first.usubjid`—we just tell R to grab the first row (`slice(1)`) or the maximum value (`slice_max`) for each group. 
+
+## Final Thoughts
+
+The transition from SAS to R is really a shift from **row-wise iteration** to **vectorized operations on columns**. Once you stop trying to force R to behave like a SAS Data Step and embrace the `{dplyr}` pipeline, your code will become more readable, more efficient, and surprisingly fun to write. 
+
+Ready to make the jump? In the next posts, we'll cover how to replace trusty PROCs like `FREQ` and `MEANS`. Stay tuned!

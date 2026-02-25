@@ -1,0 +1,96 @@
+---
+title: "How I Built an Interactive Clinical App with {teal} (And Why You Should Too)"
+date: "2026-04-05"
+author: "Harsh Verma"
+categories: [Shiny, teal, Interactive, Clinical Apps]
+description: "Stop emailing 500-page demographic listings. Build a standardized exploratory data analysis (EDA) app for clinical teams using {teal}."
+---
+
+## The Request That Started It All
+
+We’ve all been there. The clinical team reviews Table 14.1.1 (Demographics). A medical monitor emails you:
+*"Table 14.1.1 shows a higher proportion of elderly subjects in the Active arm. Can you break this table down further by Region and rerun it for only the subjects who experienced a Severe Adverse Event?"*
+
+To fulfill this in SAS, you copy your `.sas` program, change the `where` clause in the data step, add `REGION` to the `PROC REPORT` split variable, run the whole pipeline, and generate a new RTF.
+
+Three days later, they reply: *"Ah, I meant Region AND Sex. Can you rerun it again?"*
+
+This cycle of iterative manual requests wastes hundreds of programming hours. What if, instead, we gave the medical monitor a dashboard where they could change those filters themselves in real time?
+
+## From Shiny to `{teal}`
+
+A standard **Shiny** app solves this problem, but building a highly robust clinical data dashboard from scratch in Shiny requires heavy UI/UX design, State management, and reactive troubleshooting.
+
+The Pharmaverse solved this by releasing **`{teal}`**—a standardized framework specifically designed for exploring CDISC data intuitively.
+
+`{teal}` modules are pre-built widgets that automatically understand `ADSL`, `ADAE`, `ADLB`, etc., and render them into dynamic tables, plots, and filters.
+
+## Building a Basic `{teal}` App in 10 Minutes
+
+Let's build an app that allows a reviewer to interactively filter Demographics and explore an Adverse Event table.
+
+```{r}
+#| eval: false
+# NOTE: This code is meant to be run in a live R console/script, not evaluated statically in this blog.
+
+library(teal)
+library(teal.modules.clinical)
+
+# 1. Provide the datasets
+# We wrap them in teal_data() and tell teal to make them reproducible.
+data <- teal_data()
+data <- within(data, {
+  ADSL <- source_adsl
+  ADAE <- source_adae
+})
+datanames(data) <- c("ADSL", "ADAE")
+
+# 2. Define the Application Structure
+# We define an app that contains two pre-built clinical modules.
+app <- init(
+  data = data,
+  
+  # Inject the pre-built modules!
+  modules = modules(
+    # Module 1: An interactive Demographic Table
+    tm_t_summary(
+      label = "Demographic Table",
+      dataname = "ADSL",
+      arm_var = choices_selected(c("ARM", "SEX"), "ARM"),
+      summarize_vars = choices_selected(
+        c("AGE", "SEX", "RACE", "BMI"), 
+        c("AGE", "SEX")
+      )
+    ),
+    
+    # Module 2: An interactive Adverse Event Table
+    tm_t_events(
+      label = "Adverse Event Summary",
+      dataname = "ADAE",
+      arm_var = choices_selected(c("ARM", "SEX"), "ARM"),
+      llt = choices_selected(c("AEDECOD", "AETERM"), "AEDECOD"),
+      hlt = choices_selected(c("AEBODSYS", "AESOC"), "AEBODSYS")
+    )
+  )
+)
+
+# 3. Launch the app!
+runApp(app)
+```
+
+## The Magic of `{teal}`
+
+With just 30 lines of code, you have launched a professional web application. 
+
+Here is what the medical reviewer gets when they open the app:
+1. **The Filter Panel:** On the right side, `{teal}` automatically generates a filter panel reading your dataset. The user can filter `ADSL` by `AGE > 65` or filter `ADAE` by `AESEV == "SEVERE"`. The tables instantly update.
+2. **Dynamic UI:** In the "Demographic Table" tab, the user can click dropdowns to change the grouping variable from `ARM` to `SEX`, and add `BMI` to the summary statistics.
+3. **Show R Code:** Most importantly for validation, `{teal}` includes a "Show R Code" button. When the medical writer configures the exact table they want, they click this button, and `{teal}` provides the exact `{rtables}` R code necessary to perfectly reproduce that specific table in a validated script.
+
+## The Paradigm Shift
+
+We are moving away from treating clinical programmers as "report vending machines." 
+
+By using `{teal}`, we empower biostatisticians and medical monitors to perform Exploratory Data Analysis (EDA) on their own time. We shift our focus to delivering validated analysis datasets (ADaMs), and then providing interactive endpoints that sit on top of them.
+
+In our final post of this series, we will explore the future of clinical submissions: replacing static TFL submissions with fully interactive regulatory Shiny apps!

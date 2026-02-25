@@ -1,0 +1,108 @@
+---
+title: "Clinical Listings in R: Creating Patient Profiles that Rival PROC REPORT"
+date: "2026-03-25"
+author: "Harsh Verma"
+categories: [Listings, TFL, Quarto, flextable]
+description: "How to move beyond simple datasets and build paginated, formatted RTF/Word document listings using {flextable} and Quarto."
+---
+
+## The Unsophisticated Cousin of TFLs
+
+Tables and Figures get all the glory, but **Data Listings** are often where the heaviest regulatory review actually happens. Medical monitors and FDA reviewers read Appendix 16.2 listings to verify individual patient journeys (Patient Profiles), track serious adverse events line-by-line, and check vital sign out-of-range flags.
+
+In SAS, the undisputed king of Data Listings is `PROC REPORT` outputting via `ODS RTF`. It handles pagination beautifully and repeats column headers endlessly across hundreds of pages.
+
+Can R do this natively? Yes, but you must shift your perspective away from Base R `print()` statements and embrace the world of `Quarto` and `{flextable}`.
+
+## Building a Listing with `{flextable}`
+
+The `{flextable}` package is designed specifically for tabular reporting in Microsoft Word and PowerPoint (and HTML/PDF). Because clinical organizations heavily rely on DOCX/RTF formats for collaborative review, this is the perfect package for listings.
+
+Let's build a Lab Abnormalities Listing (Table 16.2.8).
+
+```{r}
+#| label: flextable-listing
+#| message: false
+library(dplyr)
+library(flextable)
+library(officer)
+
+# Simulated Extreme Lab Values
+adlb_abn <- data.frame(
+  USUBJID = c("101", "101", "102", "102", "103"),
+  PARAM = c("Alanine Aminotransferase", "Aspartate Aminotransferase", "Potassium", "Sodium", "Hemoglobin"),
+  AVISIT = c("Week 4", "Week 4", "Baseline", "Week 12", "EOT"),
+  AVAL = c(120, 85, 2.5, 150, 7.2),
+  ANRIND = c("HIGH", "HIGH", "LOW", "HIGH", "LOW"),
+  FLAG = c("*", "*", "*", "", "**")
+)
+
+# Create the basic flextable object
+ft_listing <- flextable(adlb_abn) %>%
+  
+  # Format the headers
+  set_header_labels(
+    USUBJID = "Subject ID",
+    PARAM = "Laboratory Parameter",
+    AVISIT = "Visit",
+    AVAL = "Result\n(Numeric)",
+    ANRIND = "Reference\nIndicator",
+    FLAG = "Clinical\nFlag"
+  ) %>%
+  
+  # Styling 
+  theme_vanilla() %>%
+  align(align = "center", part = "all") %>%
+  align(j = "PARAM", align = "left", part = "body") %>% # Left align text strings
+  
+  # Emphasize rows with flags
+  bold(i = ~ FLAG == "**", j = "AVAL") %>%
+  color(i = ~ ANRIND == "HIGH", j = "ANRIND", color = "red") %>%
+  color(i = ~ ANRIND == "LOW", j = "ANRIND", color = "blue") %>%
+  
+  # Merge repeated Subject IDs vertically (like a BREAK variable in PROC REPORT)
+  merge_v(j = "USUBJID")
+
+# View the result (in HTML usually)
+ft_listing
+```
+
+Notice the `merge_v(j = "USUBJID")` command. This acts exactly like the `order` or `group` option in `PROC REPORT`, hiding duplicate Subject IDs on subsequent rows so the reviewer’s eye tracks cleanly across the patient's data block.
+
+## Handling Pagination in Listings
+
+If your listing is 500 pages long, you need column headers to repeat on every page of your RTF/Word document. 
+
+While `{flextable}` inherently repeats headers in MS Word when rendered, controlling exactly *when* a page breaks is critical for Patient Profiles (e.g., breaking the page on a new `USUBJID`).
+
+To accomplish this programmatically, you use **Quarto**. Quarto allows you to loop through unique subjects in your R code, generate a specific `{flextable}` for just that subject, and insert raw Markdown page breaks (`\pagebreak`) into the document dynamically using `knitr::asis_output()`.
+
+```{r}
+#| eval: false
+# A conceptual example of a Quarto loop for Patient Profiles
+
+cat("# Patient Profiles: Severe Adverse Events\n")
+
+unique_patients <- unique(adae_severe$USUBJID)
+
+for (pt in unique_patients) {
+  
+  # Subset data
+  pt_data <- adae_severe %>% filter(USUBJID == pt)
+  
+  cat(paste("## Subject Details for", pt, "\n"))
+  
+  # Print flextable to Word Document
+  ft <- flextable(pt_data) %>% theme_vanilla()
+  print(ft)
+  
+  # Force a Microsoft Word Page Break!
+  cat('\n\n\\pagebreak\n\n')
+}
+```
+
+## The Verification Advantage
+
+Because R treats the generation of a listing as manipulating an R object (`flextable`), you can run unit tests on the document generation script. Your verification programmer can programmatically assert that the output object contains exactly the right columns, values, and styling attributes before a single PDF or DOCX is ever physically opened by a user.
+
+Tables, Figures, and Data Listings in R are completely mature. Next, we are going to look at computationally intensive optimization: **How to make your R code execute at lightning speed.**

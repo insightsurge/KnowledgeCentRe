@@ -1,0 +1,91 @@
+---
+title: "Validating SDTM Domains Programmatically in R: A New Approach"
+date: "2026-02-18"
+author: "Harsh Verma"
+categories: [SDTM, Data Quality, Validation, CDISC]
+description: "How to use R packages to QC your SDTM domains and catch systematic errors before sending them to Pinnacle 21."
+---
+
+## Beyond Pinnacle 21
+
+Every clinical programmer knows the ritual: you build your SDTM domains, you export them to XPT, you load them into Pinnacle 21 Community (or Enterprise), and you pray that the validation report doesn't generate 500 pages of errors.
+
+Pinnacle 21 is phenomenal, but it functions as a black-box end-of-pipeline check. What if we want to catch structural, data-type, and referential integrity errors *while* we are building the domains in R? 
+
+## Programmatic QC in R
+
+Because R is an interactive, memory-based language, we can run validation suites directly against our data frames before we ever write them to disk. Several packages in the open-source clinical R community (like `{pointblank}` or `{validate}`) allow us to define rule sets.
+
+### Setting Up Rules with `{validate}`
+
+Let's look at how we might validate the `DM` domain using the `{validate}` package.
+
+```{r}
+#| label: validate-dm
+#| message: false
+library(dplyr)
+library(validate)
+
+# Our theoretical DM domain
+dm_target <- data.frame(
+  STUDYID = c("ABC", "ABC", "ABC"),
+  DOMAIN = c("DM", "DM", "AE"), # Intentional error here
+  USUBJID = c("ABC-01", "ABC-02", "ABC-01"), # Intentional duplicate
+  AGE = c(45, -5, 60), # Intentional negative age
+  SEX = c("M", "F", "UNKNOWN") # Intentional non-standard codelist
+)
+
+# Define CDISC IG rules
+rules <- validator(
+  check_domain = DOMAIN == "DM",
+  check_unique = is_unique(USUBJID),
+  check_age_positive = AGE >= 0 & AGE <= 120,
+  check_sex_codelist = SEX %in% c("M", "F", "U")
+)
+
+# Run the validation
+qc_results <- confront(dm_target, rules)
+summary(qc_results)
+```
+
+Look at how cleanly that outputs! Instead of scrolling through logs or waiting for Pinnacle 21, `summary(qc_results)` immediately shows us:
+- `check_domain`: Fails (one row has "AE")
+- `check_unique`: Fails (we have duplicate USUBJIDs)
+- `check_age_positive`: Fails (we have an age of -5)
+- `check_sex_codelist`: Fails ("UNKNOWN" is not standard "U")
+
+### Extracting the Failures
+
+You can easily extract the exact rows that failed to investigate them.
+
+```{r}
+# Extract rows that failed the age check
+violating(dm_target, qc_results[3]) 
+```
+
+## Cross-Domain Validation
+
+Pinnacle 21 often flags issues where an Adverse Event (`USUBJID` in `AE`) does not exist in the Demographics domain (`DM`). We can proactively check referential integrity using `{dplyr}` anti-joins.
+
+```{r}
+# AE Domain
+ae_domain <- data.frame(
+  USUBJID = c("ABC-01", "ABC-02", "ABC-99"), # ABC-99 is not in DM!
+  AETERM = c("HEADACHE", "NAUSEA", "FATIGUE")
+)
+
+# Find subjects in AE that are missing from DM
+missing_from_dm <- ae_domain %>%
+  anti_join(dm_target, by = "USUBJID")
+
+print(missing_from_dm)
+```
+In SAS, this requires a `SQL` query or a merged data step with `IN=` variables. In R, `anti_join()` performs this exact check in one readable line of code.
+
+## The Future: `{sdtmchecks}`
+
+The pharmaverse community is actively building packages like `{sdtmchecks}` specifically designed to run CDISC-specific data quality checks natively in R. 
+
+By integrating these tools into your development pipeline, your code becomes self-testing. This drastically reduces the back-and-forth iteration required when solely relying on external validation engines. 
+
+Next up, we’ll move beyond SDTM and look into building analysis datasets (ADaMs) using the powerful `{admiral}` package!
