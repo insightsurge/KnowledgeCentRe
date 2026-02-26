@@ -1,0 +1,80 @@
+---
+title: "TFL Generation with R: A SAS Programmer’s Overview"
+date: "2026-03-08"
+author: "Harsh Verma"
+categories: [TFL, Clinical, R, rtables, gt]
+description: "A high-level overview of how clinical Tables, Figures, and Listings differ when programmed in R vs SAS."
+---
+
+## The Ultimate Deliverable: TFLs
+
+In the pharmaceutical industry, everything we do—SDTM mapping, ADaM derivations, and statistical modeling—culminates in the generation of TFLs (Tables, Figures, and Listings). These are the definitive outputs reviewed by medical writers, statisticians, and regulatory agencies.
+
+If you are a SAS programmer, you probably have a template `PROC REPORT` macro that looks like this:
+
+```sas
+/* SAS Code: The Classic TFL Macro */
+%let title1 = "Table 14.1.1: Demographics and Baseline Characteristics";
+%let title2 = "Full Analysis Set";
+
+proc report data=final_adsl split='|' headline headskip missing spacing=2;
+  column page _PB_page1 trt_ord group_ord row_ord indent label ("Placebo |(N=&n_pbo.)" stat1) ("Active |(N=&n_act.)" stat2);
+  define trt_ord / order noprint;
+  define group_ord / order noprint;
+  define row_ord / order noprint;
+  define indent / display noprint;
+  
+  /* Extremely complex compute blocks to handle bolding and indentation */
+  compute label;
+    if indent=1 then label = "  "||strip(label);
+  endcomp;
+run;
+```
+
+It works, but modifying it to handle complex nested headers or dynamic column spanning requires deep expertise in ODS (Output Delivery System) escape characters.
+
+## The R TFL Ecosystem
+
+R approaches TFL generation totally differently. Instead of relying on a single, massive procedure like `PROC REPORT`, R provides specialized packages tailored for specific types of outputs.
+
+### 1. Tables: `{rtables}` vs `{gt}` vs `{gtsummary}`
+
+Tables are incredibly complex structural objects in clinical trials. They are not just data frames; they have spanning headers ("Active vs Placebo"), footnotes, multiple nested rows (System Organ Class > Preferred Term), and specific alignment rules.
+
+- **`{rtables}`:** Built by the Pharmaverse community (heavily supported by Roche). It is explicitly designed to replicate the complex, nested trees of clinical trial tables. It is declarative (you define the *layout* first, then apply the *data*).
+- **`{gt}` (Grammar of Tables):** Built by Posit. It is excellent for highly customized, beautiful static tables. It treats tables like ggplot treats charts—building them piece by piece (title, spanners, body, stub, footnotes).
+- **`{gtsummary}`:** A wrapper package that takes an ADaM dataset and automatically calculates standard summary statistics (mean, SD, n, p-values) and outputs a `{gt}` or `{flextable}` object. Perfect for quick Demographic tables.
+
+### 2. Figures: `{ggplot2}`
+
+When it comes to Figures, **SAS isn’t even in the same league as R.** `PROC SGPLOT` is highly functional, but R’s `{ggplot2}` (Grammar of Graphics) is arguably the most powerful data visualization framework on the planet.
+
+With `{ggplot2}`, creating Kaplan-Meier curves, Waterfall plots, and adverse event volcano plots isn't just possible—it’s intuitive. We will explore `{survival}` and `{survminer}` for efficacy plots later in this series.
+
+### 3. Listings: `{flextable}` and Quarto
+
+Listings are essentially the raw data dumped into a PDF or Word document with pagination.
+
+In SAS, this is `PROC PRINT` or `PROC REPORT`. In R, you can use packages like `{flextable}` which export perfectly to Microsoft Word (Docx) with repeating column headers on new pages.
+
+However, the biggest paradigm shift in R is **Quarto** (the successor to R Markdown). Quarto allows you to generate paginated RTF, PDF, or Word documents dynamically. Instead of creating 50 separate RTF files using ODS, you can knit a single Quarto document that loops through your datasets and generates 50 listings with automatic tables of contents.
+
+## The Workflow Shift
+
+In SAS:
+1. Load dataset.
+2. Run `PROC SUMMARY` to get stats.
+3. Run Data step to format stats into strings (`"15 (30.0%)"`).
+4. Run `PROC TRANSPOSE` to put Placebo and Active side-by-side.
+5. Run `PROC SORT` to order the rows correctly.
+6. Run `PROC REPORT` with an ODS RTF wrapper to print.
+
+In R (e.g., using `{rtables}`):
+1. Load dataset.
+2. Define the tree layout (`lyt <- basic_table() %>% split_cols_by("ARM") %>% analyze("AGE")`).
+3. Build the table (`build_table(lyt, adsl)`).
+4. Export to RTF or PDF.
+
+In R, the computation (summary stats) and the rendering (printing the table) happen **in a single step**. 
+
+Next, we’ll look at real code for building an Adverse Event Summary table using `{rtables}`!

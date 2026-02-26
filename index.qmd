@@ -5,81 +5,78 @@ toc: false
 ---
 
 <!-- 1. The Hero Section -->
+
 ```{=html}
-<div class="hero-section text-center p-5 bg-light border-bottom">
-  <h1 class="display-3 fw-bold text-primary">Bridge the Gap: SAS to R</h1>
-  <p>The definitive guide for clinical programmers transitioning to modern data science.</p>
-  <div class="mt-4">
-    <a href="sas-to-r/index.qmd" class="btn btn-primary btn-lg me-2">Start the Migration</a>
-    <a href="r-hub/beginner.qmd" class="btn btn-outline btn-lg">New to Programming?</a>
+<div class="hero-section text-center p-5">
+  <div class="fade-in-up">
+    <h1 class="display-3 fw-bold">Bridge the Gap: SAS to R</h1>
+    <p class="lead opacity-75">The definitive guide for clinical programmers transitioning to modern data science.</p>
+  </div>
+  <div class="mt-4 fade-in-up delay-1">
+    <a href="sas-to-r/index.qmd" class="btn btn-light btn-lg px-5 py-3 fw-bold shadow-sm">Start the Migration</a>
+    <a href="r-hub/beginner.qmd" class="btn btn-outline-light btn-lg px-5 py-3 ms-2 fw-medium">New to Programming?</a>
   </div>
 </div>
 ```
 
-<div class="container my-5">
+:::::::::::: {.container .my-5}
 
-## 🎯 Select Your Path
-<p class="text-muted mb-4">Explore our curated learning tracks.</p>
-
-::: {layout-ncol=3}
-
-::: {.card .feature-card .h-100 .p-3}
-### <i class="bi bi-arrow-left-right text-primary"></i> SAS to R Migration
-Detailed chapters mapping SAS procedures to R functions, specifically for clinical trials.
-<br><br>
-[Start Learning](sas-to-r/index.qmd){.btn .btn-primary .stretched-link}
-:::
-
-::: {.card .feature-card .h-100 .p-3}
-### <i class="bi bi-life-preserver text-info"></i> R-Hub
-R Hub. Your one stop solution to eveRything!
-<br><br>
-[R you ready!](r-hub/beginner.qmd){.btn .btn-outline-primary .stretched-link}
-:::
-
-::: {.card .feature-card .h-100 .p-3}
-### <i class="bi bi-columns-gap text-purple"></i> The Shinyverse
-Build interactive clinical dashboards using R Shiny.
-<br><br>
-[Explore Shiny](shinyverse/basics.qmd){.btn .btn-outline-primary .stretched-link}
-:::
-
-::: {.card .feature-card .h-100 .p-3}
-### <i class="bi bi-life-preserver text-danger"></i> SME Help
-Need immediate assistance? Our experts are here.
-<br><br>
-[Get Rescue](sme-rescue/index.qmd){.btn .btn-outline-primary .stretched-link}
-:::
-
-::: {.card .feature-card .h-100 .p-3}
-### <i class="bi bi-book text-warning"></i> Blog
-Articles you don't know you need.
-<br><br>
-[Learn something new](blog/index.qmd){.btn .btn-outline-primary .stretched-link}
-:::
-
-
-:::
-
-<hr class="my-5">
-
-## 📚 Quick Access Resources
-
-::: {.grid}
-
-::: {.g-col-6}
-### For Clinical Programmers
-*   [**CDISC in R**](sas-to-r/09-clinical-workflows.qmd) - Using `admiral` for ADaM.
-*   [**Reporting**](sas-to-r/08-reporting.qmd) - Creating TF-compliant tables.
-*   [**Validation**](r-hub/clinical.qmd) - Ensuring regulatory compliance.
-:::
-
-::: {.g-col-6}
-### For General R Users
-*   [**R Basics**](r-hub/beginner.qmd) - Syntax and data structures.
-*   [**Advanced Topics**](r-hub/advanced.qmd) - Metaprogramming and packages.
-*   [**Blog**](blog/index.qmd) - Latest updates and tutorials.
-:::
-
-
+<div class="text-center mb-5 fade-in-up delay-2">
+  <h2 class="display-5 fw-bold">🎯 Select Your Path</h2>
+  <p class="text-muted lead">Explore our curated learning tracks designed for eveRy level.</p>
 </div>
+
+::::::: {layout-ncol="3" .g-4}
+
+::: {.card .feature-card .h-100 .p-4 .fade-in-up .delay-1}
+<i class="bi bi-arrow-left-right text-primary"></i>
+### SAS to R Migration
+Master the mapping of SAS procedures to R functions, specifically tailored for clinical standards.
+
+[Start Learning](sas-to-r/index.qmd){.btn .btn-primary .stretched-link .mt-3}
+:::
+
+::: {.card .feature-card .h-100 .p-4 .fade-in-up .delay-2}
+<i class="bi bi-rocket-takeoff text-info"></i>
+### R-Hub
+Your centralized library for eveRything R. From basic syntax to advanced validation.
+
+[R you ready!](r-hub/beginner.qmd){.btn .btn-outline-primary .stretched-link .mt-3}
+:::
+
+::: {.card .feature-card .h-100 .p-4 .fade-in-up .delay-3}
+<i class="bi bi-layout-sidebar-reverse text-purple"></i>
+### The Shinyverse
+Build high-impact interactive clinical dashboards and validated analytical applications.
+
+[Explore Shiny](shinyverse/basics.qmd){.btn .btn-outline-primary .stretched-link .mt-3}
+:::
+
+::: {.card .feature-card .h-100 .p-4 .fade-in-up .delay-1}
+<i class="bi bi-chat-heart text-danger"></i>
+### SME Help
+Facing a complex migration hurdle? Our Subject Matter Experts are available for immediate rescue.
+
+[Get Rescue](sme-rescue/index.qmd){.btn .btn-outline-primary .stretched-link .mt-3}
+:::
+
+::: {.card .feature-card .h-100 .p-4 .fade-in-up .delay-2}
+<i class="bi bi-journal-text text-warning"></i>
+### Expert Blog
+Deep dives into clinical R trends, admiral tutorials, and the latest from the pharmaverse.
+
+[Read Blog](blog/index.qmd){.btn .btn-outline-primary .stretched-link .mt-3}
+:::
+
+:::::::
+
+<div class="contact-section text-center fade-in-up delay-3">
+  <h3 class="fw-bold mb-3">Questions? Let's Connect</h3>
+  <p class="text-muted mb-4">Have questions about the migration or want to contribute? Reach out directly.</p>
+  <a href="mailto:harsh.verma@syneoshealth.com" class="contact-button shadow">
+    <i class="bi bi-envelope-fill"></i>
+    Contact Author: Harsh Verma
+  </a>
+</div>
+
+::::::::::::

@@ -1,0 +1,108 @@
+---
+title: "Creating ADSL (Subject Level Analysis Dataset) in R: Moving Away from SAS"
+date: "2026-02-22"
+author: "Harsh Verma"
+categories: [ADaM, CDISC, admiral, Clinical]
+description: "How to build your first ADaM dataset (ADSL) using {dplyr} and the pharmaverse {admiral} package."
+---
+
+## The Core of Clinical Analysis 
+
+Every clinical trial analysis starts with ADSL (Analysis Dataset Subject Level). It contains one record per subject and houses all baseline characteristics, treatment assignments, and demographic flags required for the rest of the ADaMs and the eventual TFLs (Tables, Figures, and Listings).
+
+In SAS, building ADSL involves merging `DM` with `EX` (Exposure), `DS` (Disposition), `VS` (Vitals), and applying your Statistical Analysis Plan (SAP) derivations. 
+
+How do we do this in R? Enter **`{admiral}`**.
+
+## What is `{admiral}`?
+
+The `{admiral}` package is part of the **Pharmaverse**—a collaborative effort by major pharmaceutical companies to create a standardized suite of R packages for clinical reporting. `{admiral}` provides modular, pre-tested functions specifically designed to build ADaM datasets following CDISC standards.
+
+Let's look at how to build ADSL.
+
+## Step 1: Merging the Raw SDTMs
+
+In SAS, you might `merge` your datasets. In R, we use joins.
+
+```{r}
+#| label: admiral-adsl
+#| message: false
+library(dplyr)
+library(admiral)
+library(lubridate)
+
+# Simulating SDTM Data
+dm <- data.frame(
+  USUBJID = c("001", "002"),
+  ARM = c("Placebo", "Active"),
+  AGE = c(45, 60),
+  SEX = c("M", "F")
+)
+
+ds <- data.frame(
+  USUBJID = c("001", "001", "002", "002"),
+  DSCAT = c("DISPOSITION EVENT", "OTHER EVENT", "DISPOSITION EVENT", "OTHER EVENT"),
+  DSDECOD = c("COMPLETED", "RANDOMIZED", "ADVERSE EVENT", "RANDOMIZED")
+)
+```
+
+## Step 2: Deriving Flags using `{admiral}`
+
+Instead of writing custom conditional logic to figure out if someone completed the study, `{admiral}` gives us functions like `derive_var_merged_cat()`. 
+
+Let's derive `COMPLFL` (Completer Flag) based on the Disposition (`DS`) domain.
+
+```{r}
+# Build ADSL using a dplyr pipeline
+adsl <- dm %>%
+  # 1. Convert ARM to TRT01P (Planned Treatment)
+  mutate(TRT01P = ARM) %>%
+  
+  # 2. Derive Completer Flag (COMPLFL) from DS
+  derive_var_merged_exist_flag(
+    dataset_add = ds,
+    by_vars = exprs(USUBJID),
+    new_var = COMPLFL,
+    condition = DSCAT == "DISPOSITION EVENT" & DSDECOD == "COMPLETED"
+  )
+
+print(adsl)
+```
+
+Notice how `derive_var_merged_exist_flag()` handles the logic seamlessly. We tell it:
+- Which dataset to look at (`dataset_add = ds`)
+- How to link them (`by_vars = exprs(USUBJID)`)
+- What to name the new flag (`new_var = COMPLFL`)
+- What condition triggers a "Y" (`condition = ...`)
+
+If the condition is met, the subject gets a `Y`. If not, they get an `NA` (which you can easily convert to an `N` if your SAP requires it).
+
+## Step 3: Deriving Age Categories
+
+SAS requires `PROC FORMAT` or nested `if/else` loops to create `AGEGR1` (e.g., `<65`, `>=65`). 
+
+In R, it’s a breeze.
+
+```{r}
+adsl <- adsl %>%
+  mutate(
+    AGEGR1 = case_when(
+      AGE < 65 ~ "<65",
+      AGE >= 65 ~ ">=65",
+      TRUE ~ "Missing"
+    )
+  )
+
+print(adsl)
+```
+
+## Why `{admiral}` Beats Custom Macros
+
+In SAS programming, companies build massive libraries of proprietary macros (like `%derive_trt()` or `%derive_flags()`). These macros are notoriously difficult to debug, poorly documented, and non-transferable between companies.
+
+By using `{admiral}` in R:
+1. **It's open source:** The code is transparent and peer-reviewed by the industry.
+2. **Standardized:** A programmer from Company A can read Company B’s ADSL code because they both use `{admiral}` syntax.
+3. **Traceable:** Every `{admiral}` function integrates beautifully with `{dplyr}` pipes, making the transformation logic incredibly easy to read from top to bottom.
+
+ADSL is only the beginning. In the next post, we’ll tackle OCCDS (Occurrence Data) domains like ADAE!

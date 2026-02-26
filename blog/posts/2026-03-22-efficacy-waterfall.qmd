@@ -1,0 +1,120 @@
+---
+title: "Efficacy TFLs: Creating Waterfall and Spider Plots for Tumor Response"
+date: "2026-03-22"
+author: "Harsh Verma"
+categories: [Efficacy, Oncology, ggplot2, Visualizations]
+description: "A step-by-step guide to plotting RECIST tumor responses using Waterfall and Spider plots in R."
+---
+
+## Oncology Visualizations 
+
+Survival curves tell us *when* a patient failed therapy. But in early-phase solid tumor oncology trials (measuring RECIST criteria), we are deeply interested in *how much* their tumors grew or shrank over time relative to baseline.
+
+Two plots dominated this space: The **Waterfall Plot** (Best Overall Response per patient) and the **Spider Plot** (Tumor burden trajectory over time).
+
+Getting these right in SAS `PROC SGPLOT` requires massive data manipulation to generate sorted dummy variables for the categorical axes. In `{ggplot2}`, it’s incredibly straightforward. 
+
+## The Waterfall Plot
+
+A Waterfall Plot aligns every patient on the X-axis (sorted by their tumor shrinkage) and plots a vertical bar representing their maximum percentage change from baseline in the sum of target lesion diameters.
+
+```{r}
+#| label: waterfall
+#| message: false
+library(dplyr)
+library(ggplot2)
+library(forcats)
+
+# Simulated ADTR (Tumor Response) data
+set.seed(42)
+adtr_bor <- data.frame(
+  USUBJID = paste0("S-", 1:40),
+  PCHG = rnorm(40, mean = -10, sd = 30), # % Change from Baseline
+  BOR = sample(c("CR", "PR", "SD", "PD"), 40, replace = TRUE, prob = c(0.1, 0.3, 0.4, 0.2))
+)
+
+# Cap growth at +100% just for visualization scaling (Standard practice)
+adtr_bor <- adtr_bor %>%
+  mutate(PCHG_CAP = if_else(PCHG > 100, 100, PCHG))
+
+# The key step for Waterfall: Reordering the X-axis by the Y-value
+# We use forcats::fct_reorder to sort USUBJID factor levels by PCHG_CAP (descending)
+ggplot(adtr_bor, aes(x = fct_reorder(USUBJID, -PCHG_CAP), y = PCHG_CAP, fill = BOR)) +
+  
+  geom_bar(stat = "identity", width = 0.8) +
+  
+  # Standard RECIST reference lines 
+  # PR boundary: -30%
+  # PD boundary: +20%
+  geom_hline(yintercept = -30, linetype = "dashed", color = "black") +
+  geom_hline(yintercept = 20, linetype = "dashed", color = "black") +
+  
+  # Axis modifications
+  scale_y_continuous(breaks = seq(-100, 100, 20), limits = c(-100, 100)) +
+  scale_fill_manual(values = c("CR" = "#1A85FF", "PR" = "#D41159", "SD" = "#FFC20A", "PD" = "#000000")) +
+  
+  theme_minimal() +
+  theme(
+    axis.text.x = element_blank(), # Hide individual subject IDs
+    axis.ticks.x = element_blank(),
+    panel.grid.major.x = element_blank()
+  ) +
+  labs(
+    title = "Best Overall Response (Waterfall Plot)",
+    x = "Individual Subjects",
+    y = "Maximum % Change in Sum of Lesions from Baseline",
+    fill = "Best Response"
+  )
+```
+
+The trick here is `fct_reorder()`. In SAS, sorting a categorical axis by a numeric value requires creating an artificial `order` variable, sorting the dataset, and enforcing X-axis tick ordering. R handles it as an aesthetic mapping.
+
+## The Spider Plot
+
+A Spider Plot draws a line for each individual subject, tracking their tumor percent change across study visits.
+
+```{r}
+#| label: spider-plot
+#| message: false
+
+# Simulated longitudinal ADTR data
+adtr_long <- data.frame(
+  USUBJID = rep(paste0("S-", 1:10), each = 5),
+  AVISITN = rep(seq(0, 24, by = 6), 10),
+  PCHG = runif(50, -60, 40)
+) %>%
+  # Force baseline to 0
+  mutate(PCHG = if_else(AVISITN == 0, 0, PCHG))
+
+# Sorting subjects into "Responders" vs "Non-Responders" just for color coding
+adtr_long <- adtr_long %>%
+  group_by(USUBJID) %>%
+  mutate(MIN_PCHG = min(PCHG)) %>%
+  ungroup() %>%
+  mutate(RespGroup = if_else(MIN_PCHG <= -30, "Objective Response", "No Objective Response"))
+
+
+ggplot(adtr_long, aes(x = AVISITN, y = PCHG, group = USUBJID, color = RespGroup)) +
+  geom_line(size = 0.8, alpha = 0.7) +
+  geom_point(size = 2, alpha = 0.9) +
+  
+  # Standard RECIST reference lines
+  geom_hline(yintercept = -30, linetype = "dashed", color = "black") +
+  geom_hline(yintercept = 20, linetype = "dashed", color = "black") +
+  
+  scale_color_manual(values = c("Objective Response" = "#1A85FF", "No Objective Response" = "#D41159")) +
+  
+  theme_bw() +
+  labs(
+    title = "Longitudinal Tumor Burden (Spider Plot)",
+    x = "Study Visit (Weeks)",
+    y = "% Change in Sum of Lesions from Baseline",
+    color = "Response Status"
+  )
+```
+
+With `ggplot2`, the `group = USUBJID` mapping instinctively knows to draw a unique, connected line for each subject across the discrete time points (`AVISITN`), ensuring zero "jump" lines between data points. 
+
+With both SAS and R now capable of creating these visualizations, the critical difference is sheer speed of development. Once your `ggplot2` syntax is locked in, R produces these complex oncology metrics significantly faster and with less code complexity than traditional SAS macros.
+
+Next up, we wrap up the TFL category by exploring **Data Listings** using Quarto!

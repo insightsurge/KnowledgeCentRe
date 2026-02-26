@@ -1,0 +1,113 @@
+---
+title: "Safety TFLs: Creating Complex Adverse Event (AE) Summary Tables with {rtables}"
+date: "2026-03-12"
+author: "Harsh Verma"
+categories: [TFL, Safety, rtables, Clinical]
+description: "How to program an AE Summary Table (System Organ Class by Preferred Term) cleanly using the {rtables} layout engine."
+---
+
+## The dreaded AE Summary Table
+
+If you ask any clinical SAS programmer what the most tedious table to code is from scratch, 90% will say: **The Adverse Event System Organ Class / Preferred Term Summary.**
+
+Let's review the requirements for a standard Table 14.3.1.2:
+1. Column headers must be Split by Treatment Arm.
+2. Column headers must include `(N=xx)` counts down from the ADSL population.
+3. Row headers must list the `AEBODSYS` (System Organ Class).
+4. Beneath `AEBODSYS`, rows must indent and list the `AEDECOD` (Preferred Term).
+5. The statistics must show `n (%)` where `n` is the number of subjects with at least one AE of that type, and `%` is `(n / N) * 100`.
+6. Rows should ideally sort by frequency (highest to lowest), not alphabetically.
+
+In SAS, this requires macro calls inside of macro calls, heavily parameterized `PROC SQL` joins, and intense `PROC REPORT` compute blocks.
+
+Let's do it in R using `{rtables}`.
+
+## Meet `{rtables}`
+
+The `{rtables}` package operates on a declarative tree structure. You define the **Layout** first. The Layout is a set of instructions on how the table should look *before* data is applied.
+
+```{r}
+#| label: rtables-ae-layout
+#| message: false
+library(dplyr)
+library(rtables)
+
+# Define a function to calculate incidence (n and %)
+s_incidence <- function(x, .N_col) {
+  # x is a vector of USUBJIDs who had the event
+  # .N_col is the total number of subjects in the column (from ADSL)
+  
+  n <- length(unique(x)) # number of unique subjects
+  pct <- if_else(.N_col == 0, 0, (n / .N_col) * 100)
+  
+  # Return a formatted string
+  in_rows(
+    "n (%)" = rcell(c(n, pct), format = "xx (xx.x%)")
+  )
+}
+```
+
+Wait, what did we just do? We created a tiny function (`s_incidence`) that `{rtables}` will call internally every time it needs to populate a cell. `rcell()` handles the string formatting (no `PROC FORMAT` or `put()` needed!).
+
+## Constructing the Layout
+
+Now, we dictate the structure of the table.
+
+```{r}
+#| eval: false
+
+# Define the Layout
+lyt <- basic_table() %>%
+  # 1. Split columns by Treatment Arm
+  split_cols_by("TRTA") %>%
+  
+  # 2. Add the column (N=xx) counts based on the ADSL population
+  add_colcounts() %>%
+  
+  # 3. Analyze the overall subjects with any AE at the top
+  analyze_num_patients("USUBJID", .stats = "unique", .labels = c(unique = "Any Adverse Event")) %>%
+  
+  # 4. Split rows by System Organ Class (AEBODSYS)
+  split_rows_by("AEBODSYS", split_fun = drop_split_levels) %>% # Drops empty SOCs
+  summarize_row_groups() %>% # Automatically sums up the SOC level
+  
+  # 5. Nested within SOC, analyze the Preferred Term (AEDECOD)
+  analyze("AEDECOD", afun = s_incidence) # Calls our custom function!
+```
+
+This layout code is remarkable. It reads exactly like the SAP mockup shell. 
+- "Split columns by Arm"
+- "Add N counts"
+- "Analyze total patients"
+- "Split rows by SOC" 
+- "Analyze Preferred Term"
+
+## Building and Printing the Table
+
+Once the layout (`lyt`) is defined, we apply the `ADAE` data and the `ADSL` data to it.
+
+```{r}
+#| eval: false
+
+# Mock Datasets (Pre-filtered for TEAEs only!)
+adsl <- source_adsl # Must contain USUBJID and TRTA
+adae <- source_adae # Must contain USUBJID, TRTA, AEBODSYS, AEDECOD
+
+# Build the final table object
+final_ae_table <- build_table(lyt, df = adae, alt_counts_df = adsl)
+
+# Print it to the console (or export to RTF/PDF)
+print(final_ae_table)
+```
+
+By providing `alt_counts_df = adsl`, `{rtables}` knows exactly where to pull the column denominators (`.N_col`) for its percentage calculations, without you having to pre-merge ADSL totals into ADAE manually!
+
+## The Advantages 
+
+If a Medical Writer comes to you and asks, *"Can we add a column spanning header above the Treatment Arms that says 'Study Phase IIb'?"* 
+
+In SAS, you might have to rewrite your `PROC REPORT` column definitions entirely. In `{rtables}`, you just add `split_cols_by_multivar()` or change the layout specification *before* the `build_table` step. 
+
+Because `{rtables}` separates the **Layout** from the **Data Frame**, your clinical reporting pipelines become robust, modular, and instantly adaptable to mid-study SAP changes. 
+
+In our next post, we will look at how to visualize Safety Data—specifically Lab Shifts—using `{ggplot2}`!

@@ -1,54 +1,158 @@
-/* 1. The Hero Gradient */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap');
+
+:root {
+  --primary: #2780e3;
+  --secondary: #6f42c1;
+  --accent: #00d2ff;
+  --bg-gradient: linear-gradient(135deg, #2780e3 0%, #6f42c1 100%);
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+.display-3 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+/* 1. Enhanced Hero Section */
 .hero-section {
-  background: #2780e3; /* Fallback color */
-  background: linear-gradient(135deg, #2780e3 0%, #6f42c1 100%);
+  background: var(--bg-gradient);
   color: white;
-  padding: 4rem 2rem;
-  border-radius: 0 0 50px 50px;
-  margin-bottom: 3rem;
+  padding: 6rem 2rem;
+  border-radius: 0 0 80px 80px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 4rem;
 }
 
-/* 2. Blinking Glow Animation Keyframes */
-@keyframes glowPulse {
-  0% {
-    text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
-  50% {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.6);
-  }
-  100% {
-    text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+
+  to {
+    transform: rotate(360deg);
   }
 }
 
-/* 3. Apply Animation */
-/* Remove opacity: 0 to make text visible immediately */
-.animate-text {
-  /* Title is now static */
+/* 2. Entrance Animations */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-.animate-delay-1 {
-  /* The Subtitle: Applies the infinite glow */
-  animation: glowPulse 2s infinite ease-in-out;
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.animate-delay-2 {
-  /* Jump Start text is now static */
+.delay-1 {
+  animation-delay: 0.2s;
 }
 
-/* 4. Card Hover Effects */
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* 3. Premium Feature Cards */
 .feature-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: none;
-  background-color: var(--bs-card-bg);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  background: white;
+  border-radius: 20px !important;
+  box-shadow: var(--shadow-sm);
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary) !important;
 }
 
-/* 5. Utility Colors (Optional custom colors) */
+.feature-card i {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover i {
+  transform: scale(1.2) rotate(5deg);
+}
+
+/* 4. Contact Section Overlay */
+.contact-section {
+  background: #f9fafb;
+  padding: 5rem 2rem;
+  border-radius: 40px;
+  margin-top: 5rem;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: var(--bg-gradient);
+  color: white !important;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-md);
+}
+
+/* 5. Typography consistency */
+.display-3 {
+  line-height: 1.1;
+  background: linear-gradient(to bottom, #ffffff, #e2e8f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
 .text-purple {
-  color: #6f42c1 !important;
+  color: var(--secondary) !important;
 }

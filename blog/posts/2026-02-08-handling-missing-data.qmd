@@ -1,0 +1,133 @@
+---
+title: "Handling Missing Data: How R Does It Differently Than SAS"
+date: "2026-02-08"
+author: "Harsh Verma"
+categories: [SAS-to-R, Data Cleaning, Clinical]
+description: "Why R’s NA is completely different from SAS's period (.) and how missing data propagates."
+---
+
+## The Missing Data Shock
+
+If there's one thing that initially frustrates SAS programmers transitioning to R, it's missing data. 
+
+In SAS, missing numeric data is denoted by a period (`.`) and missing character data is denoted by a blank (`""`). It’s simple, it's consistent across datasets, and SAS procedures are built to politely ignore them.
+
+```sas
+/* SAS Code */
+data example;
+  x = 10;
+  y = .;
+  total = sum(x, y); /* total evaluates to 10 */
+  mean_val = mean(x, y); /* mean evaluates to 10 */
+run;
+```
+If you run this in SAS, `total` is 10 and `mean_val` is 10. SAS assumes you want it to ignore the missing value and proceed with what it has.
+
+## Welcome to R: The Infection of NA
+
+In R, missing data is denoted by `NA` (Not Available). And unlike SAS, R operates under the philosophy that **missing data is infectious**. If you don’t know part of an equation, you logically cannot know the result.
+
+```{r}
+# R Code
+x <- 10
+y <- NA
+
+# Basic arithmetic
+total <- sum(x, y) 
+mean_val <- mean(c(x, y))
+
+print(total)
+# [1] NA
+print(mean_val)
+# [1] NA
+```
+
+R refuses to guess. If you ask it for the sum of 10 and an unknown number, it sensibly concludes the answer is unknown.
+
+### The Fix: `na.rm = TRUE`
+
+To make R behave somewhat like SAS, you simply have to instruct it to "remove NAs" before performing an operation. This is done with the `na.rm = TRUE` argument inside functions like `sum()`, `mean()`, and `sd()`.
+
+```{r}
+# R Code
+total_rm      <- sum(x, y, na.rm = TRUE)
+mean_val_rm   <- mean(c(x, y), na.rm = TRUE)
+
+print(total_rm)
+# [1] 10
+print(mean_val_rm)
+# [1] 10
+```
+
+This is incredibly important when summarizing clinical data. If one patient out of 500 is missing a baseline lab value, your overall baseline mean calculation will fail (`NA`) unless you explicitly set `na.rm = TRUE`.
+
+## The Great Equality Trap
+
+Here is another massive gotcha for SAS programmers. 
+
+In SAS, if you want to find all rows where `AGE` is missing, you do this:
+```sas
+/* SAS Code */
+data missing_age;
+  set adsl;
+  if age = .;
+run;
+```
+
+If you try to perfectly translate that to R, you will crash and burn.
+
+```{r}
+# Bad R Code - Do not do this
+# adsl %>% filter(age == NA)
+```
+
+Why doesn't this work? In R, the expression `NA == NA` evaluates to `NA`. You cannot check if something is equal to "unknown." So comparing `age == NA` doesn't return `TRUE` or `FALSE`; it returns a vector of `NA`s, which causes `filter()` to fail.
+
+To check for missingness in R, you **must** use the `is.na()` function.
+
+```{r}
+# Mock ADSL Data
+library(dplyr)
+adsl <- data.frame(
+  usubjid = 1:5,
+  age = c(45, NA, 60, NA, 30),
+  status = c("Completed", "Dropout", "Completed", "Randomized", "Dropout"),
+  weight = c(80, 75, 90, 85, 78)
+)
+
+# Correct R Code
+# To find missing values
+# missing_age <- adsl %>% filter(is.na(age))
+
+# To drop missing values
+# complete_age <- adsl %>% filter(!is.na(age))
+# or using tidyr
+# complete_age <- adsl %>% drop_na(age)
+```
+
+## Creating Missing Data
+
+In SAS, you might conditionally wipe out a value like this:
+
+```sas
+/* SAS Code */
+if (status = 'Dropout') then weight = .;
+```
+
+In R, we typically use `{dplyr}`'s `mutate()` and `ifelse()` or `if_else()` or `case_when()`. 
+
+```{r}
+# R Code
+# adsl <- adsl %>%
+#  mutate(weight = if_else(status == "Dropout", NA_real_, weight))
+```
+
+Wait, what is `NA_real_`?
+
+R is a strictly typed language. Under the hood, standard `NA` is a logical vector. When you are replacing numeric values (reals), `{dplyr}` functions like `if_else()` (which are stricter than base R's `ifelse()`) require the replacement value to be of the exact same type as the original column. Thus, you use `NA_real_` for double precision floating-point numbers, `NA_integer_` for whole numbers, and `NA_character_` for text. 
+
+## Final Thoughts
+
+R's strict handling of missing data forces you to be deliberate. In clinical reporting, this is a massive advantage! You want to be violently thrown an error if you try to average a column containing hidden missing data, because quietly dropping it could lead to incorrect efficacy results. 
+
+In the next post, we'll cover how to replicate SAS's mighty `PROC FORMAT`.

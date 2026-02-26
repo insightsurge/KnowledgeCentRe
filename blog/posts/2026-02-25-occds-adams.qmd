@@ -1,0 +1,146 @@
+---
+title: "Building OCCDS (Occurrence Data) ADaMs in R: Handling Adverse Events the R Way"
+date: "2026-02-25"
+author: "Harsh Verma"
+categories: [ADaM, OCCDS, CDISC, admiral]
+description: "How to merge ADSL into ADAE, derive treatment emergence flags, and handle occurrence data using {admiral}."
+---
+
+## Occurrence Data (OCCDS) Basics
+
+OCCDS datasets like `ADAE` (Adverse Events), `ADCM` (Concomitant Medications), and `ADMH` (Medical History) deal with *occurrences*. These datasets usually merge the core domain (`AE`, `CM`, `MH`) with subject-level demographics (`ADSL`) to calculate flags based on timing relative to treatment.
+
+The most critical calculation in `ADAE` is determining if an adverse event is **Treatment Emergent** (TEAE).
+
+In SAS, this involves a data step comparing the AE start date (`ASTDT`) to the Treatment Start Date (`TRTSDT`) from `ADSL`.
+
+```sas
+/* SAS Code: TEAE Derivation */
+data adae;
+  merge sdtm_ae(in=a) adsl(in=b keep=USUBJID TRTSDT);
+  by USUBJID;
+  if a;
+
+  TRTEMFL = '';
+  if ASTDT >= TRTSDT and ASTDT ne . then TRTEMFL = 'Y';
+run;
+```
+
+## Building ADAE with `{admiral}`
+
+The `{admiral}` package streamlines OCCDS derivations. The workflow generally follows:
+1. Load `AE` and `ADSL`.
+2. Merge `ADSL` variables (like `TRTSDT`) into `AE`.
+3. Derive partial dates/times (`ASTDT`, `AENDT`).
+4. Derive population and occurrence flags (`TRTEMFL`, `CQ01NAM`).
+
+Here is a simplified R script:
+
+```{r}
+#| eval: false
+#| label: admiral-adae
+#| message: false
+library(dplyr)
+library(admiral)
+library(lubridate)
+
+# Mock Data
+ae <- data.frame(
+  USUBJID = c("101", "101", "102"),
+  AETERM = c("HEADACHE", "NAUSEA", "FATIGUE"),
+  AESTDTC = c("2024-01-10", "2024-01-20", "2024-02-05")
+)
+
+adsl <- data.frame(
+  USUBJID = c("101", "102"),
+  TRTSDT = as.Date(c("2024-01-15", "2024-02-01"))
+)
+
+# 1. Merge ADSL
+adae <- ae %>%
+  derive_vars_merged(
+    dataset_add = adsl,
+    by_vars = exprs(USUBJID),
+    new_vars = exprs(TRTSDT)
+  ) %>%
+  
+  # 2. Convert ISO character dates to numeric R dates
+  mutate(ASTDT = as.Date(AESTDTC)) %>%
+  
+  # 3. Derive Treatment Emergent Flag (TRTEMFL)
+  derive_var_extreme_flag(
+    by_vars = exprs(USUBJID),
+    order = exprs(ASTDT),
+    new_var = TRTEMFL,
+    condition = ASTDT >= TRTSDT,
+    mode = "first" # Just an example if we wanted the first event
+  )
+
+print(adae)
+```
+
+Wait, `derive_var_extreme_flag()` isn't quite right for a TEAE flag since TEAEs apply to *all* events that occur after treatment, not just the "extreme" first or last one.
+
+Instead, `{admiral}` provides elegant logical evaluation via standard `{dplyr}` `mutate()`. Because `{admiral}` handles the complex merging (like the `derive_vars_merged` step above), the actual flag derivation is dead simple.
+
+```{r}
+#| eval: false
+adae <- adae %>%
+  mutate(
+    TRTEMFL = if_else(ASTDT >= TRTSDT & !is.na(ASTDT), "Y", "N", missing = "N")
+  )
+```
+
+## Handling First Occurrence Flags
+
+Where `{admiral}` really shines is with **extreme flags**. In typical TFLs, we often report "Subjects with at least one AE." To do this, we need a flag (`AOCCIFL`) that indicates the *first occurrence* of any AE for a subject.
+
+In SAS, this requires `PROC SORT` followed by `first.USUBJID`. 
+
+In `{admiral}`:
+
+```{r}
+#| eval: false
+adae_first <- adae %>%
+  filter(TRTEMFL == "Y") %>%
+  derive_var_extreme_flag(
+    by_vars = exprs(USUBJID),
+    order = exprs(ASTDT),
+    new_var = AOCCIFL,
+    mode = "first"
+  )
+
+adae <- adae %>%
+  left_join(adae_first, by = names(adae)) %>%
+  mutate(AOCCIFL = if_else(is.na(AOCCIFL), "", AOCCIFL))
+
+print(adae)
+```
+
+This single function handles the sorting, grouping by `USUBJID`, checking the condition (`TRTEMFL == "Y"`), and flagging only the first record chronologically (`mode = "first"`).
+
+## Summarizing AE Counts 
+
+Once `ADAE` is built, we frequently need to count the number of AEs per subject and push that count back into `ADSL`.
+
+```{r}
+#| eval: false
+# Add total AEs per subject back to ADSL
+adsl_updated <- adsl %>%
+  derive_var_merged_summary(
+    dataset_add = adae,
+    by_vars = exprs(USUBJID),
+    new_var = AETOT,
+    analysis_var = USUBJID,
+    summary_fun = function(x) length(x)
+  ) %>%
+  mutate(AETOT = if_else(is.na(AETOT), 0, AETOT))
+
+print(adsl_updated)
+```
+
+The `derive_var_merged_summary()` function eliminates the need for separate `PROC SQL` `count(*)` block and subsequent `merge`.
+
+ OCCDS derivations in R highlight a massive shift from multi-step data processing (sort -> merge -> derive) to a single, continuous, highly readable text pipeline.
+
+Next, we dive into the most complex of all ADaM structures: Basic Data Structure (BDS).

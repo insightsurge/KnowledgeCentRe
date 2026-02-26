@@ -1,0 +1,98 @@
+---
+title: "How to Optimize Your R Code: Best Practices in Clinical Trial Analysis"
+date: "2026-03-28"
+author: "Harsh Verma"
+categories: [Optimization, Performance, R, Tidyverse]
+description: "Why your R code is slow (and how to fix it). Covering vectorization, memory management, and avoiding the dreaded for-loop."
+---
+
+## The "R is Slow" Myth
+
+A common complaint from SAS programmers transitioning to R is that R is "too slow." They write a script to derive baseline flags on a 5-million-record lab dataset, and R grinds to a halt while SAS blazed through it.
+
+Usually, the problem is not R. The problem is **writing SAS code in R**. 
+
+R is optimized for vectorized operations. If you attempt to force R to read data sequentially row-by-row (like a SAS data step), it will aggressively punish you with terrible performance. 
+
+Let's look at the three Golden Rules of optimizing R code for clinical analysis.
+
+## 1. Stop Using For-Loops!
+
+If you write a `for(i in 1:nrow(df))` loop in R to calculate a value, you are doing it wrong. 
+
+In R, vectors are processed natively in C behind the scenes. When you loop over a vector element by element, R has to evaluate the code environment and dispatch the function on every single iteration. This causes massive overhead.
+
+**Bad (Row-by-Row Iteration):**
+```{r}
+#| eval: false
+
+# Example: Categorizing Ages
+adsl$AGEGR1 <- character(nrow(adsl))
+
+for (i in seq_len(nrow(adsl))) {
+  if (adsl$AGE[i] < 65) {
+    adsl$AGEGR1[i] <- "<65"
+  } else {
+    adsl$AGEGR1[i] <- ">=65"
+  }
+}
+```
+
+**Good (Vectorization):**
+```{r}
+#| eval: false
+library(dplyr)
+
+# R applies this completely in parallel (vectorized)
+adsl <- adsl %>%
+  mutate(AGEGR1 = if_else(AGE < 65, "<65", ">=65"))
+```
+The vectorized `{dplyr}` code above is not just cleaner; it runs literally thousands of times faster on massive datasets.
+
+## 2. Memory Management: Pre-Allocation
+
+Another classic SAS habit is creating empty data sets and iteratively appending (`rbind`) rows to them inside a macro loop. 
+
+In SAS, the `APPEND` procedure writes directly to disk. In R, everything lives in RAM. 
+
+If you `rbind()` a new row to a 100,000-row dataframe inside a loop, R responds by copying the *entire* 100,000-row dataframe in memory, adding one row, and destroying the old copy. It does this 100,000 times! This is why your memory spikes and your computer crashes.
+
+**The Solution:** Use lists. R handles lists incredibly efficiently. If you must iterate, save your results to a list, and `bind_rows()` only once at the very end.
+
+```{r}
+#| eval: false
+
+# 1. Pre-allocate an empty list
+results_list <- list()
+
+# 2. Assign chunks of data to list elements
+for (i in 1:100) {
+  # Perform some complex simulation or derivation
+  temp_df <- run_complex_derivation(i)
+  
+  # Store the dataframe in the list (Fast!)
+  results_list[[i]] <- temp_df
+}
+
+# 3. Bind them all together exactly ONE TIME
+final_dataset <- bind_rows(results_list)
+```
+Alternatively, use the `{purrr}` package's `map_dfr()` to handle this functional iteration natively.
+
+## 3. Avoid Re-Reading Datasets
+
+A common inefficiency in SDTM mapping is reading the raw data multiple times. 
+*"I need to create DM, so I'll read Demog.csv. Now I need to create VS, so I'll read Demog.csv to get the Treatment Date."*
+
+Because R holds objects in memory, you should adopt a modular architecture:
+1. Create a `01_load_data.R` script that reads all primary CSV/SAS7bDAT files into raw R datasets.
+2. Build your domains (DM, VS, AE).
+3. Let your scripts reference those objects naturally in the global environment.
+
+## When `{dplyr}` Isn't Fast Enough
+
+For 95% of clinical trials, `{dplyr}` is more than fast enough. The `mutate()` and `filter()` verbs are highly optimized. 
+
+However, what if you are working with Real World Evidence (RWE) or genomic data? What if your simulated baseline dataset is 50 gigabytes with 200 million rows, and you need to calculate LOCF groupings?
+
+In those rare, hyper-massive scenarios, `{dplyr}` will face bottlenecks. For those cases, we turn to the king of R performance optimization. In the next post, we will explore **`{data.table}`**.

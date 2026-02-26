@@ -1,0 +1,115 @@
+---
+title: "Mapping Raw Data to SDTM in R: A SAS Programmer’s Guide"
+date: "2026-02-15"
+author: "Harsh Verma"
+categories: [SDTM, CDISC, SAS-to-R, Data Management]
+description: "How to migrate your raw-to-SDTM programming pipelines from SAS into R using tidy data principles."
+---
+
+## The SDTM Challenge 
+
+For over two decades, SAS has been the unchallenged king of mapping raw clinical data (often from EDC systems like Medidata Rave or Veeva Vault) into the Study Data Tabulation Model (SDTM) format required by regulatory agencies like the FDA.
+
+Creating SDTM datasets involves joining multiple raw forms, deriving standard variables like `STUDYID`, `DOMAIN`, and `USUBJID`, applying dictionaries (MedDRA, WHODrug), and carefully structuring columns according to the CDISC Implementation Guide (IG).
+
+So... how do we do this without SAS?
+
+## The Mental Map: SAS Data Steps vs R
+
+A typical SAS program to create the `DM` (Demographics) domain might look like this:
+
+```sas
+/* SAS Code: Creating DM */
+data dm;
+  set raw.demog (rename=(subject=SUBJID sex_raw=SEX));
+  length DOMAIN $2. STUDYID $15. USUBJID $20.;
+  
+  STUDYID = "ABC-123";
+  DOMAIN = "DM";
+  USUBJID = catx("-", STUDYID, SUBJID);
+  
+  /* Apply formats or derivations */
+  AGE = int(yrdif(BRTHDAT, RANDDAT, 'AGE'));
+  
+  keep STUDYID DOMAIN USUBJID SUBJID RFSTDTC RFENDTC BRTHDTC AGE SEX;
+run;
+```
+
+When building this in R, we rely heavily on the `{dplyr}`, `{lubridate}`, and `{stringr}` packages. 
+
+## The R Implementation
+
+Here is how we build the conceptual equivalent in R.
+
+```{r}
+#| label: sdtm-dm
+#| message: false
+library(dplyr)
+library(lubridate)
+library(stringr)
+
+# Simulating raw data
+raw_demog <- data.frame(
+  subject = c("001", "002", "003"),
+  sex_raw = c("M", "F", "F"),
+  BRTHDAT = as.Date(c("1980-01-15", "1975-06-20", "1990-11-05")),
+  RANDDAT = as.Date(c("2024-01-10", "2024-01-12", "2024-01-15"))
+)
+
+# Creating the DM Domain
+dm_domain <- raw_demog %>%
+  # Rename columns (new_name = old_name)
+  rename(
+    SUBJID = subject,
+    SEX = sex_raw
+  ) %>%
+  # Derive new columns
+  mutate(
+    STUDYID = "ABC-123",
+    DOMAIN = "DM",
+    USUBJID = paste(STUDYID, SUBJID, sep = "-"),
+    
+    # Date formatting to ISO 8601 (often YYYY-MM-DD)
+    BRTHDTC = as.character(BRTHDAT),
+    RFSTDTC = as.character(RANDDAT),
+    
+    # Age derivation using lubridate
+    AGE = time_length(interval(BRTHDAT, RANDDAT), "years") %>% floor()
+  ) %>%
+  # Select and order final columns
+  select(STUDYID, DOMAIN, USUBJID, SUBJID, RFSTDTC, BRTHDTC, AGE, SEX)
+
+print(dm_domain)
+```
+
+### Key Differences and Advantages
+
+1. **`paste()` replaces `catx()`:** In R, `paste()` or `paste0()` (or `stringr::str_c()`) is used to concatenate strings to build the `USUBJID`.
+2. **`lubridate` makes dates easier:** Calculating age in SAS requires remembering esoteric functions like `yrdif`. In R, `{lubridate}` makes time intervals mathematically logical.
+3. **No Length / Type Declarations:** In SAS, you must declare `length DOMAIN $2.` to avoid truncation. R dynamically handles string lengths, so you never have to worry about a string being truncated because of an earlier column definition.
+4. **Column Selection:** The `select()` function perfectly replaces the `keep` and `retain` statements, simultaneously defining which columns to keep *and* what order they should appear in.
+
+## Handing ISO 8601 Dates
+
+One of the most complex parts of SDTM is formatting partial dates into ISO 8601 character strings (e.g., `2024-05` if the day is missing). In SAS, this usually involves painful substring manipulation.
+
+In R, packages like `{parsedate}` or custom `{stringr}` functions make this incredibly concise.
+
+```{r}
+# Simple example of handling a missing day
+raw_dates <- c("2024-Jan-01", "2024-Feb-Unknown")
+
+# Using stringr to extract Year and Month 
+clean_dates <- raw_dates %>%
+  str_replace_all("-Unknown", "") %>%
+  as.Date(format = "%Y-%b-%d") # The second one will become NA
+
+print(clean_dates)
+```
+*(Note: Clinical date imputation can get complex depending on your SAP, but vectorized string manipulation in R is infinitely more powerful than SAS's `substr` and `index` functions).*
+
+## Conclusion
+
+Migrating SDTM generation to R forces you to write code in functional pipelines. The code becomes highly readable, self-documenting, and free from the strict column-length restrictions of SAS data types. 
+
+In the next post, we'll talk about how to validate these SDTM domains programmatically before they ever hit Pinnacle 21.

@@ -1,0 +1,139 @@
+---
+title: "Replicating SAS Formats and Informats in R (Using Factors and Lookups)"
+date: "2026-02-12"
+author: "Harsh Verma"
+categories: [SAS-to-R, Categorical Data, Clinical]
+description: "How to translate PROC FORMAT logic into R using `{forcats}`, named vectors, and joins."
+---
+
+## Life Without PROC FORMAT
+
+There are few features SAS programmers love more than `PROC FORMAT`. It allows you to store the underlying raw data (like `1`, `2`, `3`) but display beautiful, human-readable labels (`"Mild"`, `"Moderate"`, `"Severe"`) in all your outputs, without modifying the actual dataset. It's clean, efficient, and essential for clinical TFLs.
+
+When attempting to do this in R, SAS programmers often try to permanently overwrite the column string with nested conditional logic. 
+*"Wait, do I actually have to replace my 1s with 'Mild' in the dataframe?"*
+
+The answer is: Not necessarily! R has robust systems for handling categorical data and lookups that mimic what `PROC FORMAT` does, but they work quite differently.
+
+## Method 1: Factors (The Closest Native Equivalent)
+
+In R, a **factor** is used to store categorical data. It is literally an integer vector with an associated set of character "labels" (or levels). This makes it conceptually very similar to applying a format.
+
+```sas
+/* SAS Code */
+proc format;
+  value sev
+    1 = "Mild"
+    2 = "Moderate"
+    3 = "Severe";
+run;
+
+data adae;
+  set adae;
+  format aesev sev.;
+run;
+```
+
+In R, we create factors either using base R `factor()` or the `{forcats}` package (part of the tidyverse).
+
+```{r}
+# R Code
+library(dplyr)
+library(forcats)
+
+# Sample data
+adae <- data.frame(subjid = 1:5, aesev_n = c(1, 3, 2, 2, 1))
+
+# Creating a factor
+adae <- adae %>%
+  mutate(
+    aesev = factor(
+      aesev_n,
+      levels = c(1, 2, 3),
+      labels = c("Mild", "Moderate", "Severe")
+    )
+  )
+
+print(adae)
+```
+
+**Why Factors are Powerful for Clinical Work:**
+1. **Sorting:** By default, R sorts characters alphabetically (Mild, Moderate, Severe). But 'Mild' shouldn't come after 'Severe'. Factors remember the underlying integer order you define in `levels`. This is critical for TFLs!
+2. **Missing levels:** If an adverse event dataset doesn't contain any "Severe" events, `table(adae$aesev)` in R will still show a count of 0 for Severe because R knows it’s a valid possible level. This ensures your tables don't suddenly drop columns!
+
+## Method 2: Lookup Tables (Joins)
+
+If you are mapping complex text, ICD-10 codes, or MedDRA dictionaries, you shouldn't hard-code factors. Instead, you create a lookup table (a data frame) and join it. This is similar to creating a format from a dataset in SAS (`cntlin`).
+
+```sas
+/* SAS Code */
+proc sql;
+  create table adae_mapped as
+  select a.*, f.term_text
+  from adae a
+  left join meddra_dict f
+  on a.pt_code = f.pt_code;
+quit;
+```
+
+In R, we use `{dplyr}`'s `left_join()`.
+
+```{r}
+# R Code
+# Dictionary dataset
+meddra_dict <- data.frame(
+  pt_code = c(1001, 1002, 1003),
+  term_text = c("Headache", "Nausea", "Fatigue")
+)
+
+# Patient data
+adae <- data.frame(subjid = 1:3, pt_code = c(1002, 1001, 1002))
+
+# Applying the format via left join
+adae_mapped <- adae %>%
+  left_join(meddra_dict, by = "pt_code")
+
+print(adae_mapped)
+```
+
+This is the standard approach for merging in decodes (e.g., merging `PARAMCD` and `PARAM`).
+
+## Method 3: Named Vectors (The Swiss Army Knife)
+
+Sometimes you just want a quick inline format replacement without building a whole data frame. In SAS, you might use a messy `if/else if/else` block. In R, you can use a **named vector**. 
+
+A named vector is like a tiny dictionary where the "names" are your raw values, and the "values" are your formatted labels. You can use R's subsetting `[` operator to replace values quickly.
+
+```{r}
+# Define our "format"
+fmt_sex <- c("M" = "Male", "F" = "Female", "U" = "Unknown")
+
+adsl <- data.frame(subjid = 1:4, sex = c("M", "F", "F", "U"))
+
+# Apply the format by using the raw column to subset the named vector
+adsl$sex_decoded <- unname(fmt_sex[adsl$sex])
+
+print(adsl)
+```
+
+Alternatively, in a `#dplyr` pipeline, you can use `recode()` or `case_match()`.
+
+```{r}
+adsl <- adsl %>%
+  mutate(
+    sex_decoded = case_match(sex, 
+      "M" ~ "Male",
+      "F" ~ "Female",
+      "U" ~ "Unknown"
+    )
+  )
+```
+
+## Wrapping Up
+
+R doesn't give you a direct 1-to-1 substitute for `PROC FORMAT`. Instead, it forces you to think about what you actually want to achieve:
+* **Need distinct ordering for tables?** Use `factor()`.
+* **Need to merge a dictionary of thousands of terms?** Use `left_join()`.
+* **Need a quick, hard-coded string replacement?** Use a named vector or `case_match()`.
+
+You are now well-equipped to handle the primary hurdles of moving your data operations from SAS to R. Up next: Building SDTMs directly in R!
